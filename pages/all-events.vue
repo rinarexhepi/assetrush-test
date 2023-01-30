@@ -1,8 +1,13 @@
-<script lang="ts" setup></script>
+<script lang="ts">
+export default defineComponent({
+        components: {  },
+        pageSlug: "all-events"
+    })
+</script>
 
 <template>
   <div>
-    Page: foo
+    Page: All Events - Internal link navigation
   </div>
 </template>
 

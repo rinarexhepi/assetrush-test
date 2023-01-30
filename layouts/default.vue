@@ -1,7 +1,7 @@
-<!-- <template>
+<template>
     <div class="">
-        <Header/> 
+        <!-- <Header/> -->
         <slot/>
-        <Footer /> 
+        <!-- <Footer />   -->
     </div>
-</template> -->
+</template>

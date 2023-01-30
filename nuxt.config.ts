@@ -12,4 +12,8 @@ export default {
     css: [
       '@/assets/css/main.css',
     ],
+    modules: ['@nuxtjs/strapi'],
+    strapi: {
+    url: 'http://localhost:1337'
+    },
   }

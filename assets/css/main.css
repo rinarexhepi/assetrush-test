@@ -1,3 +1,19 @@
+/* @config "./tailwind.site.config.js"; */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+    @layer components{
+        .btn-primary{
+            @apply uppercase border-2 border-transparent hover:border-white rounded-full text-white backdrop-blur-md bg-white/20 ;
+        }
+        .btn-secondary{
+            @apply uppercase bg-blue-600 text-white rounded-full;
+
+        }
+        .btn-third{
+            @apply uppercase text-blue-600 bg-white rounded-full;
+        }
+    } 
+
