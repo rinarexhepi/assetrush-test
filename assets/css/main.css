@@ -15,5 +15,6 @@
         .btn-third{
             @apply uppercase text-blue-600 bg-white rounded-full;
         }
+        
     } 
 
