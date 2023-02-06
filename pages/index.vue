@@ -1,9 +1,9 @@
 <template>
     <div class="bg-custom-gradient h-screen">
        <h1 class="text-white text-lg">------main template------</h1>
-       <div class="flex gap-6 mt-10">
-        <div class="">
-           <StrapiButton 
+    <div class="flex gap-6">
+       <div >
+        <StrapiButton 
             :variants="[
                 { text: 'All Events', value: '/all-events' },
                 { text: 'Upcoming Events', value: '/upcoming-events' },
@@ -13,11 +13,10 @@
             /> 
         </div>
         <div class="">
-        
         <StrapiButton 
             v-bind:text="'Button'" 
             class="btn-primary px-7 py-3"
-                        icon="https://www.svgrepo.com/show/447/web-application.svg"
+            icon="https://www.svgrepo.com/show/447/web-application.svg"
         />
         </div>
         <div class="">
@@ -27,9 +26,7 @@
             target="_blank"
             class="btn-primary px-4 py-6"
             rel="'noopener'"
-            v-bind:reverse="true"
-
-            
+            v-bind:reverse="true"   
         />
         </div>
         <div class="">
@@ -39,17 +36,17 @@
             url="all-events"
             class="btn-third px-5 py-4"
             v-bind:reverse="true"
-
         /> 
         </div>
-       </div>
-       </div>
+    </div>
+    <!-- </Grids>  -->
+    </div>
        
 </template>
 <script lang="ts"> 
-    import StrapiButton from '~~/components/StrapiButton.vue';
+    import StrapiButton from '~~/components/StrapiButton.vue';  
     import ArrowOut from '~~/components/svg/ArrowOut.vue';
     export default defineComponent({
-        components: { StrapiButton, ArrowOut }
+        components: { StrapiButton, ArrowOut }, 
     })
 </script>
