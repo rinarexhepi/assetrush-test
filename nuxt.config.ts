@@ -1,7 +1,9 @@
 export default {
+  target: 'static',
     buildModules: [
       'nuxt-vite',
       '@nuxt/postcss8',
+      '@nuxt/image',
     ],
     postcss: {
       plugins: {
@@ -16,4 +18,7 @@ export default {
     strapi: {
     url: 'http://localhost:1337'
     },
+    image: {
+      // Options
+    }
   }

@@ -2,23 +2,44 @@
  <Component
     :is="getComponentTag()"
     v-bind="getButtonProps()" 
-    :reverse="reverse"
+    :reverse="''"
+    :class="designVariant"
   >
+
+    <div  class="flex" :class="[reverse ? 'flex-row-reverse' : '']">
+      <img v-if="icon" :src="icon" alt=""/>
+      <p>{{ text }}</p>
+    </div>
+
   <!-- template below shows the icon if reverse, - NEEDS TO BE FIXED -->
-    <template v-if="icon && reverse">
+    <!-- <template v-if="icon && reverse">
       <span class="text">{{text}}</span>
      <i v-if="icon" :class="icon">{{icon[reverse ? 1 : 0]}}</i>
     </template>
     <template v-else>
      <i v-if="icon && !reverse" :class="icon">{{icon[reverse ? 1 : 0]}}</i>
       <span class="text">{{text}}</span>
-    </template>
+    </template> -->
 
     <template v-if="variants">
       <select class=" hover:backdrop-blur-xl btn-primary px-7 py-3" v-model="selectedVariant">
-        <option class="" v-for="(text, value) in variants" key="variant" value="variant">{{ text }} {{value}}</option>
+        <option class="" v-for="variant in variants" key="variant.value" value="variant.value">{{ variant.text }}</option>
       </select>
+    </template> 
+    <!-- check out v-binding classes and styles -->
+    <!-- <template :class="[reverse ? 'flex': 'flex flex-row-reverse']">
+      <span class="text mr-2">{{text}}</span>
+      <div>pappa</div>
+      <i>{{icon}}</i>
+    </template> -->
+    <!-- <template v-else-if="!reverse">
+      <i>{{icon}}</i>
+      <span class="text">{{text}}</span>
     </template>
+    <template v-else>
+      <span class="text">{{text}}</span>
+    </template> -->
+
     
   </Component> 
   </template>
@@ -40,9 +61,10 @@
       newTab: { type: Boolean as PropType<Button['newTab'] | undefined>, default: undefined },
       text: { type: String as PropType<Button['text']>, default: '' },
       size: { type: String as PropType<'base' | 'lg'>, default: 'lg' },
-      reverse: { type: Boolean, default: false },
+      reverse: { type: Boolean, default: null },
+      designVariant: { type: String, default: ""},
       icon: { type: String as PropType<string>, default: '' },
-      variants: { type: Array as PropType<Variant[]>, default: false}
+      variants: { type: Array as PropType<Variant[]>, default: null},
   },
 
     setup(props) {
@@ -50,10 +72,26 @@
     const baseUrl = strapiUrl.slice(0, -1)
     const route = useRoute()
     const selectedVariant = ref(null)
-
+    const buttonDesign = ref('');
     const hasIcons = () =>
      props.icon && props.icon.length > 0;
-
+    const getButtonDesign = () => {
+        let classes = '';
+        switch(props.designVariant){
+          case 'primary-btn':
+            classes = 'primary-btn';
+            break;
+          case 'secondary-btn':
+            classes = 'secondary-btn';
+            break;
+          case 'third-btn':
+            classes = 'third-btn';
+          default:
+            break;  
+        }
+        buttonDesign.value = `${classes}`;
+      }
+      
 
     function getComponentTag() {
       if (props.url) {
@@ -83,14 +121,15 @@
           download: props.file.name,
           rel: route.fullPath.includes('gentwo-plus') ? 'nofollow' : undefined,
         }
-      } 
+      }
     }
     return { isUrlExternal, 
               getComponentTag, 
               getButtonProps, 
               selectedVariant,
-              variants: computed(() => props.variants),
-              hasIcons
+              hasIcons,
+              getButtonDesign,
+              buttonDesign
           }
     },
 })

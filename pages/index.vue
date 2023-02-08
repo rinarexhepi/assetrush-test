@@ -1,43 +1,65 @@
 <template>
     <div class="bg-custom-gradient h-screen">
        <h1 class="text-white text-lg">------main template------</h1>
-    <div class="flex gap-6">
-       <div >
+    <div class="flex flex-row gap-4 justify-center items-center">
+        <div class="">
+            <!-- StrapiButton renders button, NuxtLink for internal and a-link for external links -->
+            <!-- StrapiButton has variants for designs: primary, secondary, third -->
+            <!-- StrapiButton has reverse prop for switching position of icon and text -->
+
         <StrapiButton 
             :variants="[
                 { text: 'All Events', value: '/all-events' },
                 { text: 'Upcoming Events', value: '/upcoming-events' },
                 { text: 'Past Events', value: '/past-events' },
               ]"
-            :reverse="true"            
+               
             /> 
         </div>
-        <div class="">
-        <StrapiButton 
-            v-bind:text="'Button'" 
-            class="btn-primary px-7 py-3"
-            icon="https://www.svgrepo.com/show/447/web-application.svg"
-        />
-        </div>
-        <div class="">
+        <div class="btn-primary">
         <StrapiButton 
             v-bind:text="'Go to Asset Rush'" 
             v-bind:url="'https://www.assetrush.com/'"
             target="_blank"
-            class="btn-primary px-4 py-6"
+            class=""
             rel="'noopener'"
-            v-bind:reverse="true"   
+                
         />
         </div>
-        <div class="">
+        <div class="btn-primary">
         <StrapiButton
             text="Asset Rush All Events" 
             target="_self"
             url="all-events"
-            class="btn-third px-5 py-4"
-            v-bind:reverse="true"
+            class=""
+            
         /> 
+
+        </div>  
+        <div class="btn-secondary">
+        <StrapiButton
+            :class="'btn-secondary'" 
+            class="uppercase px-5 py-4"
+            text="button"
+        />
         </div>
+
+        <div>
+        <StrapiButton
+            class="btn-third px-5 py-4"
+            text="Hi"
+            icon="https://www.svgrepo.com/show/447/web-application.svg"
+            :reverse="true"
+        />
+        </div>
+        <StrapiButton
+            class="btn-third px-5 py-4"
+            text="Hi"
+            icon="https://www.svgrepo.com/show/447/web-application.svg"
+            :reverse="false"
+        />
+    <!-- </div> -->
+        
     </div>
     <!-- </Grids>  -->
     </div>

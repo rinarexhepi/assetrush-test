@@ -23,6 +23,7 @@
       "types": [
     "@types/node",
     "@nuxt/types",
+    "@nuxt/image",
     "@nuxtjs/strapi",
     "unplugin-vue2-script-setup/types",
     "@pinia/nuxt",
