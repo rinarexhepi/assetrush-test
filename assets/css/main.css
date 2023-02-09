@@ -15,6 +15,9 @@
         .btn-third{
             @apply max-w-fit uppercase text-blue-600 bg-white rounded-full;
         }
+        .grid-responsive{
+            @apply lg:grid-cols-12 md:grid-cols-6 sm:grid-cols-6 
+        }
         
     } 
 
