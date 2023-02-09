@@ -1,7 +1,7 @@
 <template>
   <div>
     <Grids
-    :gridVariant="'full-bleed'"
+    :gridVariant="'fullBleed'"
     >
     <h2>full-bleed</h2>
   </Grids>
@@ -9,7 +9,7 @@
   
    <div>
     <Grids
-    :gridVariant="'gutters-only'"
+    :gridVariant="'guttersOnly'"
     >
     <h2>gutters-only</h2>
   </Grids>
@@ -17,7 +17,7 @@
 
   <div>
     <Grids
-    :gridVariant="'half-and-half'"
+    :gridVariant="'halfAndHalf'"
     >
     <div :class="'half'">
       <h2>first half</h2>
@@ -26,9 +26,9 @@
       <h2>second half</h2>
     </div>
     
-    <!-- <template v-slot:half class="half">
+     <template v-slot:half class="half">
       <p>Here is half</p>
-    </template> -->
+    </template> 
 
     </Grids>
   </div>
@@ -66,7 +66,7 @@
 
   <div>
     <Grids
-    :gridVariant="'centered-cards'"
+    :gridVariant="'centeredCards'"
     >
     <div :class="'centered-card'">
       <h2>centered card</h2>

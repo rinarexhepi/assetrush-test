@@ -5,42 +5,15 @@
     :reverse="''"
     :class="designVariant"
   >
-
     <div  class="flex" :class="[reverse ? 'flex-row-reverse' : '']">
       <img v-if="icon" :src="icon" alt=""/>
       <p>{{ text }}</p>
     </div>
-
-  <!-- template below shows the icon if reverse, - NEEDS TO BE FIXED -->
-    <!-- <template v-if="icon && reverse">
-      <span class="text">{{text}}</span>
-     <i v-if="icon" :class="icon">{{icon[reverse ? 1 : 0]}}</i>
-    </template>
-    <template v-else>
-     <i v-if="icon && !reverse" :class="icon">{{icon[reverse ? 1 : 0]}}</i>
-      <span class="text">{{text}}</span>
-    </template> -->
-
     <template v-if="variants">
       <select class=" hover:backdrop-blur-xl btn-primary px-7 py-3" v-model="selectedVariant">
         <option class="" v-for="variant in variants" key="variant.value" value="variant.value">{{ variant.text }}</option>
       </select>
     </template> 
-    <!-- check out v-binding classes and styles -->
-    <!-- <template :class="[reverse ? 'flex': 'flex flex-row-reverse']">
-      <span class="text mr-2">{{text}}</span>
-      <div>pappa</div>
-      <i>{{icon}}</i>
-    </template> -->
-    <!-- <template v-else-if="!reverse">
-      <i>{{icon}}</i>
-      <span class="text">{{text}}</span>
-    </template>
-    <template v-else>
-      <span class="text">{{text}}</span>
-    </template> -->
-
-    
   </Component> 
   </template>
 <script lang="ts">
