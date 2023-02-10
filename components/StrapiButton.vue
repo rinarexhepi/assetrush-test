@@ -2,7 +2,7 @@
   <Component
     :is="getComponentTag()"
     v-bind="getButtonProps()"
-    :class="buttonClass"
+    :class="selectButtonClass"
   >
     <div class="flex" :class="[reverse ? 'flex-row-reverse' : '']">
       <img v-if="icon" :src="icon" alt="" />
@@ -62,10 +62,9 @@ export default defineComponent({
     const buttonDesign = ref("");
     const hasIcons = computed(() => props.icon && props.icon.length > 0);
 
-    const useButtonClasses = (variant: ButtonVariant) => {
-      return buttonClasses[variant];
-    };
-    const buttonClass = useButtonClasses(props.buttonVariant);
+    const selectButtonClass = computed(
+      () => buttonClasses[props.buttonVariant]
+    );
 
     function getComponentTag() {
       if (props.url) {
@@ -96,8 +95,7 @@ export default defineComponent({
       selectedVariant,
       hasIcons,
       buttonDesign,
-      buttonClass,
-      useButtonClasses,
+      selectButtonClass,
     };
   },
 });

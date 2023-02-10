@@ -1,5 +1,5 @@
 <template>
-  <div class="grid grid-responsive" :class="variantClass">
+  <div class="grid grid-responsive" :class="selectGridVariant">
     <slot />
   </div>
 </template>
@@ -25,14 +25,11 @@ export default {
     },
   },
   setup(props) {
-    const useVariantClasses = (variant: GridVariant) => {
-      return variantClasses[variant];
-    };
-    const variantClass = useVariantClasses(props.gridVariant);
+    const selectGridVariant = computed(() => variantClasses[props.gridVariant]);
+
     return {
       variantClasses,
-      useVariantClasses,
-      variantClass,
+      selectGridVariant,
     };
   },
 };
