@@ -25,16 +25,11 @@
   </Component>
 </template>
 <script lang="ts">
-const buttonClasses = {
-  primary:
-    "uppercase border-2 border-transparent hover:border-white rounded-full text-white backdrop-blur-md bg-white/20 py-4 px-3 ",
-  secondary: "uppercase bg-blue-600 text-white rounded-full",
-  third: " uppercase text-blue-600 bg-white rounded-full",
-};
+import { buttonClasses } from "./const";
 import { PropType, defineComponent } from "vue";
 import { Button } from "~/types";
 import { isUrlExternal } from "~/utils";
-import { ButtonVariant } from "~/types/buttonTypes.ts";
+import { ButtonVariant } from "~/components/StrapiButton/types.ts";
 
 interface listVariant {
   text: string;

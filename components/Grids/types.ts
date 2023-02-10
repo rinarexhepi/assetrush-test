@@ -1,4 +1,5 @@
 const gridTypes = [
+  "gridResponsive",
   "fullBleed",
   "guttersOnly",
   "halfAndHalf",

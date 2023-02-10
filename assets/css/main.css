@@ -3,9 +3,3 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@layer components {
-  .grid-responsive {
-    @apply lg:grid-cols-12 md:grid-cols-6 sm:grid-cols-6;
-  }
-}
