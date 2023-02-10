@@ -1,6 +1,5 @@
 <template>
     <NuxtImg
-      :src="imgSrc"
       :width="image.width"
       :height="image.height"
       :format="isSvg ? undefined : 'webp'"
@@ -25,10 +24,6 @@
       loading: { type: String as PropType<'eager' | 'lazy'>, default: 'lazy' },
     },
     setup(props) {
-      const strapUrl = useStrapiUrl();
-      const baseUrl = strapUrl.slice(0, -1)
-      console.log(strapUrl)
-  
       const isSvg = computed(() => props.image.ext === '.svg')
       const urlForPreferredSize = computed(() => props.image.formats?.[props.size]?.url)
       const imagePath = computed(() => {
@@ -38,9 +33,7 @@
   
         return urlForPreferredSize.value
       })
-      const imgSrc = computed(() => `${baseUrl}${imagePath.value}`)
-  
-      return { isSvg, imgSrc }
+      return { isSvg, imagePath }
     },
   })
   </script>
