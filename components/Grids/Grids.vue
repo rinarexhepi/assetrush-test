@@ -1,5 +1,5 @@
 <template>
-  <div class="grid grid-responsive" :class="selectGridVariant">
+  <div class="grid grid-responsive" :class="selectedGridVariant">
     <slot />
   </div>
 </template>
@@ -16,11 +16,12 @@ export default {
     },
   },
   setup(props) {
-    const selectGridVariant = computed(() => variantClasses[props.gridVariant]);
+    const selectedGridVariant = computed(
+      () => variantClasses[props.gridVariant]
+    );
 
     return {
-      variantClasses,
-      selectGridVariant,
+      selectedGridVariant,
     };
   },
 };
