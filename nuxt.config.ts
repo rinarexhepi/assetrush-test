@@ -20,5 +20,6 @@ export default {
     },
     image: {
       // Options
-    }
+    },
+    components: {dirs: ['~~/components'], },
   }

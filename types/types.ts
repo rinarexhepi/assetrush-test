@@ -6,7 +6,11 @@ const gridTypes = [
     'standard',
     'centered',
     'cards',
-    'centeredCards'
+    'centeredCards',
+    'standardChild',
+    'centeredChild',
+    'singleCard',
+    'centeredCard'
 ] as const;
 
 export type GridVariant = typeof gridTypes[number];

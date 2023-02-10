@@ -4,20 +4,20 @@
 @tailwind components;
 @tailwind utilities;
 
-    @layer components{
-        .btn-primary{
-            @apply  max-w-fit uppercase border-2 border-transparent hover:border-white rounded-full text-white backdrop-blur-md bg-white/20 py-4 px-3 ;
-        }
-        .btn-secondary{
-            @apply max-w-fit uppercase bg-blue-600 text-white rounded-full;
+@layer components{
+    .btn-primary{
+        @apply  max-w-fit uppercase border-2 border-transparent hover:border-white rounded-full text-white backdrop-blur-md bg-white/20 py-4 px-3 ;
+    }
+    .btn-secondary{
+        @apply max-w-fit uppercase bg-blue-600 text-white rounded-full;
 
-        }
-        .btn-third{
-            @apply max-w-fit uppercase text-blue-600 bg-white rounded-full;
-        }
-        .grid-responsive{
-            @apply lg:grid-cols-12 md:grid-cols-6 sm:grid-cols-6 
-        }
-        
-    } 
+    }
+    .btn-third{
+        @apply max-w-fit uppercase text-blue-600 bg-white rounded-full;
+    }
+    .grid-responsive{
+        @apply lg:grid-cols-12 md:grid-cols-6 sm:grid-cols-6 
+    }
+    
+} 
 

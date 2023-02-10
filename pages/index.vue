@@ -1,74 +1,72 @@
 <template>
     <div class="bg-custom-gradient h-screen">
-       <h1 class="text-white text-lg">------main template------</h1>
-    <div class="flex flex-row gap-4 justify-center items-center">
-        <div class="">
-            <!-- StrapiButton renders button, NuxtLink for internal and a-link for external links -->
-            <!-- StrapiButton has variants for designs: primary, secondary, third -->
-            <!-- StrapiButton has reverse prop for switching position of icon and text -->
+        <h1 class="text-white text-lg">------main template------</h1>
+        <div class="flex flex-row gap-4 justify-center items-center">
+            <div class="">
+                <!-- StrapiButton renders button, NuxtLink for internal and a-link for external links -->
+                <!-- StrapiButton has variants for designs: primary, secondary, third -->
+                <!-- StrapiButton has reverse prop for switching position of icon and text -->
 
-        <StrapiButton 
-            :variants="[
-                { text: 'All Events', value: '/all-events' },
-                { text: 'Upcoming Events', value: '/upcoming-events' },
-                { text: 'Past Events', value: '/past-events' },
-              ]"
-               
-            /> 
-        </div>
-        <div class="btn-primary">
-        <StrapiButton 
-            v-bind:text="'Go to Asset Rush'" 
-            v-bind:url="'https://www.assetrush.com/'"
-            target="_blank"
-            class=""
-            rel="'noopener'"
-                
-        />
-        </div>
-        <div class="btn-primary">
-        <StrapiButton
-            text="Asset Rush All Events" 
-            target="_self"
-            url="all-events"
-            class=""
-            
-        /> 
+            <StrapiButton
+                :variants="[
+                    { text: 'All Events', value: '/all-events' },
+                    { text: 'Upcoming Events', value: '/upcoming-events' },
+                    { text: 'Past Events', value: '/past-events' },
+                ]"
 
-        </div>  
-        <div class="btn-secondary">
-        <StrapiButton
-            :class="'btn-secondary'" 
-            class="uppercase px-5 py-4"
-            text="button"
-        />
-        </div>
+                />
+            </div>
+            <div class="btn-primary">
+            <StrapiButton
+                v-bind:text="'Go to Asset Rush'"
+                v-bind:url="'https://www.assetrush.com/'"
+                target="_blank"
+                class=""
+                rel="'noopener'"
 
-        <div>
-        <StrapiButton
-            class="btn-third px-5 py-4"
-            text="Hi"
-            icon="https://www.svgrepo.com/show/447/web-application.svg"
-            :reverse="true"
-        />
+            />
+            </div>
+            <div class="btn-primary">
+            <StrapiButton
+                text="Asset Rush All Events"
+                target="_self"
+                url="all-events"
+                class=""
+
+            />
+
+            </div>
+            <div class="btn-secondary">
+            <StrapiButton
+                :class="'btn-secondary'"
+                class="uppercase px-5 py-4"
+                text="button"
+            />
+            </div>
+
+            <div>
+            <StrapiButton
+                class="btn-third px-5 py-4"
+                text="Hi"
+                icon="https://www.svgrepo.com/show/447/web-application.svg"
+                :reverse="true"
+            />
+            </div>
+            <StrapiButton
+                class="btn-third px-5 py-4"
+                text="Hi"
+                icon="https://www.svgrepo.com/show/447/web-application.svg"
+                :reverse="false"
+            />
+        <!-- </div> -->
+
         </div>
-        <StrapiButton
-            class="btn-third px-5 py-4"
-            text="Hi"
-            icon="https://www.svgrepo.com/show/447/web-application.svg"
-            :reverse="false"
-        />
-    <!-- </div> -->
-        
-    </div>
     <!-- </Grids>  -->
     </div>
-       
+
 </template>
-<script lang="ts"> 
-    import StrapiButton from '~~/components/StrapiButton.vue';  
-    import ArrowOut from '~~/components/svg/ArrowOut.vue';
-    export default defineComponent({
-        components: { StrapiButton, ArrowOut }, 
-    })
+<script lang="ts">
+
+export default defineComponent({
+})
 </script>

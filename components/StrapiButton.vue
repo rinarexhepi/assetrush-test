@@ -1,8 +1,7 @@
 <template>
  <Component
     :is="getComponentTag()"
-    v-bind="getButtonProps()" 
-    :reverse="''"
+    v-bind="getButtonProps()"
     :class="designVariant"
   >
     <div  class="flex" :class="[reverse ? 'flex-row-reverse' : '']">
@@ -18,10 +17,10 @@
   </template>
 <script lang="ts">
   import { PropType, defineComponent } from 'vue'
-  import type { Button } from '~/types'
+  import { Button } from '~/types'
   import { isUrlExternal } from '~/utils'
 
-  interface Variant {
+  interface listVariant {
     text: string
     value: string
   }
@@ -37,7 +36,7 @@
       reverse: { type: Boolean, default: null },
       designVariant: { type: String, default: ""},
       icon: { type: String as PropType<string>, default: '' },
-      variants: { type: Array as PropType<Variant[]>, default: null},
+      variants: { type: Array as PropType<listVariant[]>, default: null},
   },
 
     setup(props) {
@@ -48,23 +47,6 @@
     const buttonDesign = ref('');
     const hasIcons = () =>
      props.icon && props.icon.length > 0;
-    const getButtonDesign = () => {
-        let classes = '';
-        switch(props.designVariant){
-          case 'primary-btn':
-            classes = 'primary-btn';
-            break;
-          case 'secondary-btn':
-            classes = 'secondary-btn';
-            break;
-          case 'third-btn':
-            classes = 'third-btn';
-          default:
-            break;  
-        }
-        buttonDesign.value = `${classes}`;
-      }
-      
 
     function getComponentTag() {
       if (props.url) {
@@ -92,7 +74,7 @@
         return {
           href: `${baseUrl}${props.file.url}`,
           download: props.file.name,
-          rel: route.fullPath.includes('gentwo-plus') ? 'nofollow' : undefined,
+          rel: undefined,
         }
       }
     }
@@ -101,7 +83,6 @@
               getButtonProps, 
               selectedVariant,
               hasIcons,
-              getButtonDesign,
               buttonDesign
           }
     },
