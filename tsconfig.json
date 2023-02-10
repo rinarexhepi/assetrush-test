@@ -6,6 +6,7 @@
     "target": "ESNext",
     "module": "ESNext",
     "moduleResolution": "Node",
+    "allowImportingTsExtensions": true,
     "lib": ["ESNext", "ESNext.AsyncIterable", "DOM"],
     "jsx": "preserve",
     "esModuleInterop": true,

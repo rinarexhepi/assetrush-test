@@ -11,11 +11,11 @@
           'halfAndHalf': 'lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 w-full bg-slate-500 py-6',
           'standard': 'gap-4 bg-red-100',
           'centered': 'gap-4 mx-20',
-          'cards': ' gap-4 mx-20 bg-indigo-400 py-6',
+          'cards': 'gap-4 mx-20 bg-indigo-400 py-6',
           'centeredCards': ' gap-4 justify-center',
         }
    import { PropType } from 'vue'
-   import { GridVariant } from '~/types/gridTypes.js'
+   import { GridVariant } from '~/types/gridTypes.ts'
     export default {
     props: {
     gridVariant: {

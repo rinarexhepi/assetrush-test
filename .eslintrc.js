@@ -187,6 +187,7 @@ module.exports = {
     },
     {
       files: ['*.d.ts'],
+
       rules: {
         /*
          * Disable rules that don't work well with d.ts files
