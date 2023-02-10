@@ -2,7 +2,7 @@
     <div class="bg-custom-gradient h-screen">
         <h1 class="text-white text-lg">------main template------</h1>
         <div class="flex flex-row gap-4 justify-center items-center">
-            <div class="">
+            <div>
                 <!-- StrapiButton renders button, NuxtLink for internal and a-link for external links -->
                 <!-- StrapiButton has variants for designs: primary, secondary, third -->
                 <!-- StrapiButton has reverse prop for switching position of icon and text -->
@@ -16,29 +16,28 @@
 
                 />
             </div>
-            <div class="btn-primary">
+            <div>
             <StrapiButton
+                buttonVariant="primary"
                 v-bind:text="'Go to Asset Rush'"
                 v-bind:url="'https://www.assetrush.com/'"
                 target="_blank"
-                class=""
                 rel="'noopener'"
 
             />
             </div>
-            <div class="btn-primary">
+            <div>
             <StrapiButton
+                buttonVariant="primary"
                 text="Asset Rush All Events"
                 target="_self"
                 url="all-events"
-                class=""
-
             />
 
             </div>
-            <div class="btn-secondary">
+            <div>
             <StrapiButton
-                :class="'btn-secondary'"
+                buttonVariant="secondary"
                 class="uppercase px-5 py-4"
                 text="button"
             />
@@ -46,14 +45,14 @@
 
             <div>
             <StrapiButton
-                class="btn-third px-5 py-4"
+                buttonVariant="third"
                 text="Hi"
                 icon="https://www.svgrepo.com/show/447/web-application.svg"
                 :reverse="true"
             />
             </div>
             <StrapiButton
-                class="btn-third px-5 py-4"
+                buttonVariant="third"
                 text="Hi"
                 icon="https://www.svgrepo.com/show/447/web-application.svg"
                 :reverse="false"

@@ -2,7 +2,7 @@
  <Component
     :is="getComponentTag()"
     v-bind="getButtonProps()"
-    :class="designVariant"
+    :class="buttonClass"
   >
     <div  class="flex" :class="[reverse ? 'flex-row-reverse' : '']">
       <img v-if="icon" :src="icon" alt=""/>
@@ -15,10 +15,17 @@
     </template> 
   </Component> 
   </template>
-<script lang="ts">
+<script lang="ts">  
+  const buttonClasses = {
+    'primary': ' uppercase border-2 border-transparent hover:border-white rounded-full text-white backdrop-blur-md bg-white/20 py-4 px-3 ',
+    'secondary': ' uppercase bg-blue-600 text-white rounded-full',
+    'third': ' uppercase text-blue-600 bg-white rounded-full',
+    }
   import { PropType, defineComponent } from 'vue'
   import { Button } from '~/types'
   import { isUrlExternal } from '~/utils'
+  import { ButtonVariant } from '~/types/buttonTypes.ts'
+
 
   interface listVariant {
     text: string
@@ -34,19 +41,25 @@
       text: { type: String as PropType<Button['text']>, default: '' },
       size: { type: String as PropType<'base' | 'lg'>, default: 'lg' },
       reverse: { type: Boolean, default: null },
-      designVariant: { type: String, default: ""},
       icon: { type: String as PropType<string>, default: '' },
       variants: { type: Array as PropType<listVariant[]>, default: null},
+      buttonVariant: { type: String as PropType<ButtonVariant>, default: ""
+    },
   },
 
     setup(props) {
     const strapiUrl = useStrapiUrl()
     const baseUrl = strapiUrl.slice(0, -1)
-    const route = useRoute()
     const selectedVariant = ref(null)
     const buttonDesign = ref('');
     const hasIcons = () =>
      props.icon && props.icon.length > 0;
+
+
+     const useButtonClasses = (variant: ButtonVariant) => {
+          return buttonClasses[variant];
+        }
+        const buttonClass = useButtonClasses(props.buttonVariant)
 
     function getComponentTag() {
       if (props.url) {
@@ -55,7 +68,6 @@
       return 'button'
     }
     function getButtonProps() {
-    //  btn: Pick<Button, 'file' | 'url' | 'newTab'>
       if (props.url) {
         if (isUrlExternal(props.url)) {
           return {
@@ -83,7 +95,9 @@
               getButtonProps, 
               selectedVariant,
               hasIcons,
-              buttonDesign
+              buttonDesign,
+              buttonClass,
+              useButtonClasses
           }
     },
 })
