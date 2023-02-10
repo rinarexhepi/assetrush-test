@@ -60,7 +60,7 @@ export default defineComponent({
   setup(props) {
     const selectedVariant = ref(null);
     const buttonDesign = ref("");
-    const hasIcons = () => props.icon && props.icon.length > 0;
+    const hasIcons = computed(() => props.icon && props.icon.length > 0);
 
     const useButtonClasses = (variant: ButtonVariant) => {
       return buttonClasses[variant];
