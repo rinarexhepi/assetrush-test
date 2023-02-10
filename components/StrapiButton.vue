@@ -17,8 +17,8 @@
   </template>
 <script lang="ts">  
   const buttonClasses = {
-    'primary': ' uppercase border-2 border-transparent hover:border-white rounded-full text-white backdrop-blur-md bg-white/20 py-4 px-3 ',
-    'secondary': ' uppercase bg-blue-600 text-white rounded-full',
+    'primary': 'uppercase border-2 border-transparent hover:border-white rounded-full text-white backdrop-blur-md bg-white/20 py-4 px-3 ',
+    'secondary': 'uppercase bg-blue-600 text-white rounded-full',
     'third': ' uppercase text-blue-600 bg-white rounded-full',
     }
   import { PropType, defineComponent } from 'vue'
@@ -48,8 +48,6 @@
   },
 
     setup(props) {
-    const strapiUrl = useStrapiUrl()
-    const baseUrl = strapiUrl.slice(0, -1)
     const selectedVariant = ref(null)
     const buttonDesign = ref('');
     const hasIcons = () =>
@@ -73,20 +71,13 @@
           return {
             href: props.url,
             // open external links in new tab by default
-            target: props.newTab === false ? '_self' : '_blank',
+            target: props.newTab ? '_self' : '_blank',
             rel: 'noopener',
           }
         }
         return {
           to: props.url,
           target: props.newTab ? '_blank' : '_self',
-        }
-      }
-      if (props.file) {
-        return {
-          href: `${baseUrl}${props.file.url}`,
-          download: props.file.name,
-          rel: undefined,
         }
       }
     }
