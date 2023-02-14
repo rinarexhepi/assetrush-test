@@ -1,4 +1,9 @@
 const gridTypes = [
+  "half",
+  "standardChild",
+  "centeredChild",
+  "singleCard",
+  "centeredCard",
   "gridResponsive",
   "fullBleed",
   "guttersOnly",

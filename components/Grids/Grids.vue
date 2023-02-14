@@ -1,13 +1,17 @@
 <template>
-  <div class="grid grid-responsive" :class="selectedGridVariant">
-    <slot />
+  <div
+    class="grid grid-responsive"
+    :class="selectedGridVariant"
+    v-if="gridVariant"
+  >
+    <slot :variant="gridVariant"></slot>
   </div>
 </template>
 
 <script lang="ts">
 import { variantClasses } from "./const";
 import { PropType } from "vue";
-import { GridVariant } from "~/components/Grids/types.js";
+import { GridVariant } from "~/components/Grids/types.ts";
 export default {
   props: {
     gridVariant: {
