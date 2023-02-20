@@ -70,8 +70,7 @@
           <h1>This is a title</h1>
           <p>This is a description</p>
         </div>
-        <vimeo-player
-          ref="videoPlayerEl"
+        <VideoTestimonials
           :options="{ responsive: true }"
           class="m-auto w-full"
           video-url="https://vimeo.com/444369368"
@@ -83,6 +82,7 @@
 </template>
 <script>
 import Modal from "~/components/VueFinalModal/Modal.vue";
+import VideoTestimonials from "~/components/Video/VideoTestimonials.vue";
 export default {
   components: {
     Modal,
