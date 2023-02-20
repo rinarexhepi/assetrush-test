@@ -4,10 +4,10 @@
     v-if="showModal"
     @click="closeModal()"
   >
-    <div class=" m-20 bg-red-100 p-4;" @click.stop>
-      <button @click="closeModal()">
-        <i>X</i>
-      </button>
+    <button @click="closeModal()">
+      <i>X</i>
+    </button>
+    <div class="m-20 bg-red-100" @click.stop>
       <slot />
     </div>
   </div>
