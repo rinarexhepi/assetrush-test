@@ -63,14 +63,20 @@
     <Modal
       :showModal="shouldRenderModal"
       @closeModal="shouldRenderModal = false"
-      class=" bg-red-100 fixed top-0 left-0 align-center z-10"
+      class=" bg-red-100 fixed inset-0 align-center z-10"
     >
-      <div class="flex justify-center bg-white w-full h-screen ">
+      <div class="flex justify-center w-full h-screen">
         <div>
           <h1>This is a title</h1>
           <p>This is a description</p>
         </div>
-        <!-- <VideoTestimonials src="">This is a video</VideoTestimonials> -->
+        <vimeo-player
+          ref="videoPlayerEl"
+          :options="{ responsive: true }"
+          class="m-auto w-full"
+          video-url="https://vimeo.com/444369368"
+          video-id="444369368"
+        />
       </div>
     </Modal>
   </div>
@@ -81,7 +87,6 @@ export default {
   components: {
     Modal,
   },
-
   setup() {
     const shouldRenderModal = ref(false);
 
