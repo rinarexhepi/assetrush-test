@@ -36,6 +36,9 @@
     "@fortawesome/free-regular-svg-icons": "^6.2.1",
     "@fortawesome/free-solid-svg-icons": "^6.2.1",
     "@fortawesome/vue-fontawesome": "^3.0.3",
-    "@nuxtjs/strapi": "^1.7.1"
+    "@nuxtjs/strapi": "^1.7.1",
+    "nuxt-video-player": "^1.0.17",
+    "vue-final-modal": "^4.0.4",
+    "vue-vimeo-player": "^1.1.2"
   }
 }

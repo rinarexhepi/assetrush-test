@@ -4,7 +4,13 @@ export default {
       'nuxt-vite',
       '@nuxt/postcss8',
       '@nuxt/image',
+      vendor: [
+      'vue-vimeo-player'
     ],
+    ],
+    plugins: [
+    { src: `~plugins/vimeo-player` }
+  ],
     postcss: {
       plugins: {
         tailwindcss: {},
