@@ -63,13 +63,13 @@
     <Modal
       :showModal="shouldRenderModal"
       @closeModal="shouldRenderModal = false"
-      class=" bg-red-100 fixed inset-0 align-center"
+      class=" fixed inset-0 align-center"
     >
       <div class="flex justify-center flex-row w-full h-full">
         <div class="absolute z-10 mt-60">
           <h1>This is a title</h1>
           <p>This is a description</p>
-          <NuxtLink class="border absolute bg-red-300 p-3" href="join">
+          <NuxtLink class="border absolute bg-slate-900 p-3" href="join">
             <span>index page</span>
           </NuxtLink>
         </div>
