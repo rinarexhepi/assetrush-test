@@ -65,24 +65,20 @@
       @closeModal="shouldRenderModal = false"
       class=" bg-red-100 fixed inset-0 align-center z-10"
     >
-      <div class="flex justify-center w-full h-screen">
-        <div class="absolute ">
+      <div class="flex justify-center flex-row w-full h-full">
+        <div>
           <h1>This is a title</h1>
           <p>This is a description</p>
+          <NuxtLink class="border absolute bg-red-300 p-3" href="join">
+            <i>index page</i>
+          </NuxtLink>
         </div>
         <VideoTestimonials
           :options="{ responsive: true }"
-          class="m-auto w-full z-50"
+          class="m-16 w-full z-50"
           video-url="https://vimeo.com/444369368"
           video-id="444369368"
         />
-        <NuxtLink
-          class="border absolute bg-red-800"
-          to="https://www.assetrush.com/"
-          @click.stop
-        >
-          <i>asset rush website</i>
-        </NuxtLink>
       </div>
     </Modal>
   </div>

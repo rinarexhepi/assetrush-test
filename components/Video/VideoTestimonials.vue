@@ -2,8 +2,6 @@
   <Transition name="fade-video" appear>
     <vimeo-player
       ref="videoPlayerEl"
-      :options="{ responsive: true }"
-      class="m-auto w-full"
       @ready="videoPlayerEl && videoPlayerEl.play()"
     />
   </Transition>

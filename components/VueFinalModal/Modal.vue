@@ -5,7 +5,17 @@
     @click="closeModal()"
   >
     <button @click="closeModal()">
-      <i>X</i>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="#000000"
+        width="30px"
+        height="30px"
+        viewBox="0 0 1024 1024"
+      >
+        <path
+          d="M697.4 759.2l61.8-61.8L573.8 512l185.4-185.4-61.8-61.8L512 450.2 326.6 264.8l-61.8 61.8L450.2 512 264.8 697.4l61.8 61.8L512 573.8z"
+        />
+      </svg>
     </button>
     <div class="m-20 bg-red-100" @click.stop>
       <slot />
@@ -15,7 +25,6 @@
 
 <script>
 import { defineComponent } from "vue";
-
 export default defineComponent({
   props: {
     title: {
