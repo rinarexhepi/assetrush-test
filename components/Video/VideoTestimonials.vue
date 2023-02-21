@@ -1,5 +1,5 @@
 <template>
-  <Transition name="fade-video" appear>
+  <Transition appear>
     <vimeo-player
       ref="videoPlayerEl"
       @ready="videoPlayerEl && videoPlayerEl.play()"

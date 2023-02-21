@@ -63,26 +63,25 @@
     <Modal
       :showModal="shouldRenderModal"
       @closeModal="shouldRenderModal = false"
-      class=" bg-red-100 fixed inset-0 align-center z-10"
+      class=" bg-red-100 fixed inset-0 align-center"
     >
       <div class="flex justify-center flex-row w-full h-full">
-        <div>
+        <div class="absolute z-10 mt-60">
           <h1>This is a title</h1>
           <p>This is a description</p>
           <NuxtLink class="border absolute bg-red-300 p-3" href="join">
-            <i>index page</i>
+            <span>index page</span>
           </NuxtLink>
         </div>
         <VideoTestimonials
           :options="{ responsive: true }"
-          class="m-16 w-full z-50"
+          class="m-16 w-full z-0"
           video-url="https://vimeo.com/444369368"
-          video-id="444369368"
         />
       </div>
     </Modal>
-  </div>
-</template>
+  </div> </template
+>z-20
 <script>
 import Modal from "~/components/VueFinalModal/Modal.vue";
 import VideoTestimonials from "~/components/Video/VideoTestimonials.vue";

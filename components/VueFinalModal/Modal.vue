@@ -17,7 +17,7 @@
         />
       </svg>
     </button>
-    <div class="m-20 bg-red-100" @click.stop>
+    <div class="m-20 bg-red-100 z-20" @click.stop>
       <slot />
     </div>
   </div>
