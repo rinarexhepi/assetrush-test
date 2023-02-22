@@ -1,6 +1,6 @@
 <template>
   <div
-    class=" w-screen h-screen bg-slate-800 bg-opacity-40"
+    class=" w-screen h-screen bg-slate-800 bg-opacity-40 "
     v-if="showModal"
     @click="closeModal()"
   >
@@ -17,8 +17,25 @@
         />
       </svg>
     </button>
-    <div class="m-20 bg-slate-900 text-white z-20" @click.stop>
+    <div class="m-20 bg-slate-900 text-white z-20 rounded-lg" @click.stop>
       <slot />
+      <div>
+        <h2 v-if="title" class="text-3xl">{{ title }}</h2>
+        <p v-if="description" class="text-lg">{{ description }}</p>
+        <NuxtLink
+          v-if="cta"
+          class="border absolute bg-slate-900 p-3 rounded-xl"
+          href=""
+          >{{ cta }}</NuxtLink
+        >
+        <Transition>
+          <VideoTestimonials
+            :options="{ responsive: true }"
+            class="m-16 w-full z-0 "
+            video-url=""
+          />
+        </Transition>
+      </div>
     </div>
   </div>
 </template>
@@ -32,6 +49,10 @@ export default defineComponent({
       default: "",
     },
     description: {
+      type: String,
+      default: "",
+    },
+    cta: {
       type: String,
       default: "",
     },
