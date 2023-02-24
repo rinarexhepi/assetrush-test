@@ -22,6 +22,7 @@ export default defineComponent({
     size: { type: String as PropType<keyof ImageFormat>, default: 'small' },
     preload: { type: Boolean, default: false },
     loading: { type: String as PropType<'eager' | 'lazy'>, default: 'lazy' },
+    aspectRatio: { type: String as PropType< '16/9'| '4/3' | '1/1' >, default: '16/9'},
   },
   setup(props) {
     const isSvg = computed(() => props.image.ext === '.svg')
