@@ -1,6 +1,6 @@
 <template>
   <div
-    class=" w-screen h-screen bg-slate-800 bg-opacity-40 "
+    class="absolute top-0 left-0 bg-slate-800 bg-opacity-40 "
     v-if="showModal"
     @click="closeModal()"
   >
@@ -17,7 +17,7 @@
         />
       </svg>
     </button>
-    <div class="m-20 bg-slate-900 text-white z-20 rounded-lg" @click.stop>
+    <div class=" m-20 bg-slate-900 text-white rounded-lg" @click.stop>
       <slot />
       <div>
         <h2 v-if="title" class="text-3xl">{{ title }}</h2>
@@ -28,13 +28,6 @@
           href=""
           >{{ cta }}</NuxtLink
         >
-        <Transition>
-          <VideoTestimonials
-            :options="{ responsive: true }"
-            class="m-16 w-full z-0 "
-            video-url=""
-          />
-        </Transition>
       </div>
     </div>
   </div>

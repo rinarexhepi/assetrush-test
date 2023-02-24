@@ -1,9 +1,5 @@
-<script lang="ts" setup></script>
-
 <template>
-  <div>
-    Page: foo
-  </div>
+  <button>
+    Open Modal
+  </button>
 </template>
-
-<style scoped></style>
