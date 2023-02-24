@@ -5,19 +5,6 @@
   <Grids gridVariant="guttersOnly">
     <h2>gutters-only</h2>
   </Grids>
-  <!-- 
-  <FlexLayoutTwoItems
-    ><Grids gridVariant="halfAndHalf">
-      <template v-slot:first>
-        <span>hi</span>
-        <span>hi</span>
-        <span>hi</span>
-      </template>
-      <template v-slot:second>
-        <span>hi</span>
-      </template>
-    </Grids>
-  </FlexLayoutTwoItems> -->
   <Grids gridVariant="halfAndHalf">
     <FlexLayoutTwoItems>
       <template v-slot:first>
@@ -86,10 +73,39 @@
         </div> </Modal
     ></Transition>
   </div>
+
+  <!-- <div>
+    <BaseSlider :config="sliderConfig">
+      <div
+        v-for="testimonial in filteredTestimonials"
+        :key="testimonial.id"
+        class="mr-12 md:mr-20"
+      >
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+      </div>
+    </BaseSlider>
+  </div> -->
 </template>
-<script>
+<script lang="ts">
 import Modal from "~/components/VueFinalModal/Modal.vue";
-import VideoTestimonials from "~/components/Video/VideoTestimonials.vue";
+// import { VueSlickConfig } from "~/components/BaseSlider/BaseSlider.vue";
+// import VideoTestimonials from "~/components/Video/VideoTestimonials.vue";
+// const sliderConfig: VueSlickConfig = {
+//   infinite: true,
+//   speed: 600,
+//   variableWidth: false,
+//   adaptiveHeight: false,
+//   autoplay: true,
+//   slidesToScroll: 1,
+//   slidesToShow: 5,
+//   responsive: [
+//     { breakpoint: 1280, settings: { slidesToShow: 2 } },
+//     { breakpoint: 640, settings: { slidesToShow: 1 } },
+//   ],
+// };
 export default {
   components: {
     Modal,
