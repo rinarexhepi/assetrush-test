@@ -1,4 +1,4 @@
-import type { StrapiEntity } from '.'
+import type { StrapiEntity } from '../../types'
 
 export interface ImageFile {
   ext: string

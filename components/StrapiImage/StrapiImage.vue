@@ -14,7 +14,7 @@
 
 <script lang="ts">
 import type { PropType } from 'vue'
-import type { Image, ImageFormat } from '~/types'
+import type { Image, ImageFormat } from './image'
 import { AspectRatio } from './aspectRatio'
 import { Loading } from './loading'
 export default defineComponent({
