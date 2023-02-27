@@ -15,6 +15,7 @@
 <script lang="ts">
 import type { PropType } from 'vue'
 import type { Image, ImageFormat } from '~/types'
+import { AspectRatio } from './aspectRatio'
 
 export default defineComponent({
   props: {
@@ -22,7 +23,7 @@ export default defineComponent({
     size: { type: String as PropType<keyof ImageFormat>, default: 'small' },
     preload: { type: Boolean, default: false },
     loading: { type: String as PropType<'eager' | 'lazy'>, default: 'lazy' },
-    aspectRatio: { type: String as PropType< '16/9'| '4/3' | '1/1' >, default: '16/9'},
+    aspectRatio: { type: String as PropType<AspectRatio>, default: ''},
   },
   setup(props) {
     const isSvg = computed(() => props.image.ext === '.svg')
