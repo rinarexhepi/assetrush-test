@@ -28,37 +28,12 @@
 
 <script lang="ts">
 import type { PropType } from 'vue'
+import { vueSlickCarouselConfig } from './const.ts'
+import {VueSlickConfig} from './vueSlickConfig'
 
 interface VueSlickResponsive {
   breakpoint?: number
   settings?: VueSlickConfig
-}
-
-export interface VueSlickConfig {
-  infinite?: boolean
-  speed?: number
-  autoplaySpeed?: number
-  variableWidth?: boolean
-  adaptiveHeight?: boolean
-  autoplay?: boolean
-  slidesToScroll?: number
-  slidesToShow?: number
-  responsive?: VueSlickResponsive[]
-}
-
-const vueSlickCarouselConfig = {
-  infinite: true,
-  speed: 10,
-  autoplaySpeed: 10,
-  variableWidth: false,
-  adaptiveHeight: false,
-  autoplay: true,
-  slidesToScroll: 1,
-  slidesToShow: 3,
-  responsive: [
-    { breakpoint: 1280, settings: { slidesToShow: 2 } },
-    { breakpoint: 640, settings: { slidesToShow: 1 } },
-  ],
 }
 
 export default defineComponent({
