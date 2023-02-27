@@ -16,13 +16,13 @@
 import type { PropType } from 'vue'
 import type { Image, ImageFormat } from '~/types'
 import { AspectRatio } from './aspectRatio'
-
+import { Loading } from './loading'
 export default defineComponent({
   props: {
     image: { type: Object as PropType<Image>, required: true },
     size: { type: String as PropType<keyof ImageFormat>, default: 'small' },
     preload: { type: Boolean, default: false },
-    loading: { type: String as PropType<'eager' | 'lazy'>, default: 'lazy' },
+    loading: { type: String as PropType<Loading>, default: 'lazy' },
     aspectRatio: { type: String as PropType<AspectRatio>, default: ''},
   },
   setup(props) {
