@@ -44,13 +44,9 @@ export default defineComponent({
         const selectedVariant = computed(
       () => variantClasses[props.variant]
     );
-
-
-
     return {
       selectedVariant,
-
     };
-    }
+  }
 });
 </script>
