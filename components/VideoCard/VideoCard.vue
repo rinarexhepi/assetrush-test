@@ -1,5 +1,6 @@
 <template>
   <div :class="selectedVariant">
+    <span v-if="episodeNumber">{{ episodeNumber }}</span>
     <slot :class="variant" />
   </div>
 </template>
@@ -17,15 +18,15 @@ export default defineComponent({
     },
     posterImage: {
       type: Object as PropType<String>,
-      required: false,
+      default: undefined,
     },
     playButton: {
       type: Boolean,
       required: false,
     },
     episodeNumber: {
-      type: Number as PropType<Number>,
-      default: "",
+      type: String as PropType<String>,
+      default: undefined,
     },
     author: {
       type: String,
@@ -38,7 +39,7 @@ export default defineComponent({
     variant: {
       type: String as PropType<Variant>,
       default: "",
-    },
+    }
 
   }, setup(props){
         const selectedVariant = computed(

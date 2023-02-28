@@ -2,9 +2,7 @@
   <div class="slider-container">
     <div class="mb-6">
       <Splide ref="splideEl" :options="splideOptions">
-        <VideoCard>
-          <slot variant="half" />
-        </VideoCard>
+        <slot></slot>
       </Splide>
     </div>
     <div
@@ -57,6 +55,10 @@ const splideDefaultOptions: SplideOptions = {
 
 export default defineComponent({
   props: {
+    cards:{
+      type: Array,
+      default: () => [],
+    },
     options: {
       type: Object as PropType<SplideOptions>,
       default: () => splideDefaultOptions,
