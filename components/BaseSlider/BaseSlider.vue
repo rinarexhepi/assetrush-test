@@ -8,10 +8,10 @@
       :class="sliderArrowsClass"
     >
       <button @click="showPrev">
-        <SvgLeftEncircled class="w-10 h-10" />
+        <SvgLeftEncircled :class="leftArrowClass" />
       </button>
       <button @click="showNext">
-        <SvgRightEncircled class="w-10 h-10" />
+        <SvgRightEncircled :class="rightArrowClass" />
       </button>
     </div>
   </div>
@@ -62,9 +62,17 @@ export default defineComponent({
       default: () => [],
     },
     class: {
-        type: String,
-        default: ''
-    }
+      type: String,
+      default: ''
+    },
+    leftArrowClass: {
+      type: String,
+      default: ''
+   },
+    rightArrowClass: {
+      type: String,
+      default: ''
+   }
   },
   setup(props) {
     const splideEl = ref<Splide>()
