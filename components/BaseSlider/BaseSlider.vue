@@ -66,7 +66,7 @@ export default defineComponent({
       default: ''
     },
     leftArrowClass: {
-      type: String,
+      type: String ,
       default: ''
    },
     rightArrowClass: {
