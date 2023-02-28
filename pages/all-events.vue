@@ -74,38 +74,26 @@
     ></Transition>
   </div>
 
-  <!-- <div>
-    <BaseSlider :config="sliderConfig">
-      <div
-        v-for="testimonial in filteredTestimonials"
-        :key="testimonial.id"
-        class="mr-12 md:mr-20"
-      >
-        <div>1</div>
-        <div>2</div>
-        <div>3</div>
-        <div>4</div>
-      </div>
+  <div>
+    <BaseSlider>
+      <li class="splide__slide">
+        <img src="https://brandontran.com/images/cardboard-castle-10.jpg" />
+      </li>
+      <li class="splide__slide">
+        <img src="https://brandontran.com/images/cardboard-castle-5.jpg" />
+      </li>
+      <li class="splide__slide">
+        <img src="https://brandontran.com/images/cardboard-castle-4.jpg" />
+      </li>
+      <li class="splide__slide">
+        <img src="https://brandontran.com/images/cardboard-castle-3.jpg" />
+      </li>
     </BaseSlider>
-  </div> -->
+  </div>
 </template>
 <script lang="ts">
 import Modal from "~/components/VueFinalModal/Modal.vue";
-// import { VueSlickConfig } from "~/components/BaseSlider/BaseSlider.vue";
-// import VideoTestimonials from "~/components/Video/VideoTestimonials.vue";
-// const sliderConfig: VueSlickConfig = {
-//   infinite: true,
-//   speed: 600,
-//   variableWidth: false,
-//   adaptiveHeight: false,
-//   autoplay: true,
-//   slidesToScroll: 1,
-//   slidesToShow: 5,
-//   responsive: [
-//     { breakpoint: 1280, settings: { slidesToShow: 2 } },
-//     { breakpoint: 640, settings: { slidesToShow: 1 } },
-//   ],
-// };
+
 export default {
   components: {
     Modal,
