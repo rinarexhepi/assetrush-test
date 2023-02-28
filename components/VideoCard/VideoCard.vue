@@ -21,7 +21,7 @@ export default defineComponent({
     },
     playButton: {
       type: Boolean,
-      required: true,
+      required: false,
     },
     episodeNumber: {
       type: Number as PropType<Number>,

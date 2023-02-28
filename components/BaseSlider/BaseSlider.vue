@@ -1,7 +1,11 @@
 <template>
   <div class="slider-container">
     <div class="mb-6">
-      <Splide ref="splideEl" :options="splideOptions"> <slot></slot> </Splide>
+      <Splide ref="splideEl" :options="splideOptions">
+        <VideoCard>
+          <slot variant="half" />
+        </VideoCard>
+      </Splide>
     </div>
     <div
       class="slider-arrows mt-auto flex flex-row gap-3"
