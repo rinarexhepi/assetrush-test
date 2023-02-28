@@ -4,7 +4,7 @@
       <Splide ref="splideEl" :options="splideOptions"> <slot></slot> </Splide>
     </div>
     <div
-      class="slider-arrows mt-atuo flex flex-row gap-3"
+      class="slider-arrows mt-auto flex flex-row gap-3"
       :class="sliderArrowsClass"
     >
       <button @click="showPrev">
