@@ -1,6 +1,7 @@
 <template>
   <div :class="selectedVariant">
     <h2 v-if="episodeNumber">{{ episodeNumber }}</h2>
+    <h2 v-if="number" class="text-2xl text-white m-3">{{ number }}</h2>
     <slot :class="variant" />
   </div>
 </template>
@@ -12,6 +13,10 @@ import { Variant } from "~/components/VideoCard/types.ts";
 
 export default defineComponent({
   props: {
+    number: {
+      type: String,
+      required: false
+    },
     title: {
       type: String,
       default: "",
