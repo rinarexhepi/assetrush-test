@@ -45,35 +45,6 @@
     </div>
   </Grids>
 
-  <!-- <div>
-    <button @click="openModal()">Open Modal</button>
-    <Transition>
-      <Modal
-        :showModal="shouldRenderModal"
-        @closeModal="shouldRenderModal = false"
-        class=" fixed inset-0 align-center"
-      >
-        <div class="flex justify-center flex-row ">
-          <div class="absolute z-10 mt-60">
-            <h1 class="text-3xl">This is a title</h1>
-            <p class="text-lgs">This is a description</p>
-            <NuxtLink
-              class="border absolute bg-slate-900 p-3 rounded-xl"
-              href="join"
-            >
-              <span>index page</span>
-            </NuxtLink>
-          </div>
-
-          <VideoTestimonials
-            :options="{ responsive: true }"
-            class="m-16 w-full z-0 "
-            video-url="https://vimeo.com/444369368"
-          />
-        </div> </Modal
-    ></Transition>
-  </div> -->
-
   <div class="w-screen overflow-hidden">
     <BaseSlider>
       <li class="splide__slide">
@@ -97,7 +68,7 @@
               <div>
                 <StrapiButton
                   buttonVariant="secondary"
-                  class="uppercase px-6 py-4 font-semibold"
+                  class="uppercase px-5 py-3 font-semibold"
                   text="PLAY"
                   :reverse="true"
                   :iconBackground="true"
@@ -140,7 +111,7 @@
               <div>
                 <StrapiButton
                   buttonVariant="secondary"
-                  class="uppercase px-6 py-4 font-semibold"
+                  class="uppercase px-5 py-3 font-semibold"
                   text="PLAY"
                   :reverse="true"
                   :iconBackground="true"
@@ -183,7 +154,7 @@
               <div>
                 <StrapiButton
                   buttonVariant="secondary"
-                  class="uppercase px-6 py-4 font-semibold"
+                  class="uppercase px-5 py-3 font-semibold"
                   text="PLAY"
                   :reverse="true"
                   :iconBackground="true"
@@ -207,68 +178,74 @@
       </li>
       <li class="splide__slide">
         <VideoCard variant="pastPresenters" episodeNumber="" number="2">
-          <img
-            class="absolute rounded-md"
-            src="https://brandontran.com/images/cardboard-castle-5.jpg"
-          />
-          <h3 class="text-white text-4xl font-semibold mx-5 my-12 relative">
-            How Web 3.0 will impact our collective financial future
-          </h3>
-          <StrapiButton
-            buttonVariant="secondary"
-            class="uppercase  px-6 py-4  font-semibold relative float-right"
-            text="PLAY"
-            :reverse="true"
-            :iconBackground="true"
-            icon="https://static1.squarespace.com/static/6278bb92688b50292499e115/t/6278e1b2b3b9d8705d65d301/1652089266787/icon--video-play+%281%29.png"
-            alt="play"
-            loading="lazy"
-            @click="openModal()"
-          />
+          <div>
+            <img
+              class="absolute rounded-md"
+              src="https://brandontran.com/images/cardboard-castle-5.jpg"
+            />
+            <h3 class="text-white text-4xl font-semibold mx-5 my-12 relative">
+              How Web 3.0 will impact our collective financial future
+            </h3>
+            <StrapiButton
+              buttonVariant="secondary"
+              class="uppercase px-5 py-3 font-semibold relative float-right"
+              text="PLAY"
+              :reverse="true"
+              :iconBackground="true"
+              icon="https://static1.squarespace.com/static/6278bb92688b50292499e115/t/6278e1b2b3b9d8705d65d301/1652089266787/icon--video-play+%281%29.png"
+              alt="play"
+              loading="lazy"
+              @click="openModal()"
+            />
+          </div>
         </VideoCard>
       </li>
       <li class="splide__slide">
         <VideoCard variant="pastPresenters" episodeNumber="" number="2">
-          <img
-            class="absolute rounded-md"
-            src="https://brandontran.com/images/cardboard-castle-5.jpg"
-          />
-          <h3 class="text-white text-4xl font-semibold mx-5 my-12 relative">
-            How Web 3.0 will impact our collective financial future
-          </h3>
-          <StrapiButton
-            buttonVariant="secondary"
-            class="uppercase  px-6 py-4  font-semibold relative float-right"
-            text="PLAY"
-            :reverse="true"
-            :iconBackground="true"
-            icon="https://static1.squarespace.com/static/6278bb92688b50292499e115/t/6278e1b2b3b9d8705d65d301/1652089266787/icon--video-play+%281%29.png"
-            alt="play"
-            loading="lazy"
-            @click="openModal()"
-          />
+          <div>
+            <img
+              class="absolute rounded-md"
+              src="https://brandontran.com/images/cardboard-castle-5.jpg"
+            />
+            <h3 class="text-white text-4xl font-semibold mx-5 my-12 relative">
+              How Web 3.0 will impact our collective financial future
+            </h3>
+            <StrapiButton
+              buttonVariant="secondary"
+              class="uppercase px-5 py-3 font-semibold relative float-right"
+              text="PLAY"
+              :reverse="true"
+              :iconBackground="true"
+              icon="https://static1.squarespace.com/static/6278bb92688b50292499e115/t/6278e1b2b3b9d8705d65d301/1652089266787/icon--video-play+%281%29.png"
+              alt="play"
+              loading="lazy"
+              @click="openModal()"
+            />
+          </div>
         </VideoCard>
       </li>
       <li class="splide__slide">
         <VideoCard variant="pastPresenters" episodeNumber="" number="2">
-          <img
-            class="absolute rounded-md"
-            src="https://brandontran.com/images/cardboard-castle-5.jpg"
-          />
-          <h3 class="text-white text-4xl font-semibold mx-5 my-12 relative">
-            How Web 3.0 will impact our collective financial future
-          </h3>
-          <StrapiButton
-            buttonVariant="secondary"
-            class="uppercase  px-6 py-4  font-semibold relative float-right"
-            text="PLAY"
-            :reverse="true"
-            :iconBackground="true"
-            icon="https://static1.squarespace.com/static/6278bb92688b50292499e115/t/6278e1b2b3b9d8705d65d301/1652089266787/icon--video-play+%281%29.png"
-            alt="play"
-            loading="lazy"
-            @click="openModal()"
-          />
+          <div>
+            <img
+              class="absolute rounded-md"
+              src="https://brandontran.com/images/cardboard-castle-5.jpg"
+            />
+            <h3 class="text-white text-4xl font-semibold mx-5 my-12 relative">
+              How Web 3.0 will impact our collective financial future
+            </h3>
+            <StrapiButton
+              buttonVariant="secondary"
+              class="uppercase px-5 py-3 font-semibold relative float-right"
+              text="PLAY"
+              :reverse="true"
+              :iconBackground="true"
+              icon="https://static1.squarespace.com/static/6278bb92688b50292499e115/t/6278e1b2b3b9d8705d65d301/1652089266787/icon--video-play+%281%29.png"
+              alt="play"
+              loading="lazy"
+              @click="openModal()"
+            />
+          </div>
         </VideoCard>
       </li>
     </BaseSlider>

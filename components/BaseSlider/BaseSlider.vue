@@ -41,7 +41,7 @@ const splideFixedOptions = {
 }
 
 const splideDefaultOptions: SplideOptions = {
-  speed: 600,
+  speed: 1200,
   autoplay: false,
   interval: 5000,
   rewind: false,
