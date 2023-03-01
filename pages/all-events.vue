@@ -74,35 +74,35 @@
     ></Transition>
   </div> -->
 
-  <div>
+  <div class="w-screen overflow-hidden ">
     <BaseSlider>
       <li class="splide__slide">
-        <VideoCard>
+        <VideoCard variant="centeredCard">
           <img src="https://brandontran.com/images/cardboard-castle-10.jpg" />
         </VideoCard>
       </li>
       <li class="splide__slide">
-        <VideoCard>
+        <VideoCard variant="centeredCard">
           <img src="https://brandontran.com/images/cardboard-castle-5.jpg" />
         </VideoCard>
       </li>
       <li class="splide__slide">
-        <VideoCard>
+        <VideoCard variant="centeredCard">
           <img src="https://brandontran.com/images/cardboard-castle-4.jpg" />
         </VideoCard>
       </li>
       <li class="splide__slide">
-        <VideoCard>
+        <VideoCard variant="centeredCard">
           <img src="https://brandontran.com/images/cardboard-castle-3.jpg" />
         </VideoCard>
       </li>
       <li class="splide__slide">
-        <VideoCard>
+        <VideoCard variant="centeredCard">
           <img src="https://brandontran.com/images/cardboard-castle-10.jpg" />
         </VideoCard>
       </li>
       <li class="splide__slide">
-        <VideoCard>
+        <VideoCard variant="centeredCard">
           <button @click="openModal()">Open Modal</button>
         </VideoCard>
       </li>
