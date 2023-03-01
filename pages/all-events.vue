@@ -102,7 +102,7 @@
         </VideoCard>
       </li>
       <li class="splide__slide">
-        <VideoCard variant="centeredCard">
+        <VideoCard variant="centeredCard" episodeNumber="">
           <button @click="openModal()">Open Modal</button>
         </VideoCard>
       </li>

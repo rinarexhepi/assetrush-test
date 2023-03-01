@@ -1,6 +1,6 @@
 <template>
   <div :class="selectedVariant">
-    <span v-if="episodeNumber">{{ episodeNumber }}</span>
+    <h2 v-if="episodeNumber">{{ episodeNumber }}</h2>
     <slot :class="variant" />
   </div>
 </template>
