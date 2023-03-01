@@ -74,36 +74,201 @@
     ></Transition>
   </div> -->
 
-  <div class="w-screen overflow-hidden ">
+  <div class="w-screen overflow-hidden">
     <BaseSlider>
       <li class="splide__slide">
-        <VideoCard variant="top10Card" episodeNumber="" number="1">
-          <img src="https://brandontran.com/images/cardboard-castle-10.jpg" />
+        <VideoCard variant="episodesCard" episodeNumber="">
+          <div>
+            <img
+              class="rounded-t-2xl"
+              src="https://www.g2fp.com/hubfs/trevor.png"
+              alt="image"
+              loading="lazy"
+            />
+          </div>
+          <div class="m-2">
+            <div class="flex flex-row justify-between mx-6 my-8">
+              <div>
+                <h3 :episodeNumber="1" class="uppercase text-white text-lg">
+                  #episode
+                </h3>
+                <h3 class="text-white text-3xl">name</h3>
+              </div>
+              <div>
+                <StrapiButton
+                  buttonVariant="secondary"
+                  class="uppercase px-6 py-4 font-semibold"
+                  text="PLAY"
+                  :reverse="true"
+                  :iconBackground="true"
+                  icon="https://static1.squarespace.com/static/6278bb92688b50292499e115/t/6278e1b2b3b9d8705d65d301/1652089266787/icon--video-play+%281%29.png"
+                  alt="play"
+                  loading="lazy"
+                  @click="openModal()"
+                  :hasOverlay="true"
+                />
+              </div>
+            </div>
+            <div>
+              <p
+                class="text-4xl text-white mx-4 pb-36 font-serif font-semibold"
+              >
+                Banks have shied away from this opportunity
+              </p>
+            </div>
+          </div>
         </VideoCard>
       </li>
       <li class="splide__slide">
-        <VideoCard variant="top10Card" episodeNumber="" number="2">
-          <img src="https://brandontran.com/images/cardboard-castle-5.jpg" />
+        <VideoCard variant="episodesCard" episodeNumber="">
+          <div>
+            <img
+              class="rounded-t-2xl"
+              src="https://www.g2fp.com/hubfs/trevor.png"
+              alt="image"
+              loading="lazy"
+            />
+          </div>
+          <div class="m-2">
+            <div class="flex flex-row justify-between mx-6 my-8">
+              <div>
+                <h3 :episodeNumber="1" class="uppercase text-white text-lg">
+                  #episode
+                </h3>
+                <h3 class="text-white text-3xl">name</h3>
+              </div>
+              <div>
+                <StrapiButton
+                  buttonVariant="secondary"
+                  class="uppercase px-6 py-4 font-semibold"
+                  text="PLAY"
+                  :reverse="true"
+                  :iconBackground="true"
+                  icon="https://static1.squarespace.com/static/6278bb92688b50292499e115/t/6278e1b2b3b9d8705d65d301/1652089266787/icon--video-play+%281%29.png"
+                  alt="play"
+                  loading="lazy"
+                  @click="openModal()"
+                  :hasOverlay="true"
+                />
+              </div>
+            </div>
+            <div>
+              <p
+                class="text-4xl text-white mx-4 pb-36 font-serif font-semibold"
+              >
+                Banks have shied away from this opportunity
+              </p>
+            </div>
+          </div>
         </VideoCard>
       </li>
       <li class="splide__slide">
-        <VideoCard variant="top10Card" episodeNumber="" number="3">
-          <img src="https://brandontran.com/images/cardboard-castle-4.jpg" />
+        <VideoCard variant="episodesCard" episodeNumber="">
+          <div>
+            <img
+              class="rounded-t-2xl"
+              src="https://www.g2fp.com/hubfs/trevor.png"
+              alt="image"
+              loading="lazy"
+            />
+          </div>
+          <div class="m-2">
+            <div class="flex flex-row justify-between mx-6 my-8">
+              <div>
+                <h3 :episodeNumber="1" class="uppercase text-white text-lg">
+                  #episode
+                </h3>
+                <h3 class="text-white text-3xl">name</h3>
+              </div>
+              <div>
+                <StrapiButton
+                  buttonVariant="secondary"
+                  class="uppercase px-6 py-4 font-semibold"
+                  text="PLAY"
+                  :reverse="true"
+                  :iconBackground="true"
+                  icon="https://static1.squarespace.com/static/6278bb92688b50292499e115/t/6278e1b2b3b9d8705d65d301/1652089266787/icon--video-play+%281%29.png"
+                  alt="play"
+                  loading="lazy"
+                  @click="openModal()"
+                  :hasOverlay="true"
+                />
+              </div>
+            </div>
+            <div>
+              <p
+                class="text-4xl text-white mx-4 pb-36 font-serif font-semibold"
+              >
+                Banks have shied away from this opportunity
+              </p>
+            </div>
+          </div>
         </VideoCard>
       </li>
       <li class="splide__slide">
-        <VideoCard variant="top10Card" episodeNumber="" number="4">
-          <img src="https://brandontran.com/images/cardboard-castle-3.jpg" />
+        <VideoCard variant="pastPresenters" episodeNumber="" number="2">
+          <img
+            class="absolute rounded-md"
+            src="https://brandontran.com/images/cardboard-castle-5.jpg"
+          />
+          <h3 class="text-white text-4xl font-semibold mx-5 my-12 relative">
+            How Web 3.0 will impact our collective financial future
+          </h3>
+          <StrapiButton
+            buttonVariant="secondary"
+            class="uppercase  px-6 py-4  font-semibold relative float-right"
+            text="PLAY"
+            :reverse="true"
+            :iconBackground="true"
+            icon="https://static1.squarespace.com/static/6278bb92688b50292499e115/t/6278e1b2b3b9d8705d65d301/1652089266787/icon--video-play+%281%29.png"
+            alt="play"
+            loading="lazy"
+            @click="openModal()"
+          />
         </VideoCard>
       </li>
       <li class="splide__slide">
-        <VideoCard variant="top10Card" episodeNumber="" number="5">
-          <img src="https://brandontran.com/images/cardboard-castle-10.jpg" />
+        <VideoCard variant="pastPresenters" episodeNumber="" number="2">
+          <img
+            class="absolute rounded-md"
+            src="https://brandontran.com/images/cardboard-castle-5.jpg"
+          />
+          <h3 class="text-white text-4xl font-semibold mx-5 my-12 relative">
+            How Web 3.0 will impact our collective financial future
+          </h3>
+          <StrapiButton
+            buttonVariant="secondary"
+            class="uppercase  px-6 py-4  font-semibold relative float-right"
+            text="PLAY"
+            :reverse="true"
+            :iconBackground="true"
+            icon="https://static1.squarespace.com/static/6278bb92688b50292499e115/t/6278e1b2b3b9d8705d65d301/1652089266787/icon--video-play+%281%29.png"
+            alt="play"
+            loading="lazy"
+            @click="openModal()"
+          />
         </VideoCard>
       </li>
       <li class="splide__slide">
-        <VideoCard variant="top10Card" episodeNumber="" number="6">
-          <button @click="openModal()">Open Modal</button>
+        <VideoCard variant="pastPresenters" episodeNumber="" number="2">
+          <img
+            class="absolute rounded-md"
+            src="https://brandontran.com/images/cardboard-castle-5.jpg"
+          />
+          <h3 class="text-white text-4xl font-semibold mx-5 my-12 relative">
+            How Web 3.0 will impact our collective financial future
+          </h3>
+          <StrapiButton
+            buttonVariant="secondary"
+            class="uppercase  px-6 py-4  font-semibold relative float-right"
+            text="PLAY"
+            :reverse="true"
+            :iconBackground="true"
+            icon="https://static1.squarespace.com/static/6278bb92688b50292499e115/t/6278e1b2b3b9d8705d65d301/1652089266787/icon--video-play+%281%29.png"
+            alt="play"
+            loading="lazy"
+            @click="openModal()"
+          />
         </VideoCard>
       </li>
     </BaseSlider>

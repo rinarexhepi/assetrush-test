@@ -1,7 +1,11 @@
 <template>
   <div :class="selectedVariant">
-    <h2 v-if="episodeNumber">{{ episodeNumber }}</h2>
+    <h2 v-if="episodeNumber">Episode {{ episodeNumber }}</h2>
     <h2 v-if="number" class="text-2xl text-white m-3">{{ number }}</h2>
+    <div
+      v-if="hasOverlay"
+      class="w-1/2 float-left relative bg-gradient-to-b from-indigo-500 to-fuchsia-900"
+    ></div>
     <slot :class="variant" />
   </div>
 </template>
@@ -44,7 +48,8 @@ export default defineComponent({
     variant: {
       type: String as PropType<Variant>,
       default: "",
-    }
+    },
+    hasOverlay: { type: Boolean, default: false },
 
   }, setup(props){
         const selectedVariant = computed(

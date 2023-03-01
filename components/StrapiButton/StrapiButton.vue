@@ -4,9 +4,17 @@
     v-bind="getButtonProps()"
     :class="selectButtonClass"
   >
-    <div class="flex" :class="[reverse ? 'flex-row-reverse' : '']">
-      <img v-if="icon" :src="icon" alt="" />
-      <p>{{ text }}</p>
+    <div
+      class="flex"
+      :class="[reverse ? 'flex-row-reverse gap-4 items-center' : '']"
+    >
+      <img v-if="icon && !iconBackground" :src="icon" alt="" />
+      <img
+        v-if="iconBackground"
+        :src="icon"
+        class="bg-white rounded-full py-5 px-6"
+      />
+      <p class="text-2xl">{{ text }}</p>
     </div>
     <template v-if="variants">
       <select
@@ -50,6 +58,7 @@ export default defineComponent({
     icon: { type: String as PropType<string>, default: "" },
     variants: { type: Array as PropType<listVariant[]>, default: null },
     buttonVariant: { type: String as PropType<ButtonVariant>, default: "" },
+    iconBackground: { type: Boolean, default: false },
   },
 
   setup(props) {
