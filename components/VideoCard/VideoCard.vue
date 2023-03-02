@@ -1,10 +1,10 @@
 <template>
-  <div :class="selectedVariant">
+  <div :class="selectedVariant" class="relative">
     <h2 v-if="episodeNumber">Episode {{ episodeNumber }}</h2>
     <h2 v-if="number" class="text-2xl text-white m-3">{{ number }}</h2>
     <div
       v-if="hasOverlay"
-      class="w-1/2 float-left relative bg-gradient-to-b from-indigo-500 to-fuchsia-900"
+      class="w-1/2 float-left absolute bg-gradient-to-b from-indigo-500 to-fuchsia-900"
     ></div>
     <slot :class="variant" />
   </div>
