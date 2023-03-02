@@ -1,15 +1,16 @@
 <template>
-  <div v-if="hasOverlay" :class="selectedVariant" class="relative z-10">
+  <div :class="selectedVariant" class="relative z-10">
     <span
+      v-if="hasOverlay"
       class=" absolute h-full w-1/2 float-left bg-gradient-to-b from-indigo-600 to-fuchsia-700 opacity-80 z-0 rounded-l-xl"
     ></span>
     <h2 v-if="episodeNumber">Episode {{ episodeNumber }}</h2>
-    <h2 v-if="number" class="text-2xl text-white m-3">{{ number }}</h2>
-    <slot :class="variant" />
-  </div>
-  <div v-else :class="selectedVariant" class="relative">
-    <h2 v-if="episodeNumber">Episode {{ episodeNumber }}</h2>
-    <h2 v-if="number" class="text-2xl text-white m-3">{{ number }}</h2>
+    <h2
+      v-if="number"
+      class=" text-9xl outline-white font-poppins font-800 float-left absolute -left-10 -bottom-60 text-neutral-700 m-3 z-20"
+    >
+      {{ number }}
+    </h2>
     <slot :class="variant" />
   </div>
 </template>
