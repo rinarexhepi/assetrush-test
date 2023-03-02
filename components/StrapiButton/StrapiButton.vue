@@ -12,7 +12,7 @@
       <img
         v-if="iconBackground"
         :src="icon"
-        class="bg-white rounded-full py-5 px-6"
+        class="bg-white relative rounded-full py-5 px-6"
       />
       <p class="text-2xl">{{ text }}</p>
     </div>

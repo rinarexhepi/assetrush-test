@@ -48,8 +48,8 @@
   <div class="w-screen overflow-hidden">
     <BaseSlider>
       <li class="splide__slide">
-        <VideoCard variant="episodesCard" episodeNumber="">
-          <div>
+        <VideoCard variant="episodesCard" episodeNumber="" :hasOverlay="true">
+          <div class="z-0">
             <img
               class="rounded-t-2xl"
               src="https://www.g2fp.com/hubfs/trevor.png"
@@ -58,8 +58,8 @@
             />
           </div>
           <div class="m-2">
-            <div class="flex flex-row justify-between mx-6 my-8">
-              <div>
+            <div class="flex flex-row justify-between mx-6 my-8 z-20">
+              <div class="z-20">
                 <h3 :episodeNumber="1" class="uppercase text-white text-lg">
                   #episode
                 </h3>
@@ -76,11 +76,52 @@
                   alt="play"
                   loading="lazy"
                   @click="openModal()"
-                  :hasOverlay="true"
                 />
               </div>
             </div>
-            <div>
+            <div class="relative z-20">
+              <p
+                class="text-4xl text-white mx-4 pb-36 font-serif font-semibold z-20"
+              >
+                Banks have shied away from this opportunity
+              </p>
+            </div>
+          </div>
+        </VideoCard>
+      </li>
+      <li class="splide__slide">
+        <VideoCard variant="episodesCard" episodeNumber="" :hasOverlay="true">
+          <div>
+            <img
+              class="rounded-t-2xl"
+              src="https://www.g2fp.com/hubfs/trevor.png"
+              alt="image"
+              loading="lazy"
+            />
+          </div>
+          <div class="m-2">
+            <div class="flex flex-row justify-between mx-6 my-8">
+              <div class="relative z-20">
+                <h3 :episodeNumber="1" class="uppercase text-white text-lg">
+                  #episode
+                </h3>
+                <h3 class="text-white text-3xl">name</h3>
+              </div>
+              <div>
+                <StrapiButton
+                  buttonVariant="secondary"
+                  class="uppercase px-5 py-3 font-semibold"
+                  text="PLAY"
+                  :reverse="true"
+                  :iconBackground="true"
+                  icon="https://static1.squarespace.com/static/6278bb92688b50292499e115/t/6278e1b2b3b9d8705d65d301/1652089266787/icon--video-play+%281%29.png"
+                  alt="play"
+                  loading="lazy"
+                  @click="openModal()"
+                />
+              </div>
+            </div>
+            <div class="relative z-20">
               <p
                 class="text-4xl text-white mx-4 pb-36 font-serif font-semibold"
               >
@@ -91,7 +132,7 @@
         </VideoCard>
       </li>
       <li class="splide__slide">
-        <VideoCard variant="episodesCard" episodeNumber="">
+        <VideoCard variant="episodesCard" episodeNumber="" :hasOverlay="true">
           <div>
             <img
               class="rounded-t-2xl"
@@ -102,7 +143,7 @@
           </div>
           <div class="m-2">
             <div class="flex flex-row justify-between mx-6 my-8">
-              <div>
+              <div class="z-20">
                 <h3 :episodeNumber="1" class="uppercase text-white text-lg">
                   #episode
                 </h3>
@@ -119,54 +160,10 @@
                   alt="play"
                   loading="lazy"
                   @click="openModal()"
-                  :hasOverlay="true"
                 />
               </div>
             </div>
-            <div>
-              <p
-                class="text-4xl text-white mx-4 pb-36 font-serif font-semibold"
-              >
-                Banks have shied away from this opportunity
-              </p>
-            </div>
-          </div>
-        </VideoCard>
-      </li>
-      <li class="splide__slide">
-        <VideoCard variant="episodesCard" episodeNumber="">
-          <div>
-            <img
-              class="rounded-t-2xl"
-              src="https://www.g2fp.com/hubfs/trevor.png"
-              alt="image"
-              loading="lazy"
-            />
-          </div>
-          <div class="m-2">
-            <div class="flex flex-row justify-between mx-6 my-8">
-              <div>
-                <h3 :episodeNumber="1" class="uppercase text-white text-lg">
-                  #episode
-                </h3>
-                <h3 class="text-white text-3xl">name</h3>
-              </div>
-              <div>
-                <StrapiButton
-                  buttonVariant="secondary"
-                  class="uppercase px-5 py-3 font-semibold"
-                  text="PLAY"
-                  :reverse="true"
-                  :iconBackground="true"
-                  icon="https://static1.squarespace.com/static/6278bb92688b50292499e115/t/6278e1b2b3b9d8705d65d301/1652089266787/icon--video-play+%281%29.png"
-                  alt="play"
-                  loading="lazy"
-                  @click="openModal()"
-                  :hasOverlay="true"
-                />
-              </div>
-            </div>
-            <div>
+            <div class="relative z-20">
               <p
                 class="text-4xl text-white mx-4 pb-36 font-serif font-semibold"
               >
