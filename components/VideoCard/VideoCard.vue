@@ -2,7 +2,7 @@
   <div :class="selectedVariant" class="relative z-10">
     <span
       v-if="hasOverlay"
-      class=" absolute h-full w-1/2 float-left bg-gradient-to-b from-indigo-600 to-fuchsia-700 opacity-80 z-0 rounded-l-xl"
+      class=" absolute h-full w-1/2 float-left bg-gradient-to-b from-indigo-600 to-pink-500 opacity-80 z-0 rounded-l-xl"
     ></span>
     <h2 v-if="episodeNumber">Episode {{ episodeNumber }}</h2>
     <h2
