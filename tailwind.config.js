@@ -13,6 +13,7 @@ module.exports = {
     extend: {
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
+        mono: ["ui-monospace", "PTMono-Regular"],
       },
       colors: {
         "bg-primary": "#4E30A0",
