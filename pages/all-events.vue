@@ -236,7 +236,7 @@
               class="absolute rounded-xl"
               src="https://static1.squarespace.com/static/6278bb92688b50292499e115/t/62b0a7c82d21161d968a5d8f/1655744461795/Nicolas+De+Skowronski+Cover+Picture-min.png"
             />
-            <div class="absolute flex flex-col items-end ">
+            <div class="absolute flex flex-col items-end">
               <h3
                 class="text-white lg:text-3xl md:text-2xl font-semibold mx-5 my-7 "
               >
@@ -244,7 +244,7 @@
               </h3>
               <StrapiButton
                 buttonVariant="secondary"
-                class="uppercase px-5 py-3 font-semibold relative mt-8 mr-6 w-44"
+                class="uppercase px-5 py-3 font-semibold relative mt-8 mr-6 w-44 box-border"
                 text="PLAY"
                 :reverse="true"
                 :iconBackground="true"
