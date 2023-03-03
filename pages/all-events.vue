@@ -173,81 +173,81 @@
           </div>
         </VideoCard>
       </li>
-      <li class="splide__slide">
-        <VideoCard variant="pastPresenters" number="1">
-          <div class="relative">
-            <img
-              class="absolute rounded-xl"
-              src="https://static1.squarespace.com/static/6278bb92688b50292499e115/t/62b0a7c82d21161d968a5d8f/1655744461795/Nicolas+De+Skowronski+Cover+Picture-min.png"
-            />
-            <h3
-              class="text-white text-4xl font-semibold mx-5 my-12 pt-5 relative"
-            >
-              How Web 3.0 will impact our collective financial future
-            </h3>
-            <StrapiButton
-              buttonVariant="secondary"
-              class="uppercase px-5 py-3 font-semibold relative float-right mt-6 mr-6"
-              text="PLAY"
-              :reverse="true"
-              :iconBackground="true"
-              icon="https://static1.squarespace.com/static/6278bb92688b50292499e115/t/6278e1b2b3b9d8705d65d301/1652089266787/icon--video-play+%281%29.png"
-              alt="play"
-              loading="lazy"
-              @click="openModal()"
-            />
-          </div>
-        </VideoCard>
-      </li>
-      <li class="splide__slide">
+      <li class="splide__slide bg-slate-300">
         <VideoCard variant="pastPresenters" number="2">
-          <div>
+          <div class="relative mt-8">
             <img
               class="absolute rounded-xl"
               src="https://static1.squarespace.com/static/6278bb92688b50292499e115/t/62b0a7c82d21161d968a5d8f/1655744461795/Nicolas+De+Skowronski+Cover+Picture-min.png"
             />
-            <h3
-              class="text-white text-4xl font-semibold mx-5 my-12 pt-5 relative"
-            >
-              How Web 3.0 will impact our collective financial future
-            </h3>
-            <StrapiButton
-              buttonVariant="secondary"
-              class="uppercase px-5 py-3 font-semibold relative float-right mt-6 mr-6"
-              text="PLAY"
-              :reverse="true"
-              :iconBackground="true"
-              icon="https://static1.squarespace.com/static/6278bb92688b50292499e115/t/6278e1b2b3b9d8705d65d301/1652089266787/icon--video-play+%281%29.png"
-              alt="play"
-              loading="lazy"
-              @click="openModal()"
-            />
+            <div class="absolute flex flex-col items-end ">
+              <h3 class="text-white text-4xl font-semibold mx-5 my-7 ">
+                How Web 3.0 will impact our collective financial future
+              </h3>
+              <StrapiButton
+                buttonVariant="secondary"
+                class="uppercase px-5 py-3 font-semibold relative mt-8 mr-6 w-44"
+                text="PLAY"
+                :reverse="true"
+                :iconBackground="true"
+                icon="https://static1.squarespace.com/static/6278bb92688b50292499e115/t/6278e1b2b3b9d8705d65d301/1652089266787/icon--video-play+%281%29.png"
+                alt="play"
+                loading="lazy"
+                @click="openModal()"
+              />
+            </div>
           </div>
         </VideoCard>
       </li>
-      <li class="splide__slide">
-        <VideoCard variant="pastPresenters" number="3">
-          <div>
+      <li class="splide__slide bg-slate-300">
+        <VideoCard variant="pastPresenters" number="2">
+          <div class="relative mt-8">
             <img
               class="absolute rounded-xl"
               src="https://static1.squarespace.com/static/6278bb92688b50292499e115/t/62b0a7c82d21161d968a5d8f/1655744461795/Nicolas+De+Skowronski+Cover+Picture-min.png"
             />
-            <h3
-              class="text-white text-4xl font-semibold mx-5 my-12 pt-5 relative"
-            >
-              How Web 3.0 will impact our collective financial future
-            </h3>
-            <StrapiButton
-              buttonVariant="secondary"
-              class="uppercase px-5 py-3 font-semibold relative float-right mt-6 mr-6"
-              text="PLAY"
-              :reverse="true"
-              :iconBackground="true"
-              icon="https://static1.squarespace.com/static/6278bb92688b50292499e115/t/6278e1b2b3b9d8705d65d301/1652089266787/icon--video-play+%281%29.png"
-              alt="play"
-              loading="lazy"
-              @click="openModal()"
+            <div class="absolute flex flex-col items-end ">
+              <h3 class="text-white text-4xl font-semibold mx-5 my-7 ">
+                How Web 3.0 will impact our collective financial future
+              </h3>
+              <StrapiButton
+                buttonVariant="secondary"
+                class="uppercase px-5 py-3 font-semibold relative mt-8 mr-6 w-44"
+                text="PLAY"
+                :reverse="true"
+                :iconBackground="true"
+                icon="https://static1.squarespace.com/static/6278bb92688b50292499e115/t/6278e1b2b3b9d8705d65d301/1652089266787/icon--video-play+%281%29.png"
+                alt="play"
+                loading="lazy"
+                @click="openModal()"
+              />
+            </div>
+          </div>
+        </VideoCard>
+      </li>
+      <li class="splide__slide bg-slate-300">
+        <VideoCard variant="pastPresenters" number="2">
+          <div class="relative mt-8">
+            <img
+              class="absolute rounded-xl"
+              src="https://static1.squarespace.com/static/6278bb92688b50292499e115/t/62b0a7c82d21161d968a5d8f/1655744461795/Nicolas+De+Skowronski+Cover+Picture-min.png"
             />
+            <div class="absolute flex flex-col items-end ">
+              <h3 class="text-white text-4xl font-semibold mx-5 my-7 ">
+                How Web 3.0 will impact our collective financial future
+              </h3>
+              <StrapiButton
+                buttonVariant="secondary"
+                class="uppercase px-5 py-3 font-semibold relative mt-8 mr-6 w-44"
+                text="PLAY"
+                :reverse="true"
+                :iconBackground="true"
+                icon="https://static1.squarespace.com/static/6278bb92688b50292499e115/t/6278e1b2b3b9d8705d65d301/1652089266787/icon--video-play+%281%29.png"
+                alt="play"
+                loading="lazy"
+                @click="openModal()"
+              />
+            </div>
           </div>
         </VideoCard>
       </li>

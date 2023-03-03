@@ -7,7 +7,7 @@
     <h2 v-if="episodeNumber">Episode {{ episodeNumber }}</h2>
     <h2
       v-if="number"
-      class=" text-9xl font-mono semibold font-800 float-left absolute text-outline -left-10 -bottom-60  m-3 z-20"
+      class="text-9xl font-mono semibold font-800 mt-56 -left-8 absolute text-outline z-20"
     >
       {{ number }}
     </h2>
