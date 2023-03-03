@@ -175,7 +175,7 @@
       </li>
       <li class="splide__slide">
         <VideoCard variant="pastPresenters" number="1">
-          <div>
+          <div class="relative">
             <img
               class="absolute rounded-xl"
               src="https://static1.squarespace.com/static/6278bb92688b50292499e115/t/62b0a7c82d21161d968a5d8f/1655744461795/Nicolas+De+Skowronski+Cover+Picture-min.png"

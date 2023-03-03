@@ -29,5 +29,19 @@ module.exports = {
     },
   },
   variants: {},
-  plugins: [],
+  plugins: [
+    function({ addComponents }) {
+      addComponents(
+        {
+          ".text-outline": {
+            color: "#fff",
+            "-webkit-text-fill-color": "rgba(255,255,255,0)",
+            "-webkit-text-stroke-width": "2px",
+            "-webkit-text-stroke-color": "#fff",
+          },
+        },
+        { variant: "responsive" }
+      );
+    },
+  ],
 };
