@@ -9,11 +9,10 @@
       :class="[reverse ? 'flex-row-reverse gap-4 items-center' : '']"
     >
       <img v-if="icon && !iconBackground" :src="icon" alt="" />
-      <img
-        v-if="iconBackground"
-        :src="icon"
-        class="bg-white relative rounded-full py-5 px-6 -mx-1"
-      />
+
+      <div class="bg-white relative rounded-full py-5 px-6 -mx-1">
+        <img v-if="iconBackground" :src="icon" />
+      </div>
       <p class="text-2xl mx-1">{{ text }}</p>
     </div>
     <template v-if="variants">
