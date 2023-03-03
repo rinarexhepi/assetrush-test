@@ -174,14 +174,16 @@
         </VideoCard>
       </li>
       <li class="splide__slide bg-slate-300">
-        <VideoCard variant="pastPresenters" number="2">
-          <div class="relative mt-8">
+        <VideoCard variant="pastPresenters" number="1">
+          <div class=" box-border relative mt-8">
             <img
               class="absolute rounded-xl"
               src="https://static1.squarespace.com/static/6278bb92688b50292499e115/t/62b0a7c82d21161d968a5d8f/1655744461795/Nicolas+De+Skowronski+Cover+Picture-min.png"
             />
-            <div class="absolute flex flex-col items-end ">
-              <h3 class="text-white text-4xl font-semibold mx-5 my-7 ">
+            <div class=" box-border absolute flex flex-col items-end ">
+              <h3
+                class="text-white lg:text-3xl md:text-2xl font-semibold mx-5 my-7"
+              >
                 How Web 3.0 will impact our collective financial future
               </h3>
               <StrapiButton
@@ -207,7 +209,9 @@
               src="https://static1.squarespace.com/static/6278bb92688b50292499e115/t/62b0a7c82d21161d968a5d8f/1655744461795/Nicolas+De+Skowronski+Cover+Picture-min.png"
             />
             <div class="absolute flex flex-col items-end ">
-              <h3 class="text-white text-4xl font-semibold mx-5 my-7 ">
+              <h3
+                class="text-white lg:text-3xl md:text-2xl font-semibold mx-5 my-7 "
+              >
                 How Web 3.0 will impact our collective financial future
               </h3>
               <StrapiButton
@@ -226,14 +230,16 @@
         </VideoCard>
       </li>
       <li class="splide__slide bg-slate-300">
-        <VideoCard variant="pastPresenters" number="2">
+        <VideoCard variant="pastPresenters" number="3">
           <div class="relative mt-8">
             <img
               class="absolute rounded-xl"
               src="https://static1.squarespace.com/static/6278bb92688b50292499e115/t/62b0a7c82d21161d968a5d8f/1655744461795/Nicolas+De+Skowronski+Cover+Picture-min.png"
             />
             <div class="absolute flex flex-col items-end ">
-              <h3 class="text-white text-4xl font-semibold mx-5 my-7 ">
+              <h3
+                class="text-white lg:text-3xl md:text-2xl font-semibold mx-5 my-7 "
+              >
                 How Web 3.0 will impact our collective financial future
               </h3>
               <StrapiButton
