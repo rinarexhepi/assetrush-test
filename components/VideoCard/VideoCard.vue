@@ -1,16 +1,21 @@
 <template>
-  <div :class="selectedVariant" class="relative z-10">
-    <span
-      v-if="hasOverlay"
-      class=" absolute h-full w-1/2 float-left bg-gradient-to-b from-indigo-600 to-pink-500 opacity-80 z-0 rounded-l-xl"
-    ></span>
-    <h2 v-if="episodeNumber">Episode {{ episodeNumber }}</h2>
-    <h2
-      v-if="number"
-      class="lg:text-9xl md:text-8xl semibold -left-8 -bottom-80 absolute text-outline z-20"
-    >
-      {{ number }}
-    </h2>
+  <div :class="selectedVariant">
+    <template v-if="hasOverlay">
+      <div>
+        <span
+          class=" absolute h-full w-1/2 float-left bg-gradient-to-b from-indigo-600 to-pink-500 opacity-80 z-0 rounded-l-xl"
+        >
+        </span>
+      </div>
+    </template>
+
+    <div v-if="number" class="bottom-5 -left-5 absolute z-20 float-right">
+      <span
+        class="text-outline semibold lg:text-9xl md:text-8xl sm:text-7xl xs:text-9xl"
+      >
+        {{ number }}
+      </span>
+    </div>
     <slot :class="variant" />
   </div>
 </template>

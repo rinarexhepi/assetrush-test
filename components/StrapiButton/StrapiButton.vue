@@ -14,7 +14,7 @@
 
       <div
         v-if="iconBackground"
-        class="bg-white relative rounded-full py-5 px-6 -mx-1"
+        class="bg-white relative rounded-full lg:py-4 lg:px-5 md:py-3 md:px-4 sm:py-2 sm:px-3 xs:py-1 xxs:px-1 xxs:py-1  xs:px-2 "
       >
         <img :src="icon" />
       </div>
