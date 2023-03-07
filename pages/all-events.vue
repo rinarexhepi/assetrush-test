@@ -153,14 +153,16 @@
             />
           </div>
           <div class="m-7 p-4">
-            <div class="flex flex-row justify-between">
+            <div
+              class="flex lg:flex-row md:flex-row sm:flex-col xs:flex-col xxs:flex-col justify-between "
+            >
               <div class="z-20">
                 <h3 class="uppercase text-xl  font-semibold mr-6 w-auto">
                   #episode
                 </h3>
                 <h3 class="text-white text-3xl">name</h3>
               </div>
-              <div class="z-20 flex flex-shrink-0">
+              <div class="z-20 flex flex-shrink-0 sm: mt-4">
                 <StrapiButton
                   buttonVariant="secondary"
                   class="uppercase px-5 py-3 font-semibold"
