@@ -55,7 +55,7 @@
           >
             <div class="h-full flex-1">
               <h3
-                class="text-white lg:text-3xl md:text-2xl xs:text-2xl font-semibold mx-5 lg:mt-4 md:mt-3 sm:mt-3 xs:mt-3"
+                class="text-white lg:text-4xl md:text-2xl xs:text-2xl font-semibold mx-5 lg:mt-4 md:mt-3 sm:mt-3 xs:mt-3"
               >
                 How Web 3.0 will impact our collective financial future
               </h3>
@@ -76,7 +76,7 @@
           </div>
         </VideoCard>
       </li>
-      <li class="splide__slide bg-slate-300 border-4">
+      <li class="splide__slide bg-slate-300">
         <VideoCard variant="pastPresenters" number="2"
           ><img
             class="rounded-xl max-h-full"
@@ -87,7 +87,7 @@
           >
             <div class="h-full flex-1">
               <h3
-                class="text-white lg:text-3xl md:text-2xl xs:text-2xl font-semibold mx-5 lg:mt-4 md:mt-3 sm:mt-3 xs:mt-3"
+                class="text-white lg:text-4xl md:text-2xl xs:text-2xl font-semibold mx-5 lg:mt-4 md:mt-3 sm:mt-3 xs:mt-3"
               >
                 How Web 3.0 will impact our collective financial future
               </h3>
@@ -108,7 +108,7 @@
           </div>
         </VideoCard>
       </li>
-      <li class="splide__slide bg-slate-300 border-4">
+      <li class="splide__slide bg-slate-300">
         <VideoCard variant="pastPresenters" number="3"
           ><img
             class="rounded-xl max-h-full"
@@ -119,7 +119,7 @@
           >
             <div class="h-full flex-1">
               <h3
-                class="text-white lg:text-3xl md:text-2xl xs:text-2xl font-semibold mx-5 lg:mt-4 md:mt-3 sm:mt-3 xs:mt-3"
+                class="text-white lg:text-4xl md:text-2xl xs:text-2xl font-semibold mx-5 lg:mt-4 md:mt-3 sm:mt-3 xs:mt-3"
               >
                 How Web 3.0 will impact our collective financial future
               </h3>
@@ -163,7 +163,7 @@
               <div>
                 <StrapiButton
                   buttonVariant="secondary"
-                  class="uppercase px-5 py-3 font-semibold"
+                  class="uppercase lg:px-5 lg:py-3 md:px-4 md:py-2 sm:px-3 sm:py-2 xs:px-2 xs:py-2 xxs:px-1 xxs:py-1 font-semibold mr-6 w-auto"
                   text="PLAY"
                   :reverse="true"
                   :iconBackground="true"
@@ -205,7 +205,7 @@
               <div>
                 <StrapiButton
                   buttonVariant="secondary"
-                  class="uppercase px-5 py-3 font-semibold"
+                  class="uppercase lg:px-5 lg:py-3 md:px-4 md:py-2 sm:px-3 sm:py-2 xs:px-2 xs:py-2 xxs:px-1 xxs:py-1 font-semibold mr-6 w-auto"
                   text="PLAY"
                   :reverse="true"
                   :iconBackground="true"
@@ -239,7 +239,9 @@
           <div class="">
             <div class="flex flex-row justify-between mx-6 my-8">
               <div class="z-20">
-                <h3 class="uppercase text-white text-lg">
+                <h3
+                  class="uppercase lg:px-5 lg:py-3 md:px-4 md:py-2 sm:px-3 sm:py-2 xs:px-2 xs:py-2 xxs:px-1 xxs:py-1 font-semibold mr-6 w-auto"
+                >
                   #episode
                 </h3>
                 <h3 class="text-white text-3xl">name</h3>
