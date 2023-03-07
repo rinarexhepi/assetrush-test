@@ -143,8 +143,8 @@
     </BaseSlider>
     <BaseSlider>
       <li class="splide__slide">
-        <VideoCard variant="episodesCard" episodeNumber="1" :hasOverlay="true">
-          <div class="z-0">
+        <VideoCard variant="episodesCard" episodeNumber="" :hasOverlay="true">
+          <div>
             <img
               class="rounded-t-2xl"
               src="https://www.g2fp.com/hubfs/trevor.png"
@@ -153,9 +153,11 @@
             />
           </div>
           <div class="">
-            <div class="flex flex-row justify-between mx-6 my-8 z-20">
+            <div class="flex flex-row justify-between mx-6 my-8">
               <div class="z-20">
-                <h3 class="uppercase text-white text-lg">
+                <h3
+                  class="uppercase lg:px-5 lg:py-3 md:px-4 md:py-2 sm:px-3 sm:py-2 xs:px-2 xs:py-2 xxs:px-1 xxs:py-1 font-semibold mr-6 w-auto"
+                >
                   #episode
                 </h3>
                 <h3 class="text-white text-3xl">name</h3>
@@ -163,7 +165,7 @@
               <div>
                 <StrapiButton
                   buttonVariant="secondary"
-                  class="uppercase lg:px-5 lg:py-3 md:px-4 md:py-2 sm:px-3 sm:py-2 xs:px-2 xs:py-2 xxs:px-1 xxs:py-1 font-semibold mr-6 w-auto"
+                  class="uppercase px-5 py-3 font-semibold"
                   text="PLAY"
                   :reverse="true"
                   :iconBackground="true"
@@ -176,7 +178,7 @@
             </div>
             <div class="relative z-20">
               <p
-                class="text-4xl text-white mx-4 pb-36 font-serif font-semibold z-20"
+                class="text-4xl text-white mx-4 pb-36 font-serif font-semibold"
               >
                 Banks have shied away from this opportunity
               </p>
@@ -196,8 +198,10 @@
           </div>
           <div class="">
             <div class="flex flex-row justify-between mx-6 my-8">
-              <div class="relative z-20">
-                <h3 class="uppercase text-white text-lg">
+              <div class="z-20">
+                <h3
+                  class="uppercase lg:px-5 lg:py-3 md:px-4 md:py-2 sm:px-3 sm:py-2 xs:px-2 xs:py-2 xxs:px-1 xxs:py-1 font-semibold mr-6 w-auto"
+                >
                   #episode
                 </h3>
                 <h3 class="text-white text-3xl">name</h3>
@@ -205,7 +209,7 @@
               <div>
                 <StrapiButton
                   buttonVariant="secondary"
-                  class="uppercase lg:px-5 lg:py-3 md:px-4 md:py-2 sm:px-3 sm:py-2 xs:px-2 xs:py-2 xxs:px-1 xxs:py-1 font-semibold mr-6 w-auto"
+                  class="uppercase px-5 py-3 font-semibold"
                   text="PLAY"
                   :reverse="true"
                   :iconBackground="true"
