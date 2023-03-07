@@ -55,7 +55,7 @@
           >
             <div class=" h-full flex-1">
               <h3
-                class="text-white lg:text-4xl md:text-3xl xs:text-2xl xxs:text-xl font-semibold mx-5 lg:mt-6 md:mt-5 sm:mt-4 xs:mt-4 xxs:mt-4"
+                class="text-white lg:text-4xl md:text-3xl xs:text-2xl xxs:text-md font-semibold mx-5 lg:mt-6 md:mt-5 sm:mt-4 xs:mt-4 xxs:mt-4"
               >
                 How Web 3.0 will impact our collective financial future
               </h3>
@@ -87,7 +87,7 @@
           >
             <div class=" h-full flex-1">
               <h3
-                class="text-white lg:text-4xl md:text-3xl xs:text-2xl xxs:text-xl font-semibold mx-5 lg:mt-6 md:mt-5 sm:mt-4 xs:mt-4 xxs:mt-4"
+                class="text-white lg:text-4xl md:text-3xl xs:text-2xl xxs:text-md font-semibold mx-5 lg:mt-6 md:mt-5 sm:mt-4 xs:mt-4 xxs:mt-4"
               >
                 How Web 3.0 will impact our collective financial future
               </h3>
@@ -119,7 +119,7 @@
           >
             <div class=" h-full flex-1">
               <h3
-                class="text-white lg:text-4xl md:text-3xl xs:text-2xl xxs:text-xl font-semibold mx-5 lg:mt-6 md:mt-5 sm:mt-4 xs:mt-4 xxs:mt-4"
+                class="text-white lg:text-4xl md:text-3xl xs:text-2xl xxs:text-md font-semibold mx-5 lg:mt-6 md:mt-5 sm:mt-4 xs:mt-4 xxs:mt-4"
               >
                 How Web 3.0 will impact our collective financial future
               </h3>
