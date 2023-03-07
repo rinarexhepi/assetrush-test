@@ -51,11 +51,11 @@
             src="https://static1.squarespace.com/static/6278bb92688b50292499e115/t/62b0a7c82d21161d968a5d8f/1655744461795/Nicolas+De+Skowronski+Cover+Picture-min.png"
           />
           <div
-            class=" flex-1 absolute top-0 flex flex-col h-full items-end justify-between"
+            class="flex-1 absolute top-0 flex flex-col h-full items-end justify-between"
           >
-            <div class="h-full flex-1">
+            <div class=" h-full flex-1">
               <h3
-                class="text-white lg:text-4xl md:text-3xl xs:text-2xl font-semibold mx-5 lg:mt-4 md:mt-3 sm:mt-3 xs:mt-3"
+                class="text-white lg:text-4xl md:text-3xl xs:text-3xl xxs:text-2xl font-semibold mx-5 lg:mt-6 md:mt-5 sm:mt-4 xs:mt-4"
               >
                 How Web 3.0 will impact our collective financial future
               </h3>
@@ -87,7 +87,7 @@
           >
             <div class="h-full flex-1">
               <h3
-                class="text-white lg:text-4xl md:text-3xl xs:text-2xl font-semibold mx-5 lg:mt-4 md:mt-3 sm:mt-3 xs:mt-3"
+                class="text-white lg:text-4xl md:text-3xl xs:text-3xl xxs:text-2xl font-semibold mx-5 lg:mt-6 md:mt-5 sm:mt-4 xs:mt-4"
               >
                 How Web 3.0 will impact our collective financial future
               </h3>
@@ -119,7 +119,7 @@
           >
             <div class="flex-1">
               <h3
-                class="text-white lg:text-4xl md:text-3xl xs:text-2xl font-semibold mx-5 lg:mt-4 md:mt-3 sm:mt-3 xs:mt-3"
+                class="text-white lg:text-4xl md:text-3xl xs:text-3xl xxs:text-2xl font-semibold mx-5 lg:mt-6 md:mt-5 sm:mt-4 xs:mt-4"
               >
                 How Web 3.0 will impact our collective financial future
               </h3>
