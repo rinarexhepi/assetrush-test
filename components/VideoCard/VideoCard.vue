@@ -2,14 +2,14 @@
   <div :class="selectedVariant">
     <template v-if="hasOverlay">
       <span
-        class=" absolute h-full w-1/2 float-left bg-gradient-to-b from-indigo-600 to-pink-500 opacity-80 z-0 rounded-l-2xl"
+        class=" absolute h-full w-1/2 float-left bg-gradient-to-b from-blue-600 to-pink-500 opacity-80 z-0 rounded-l-2xl"
       >
       </span>
     </template>
 
     <div v-if="number" class="bottom-5 -left-5 absolute z-20 float-right">
       <span
-        class="text-outline semibold lg:text-9xl md:text-8xl sm:text-8xl xs:text-9xl xxs:text-8xl"
+        class="text-outline font-gtplanar semibold lg:text-9xl md:text-8xl sm:text-8xl xs:text-8xl xxs:text-7xl"
       >
         {{ number }}
       </span>

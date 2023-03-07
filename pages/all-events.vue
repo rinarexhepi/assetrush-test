@@ -51,11 +51,11 @@
             src="https://static1.squarespace.com/static/6278bb92688b50292499e115/t/62b0a7c82d21161d968a5d8f/1655744461795/Nicolas+De+Skowronski+Cover+Picture-min.png"
           />
           <div
-            class="absolute top-0 flex flex-col h-full items-end justify-between"
+            class="absolute top-0 flex flex-col h-full items-end justify-between over"
           >
             <div class=" h-full flex-1">
               <h3
-                class="text-white lg:text-4xl md:text-3xl xs:text-2xl xxs:text-md font-semibold mx-5 lg:mt-6 md:mt-5 sm:mt-4 xs:mt-4 xxs:mt-4"
+                class="text-white lg:text-4xl md:text-3xl xs:text-2xl xxs:text-md font-semibold mx-5 lg:mt-6 md:mt-5 sm:mt-4 xs:mt-4 xxs:mt-4 xxs:leading-tight"
               >
                 How Web 3.0 will impact our collective financial future
               </h3>
@@ -117,7 +117,7 @@
           <div
             class="absolute top-0 flex flex-col h-full items-end justify-between"
           >
-            <div class=" h-full flex-1">
+            <div class="h-full flex-1">
               <h3
                 class="text-white lg:text-4xl md:text-3xl xs:text-2xl xxs:text-md font-semibold mx-5 lg:mt-6 md:mt-5 sm:mt-4 xs:mt-4 xxs:mt-4"
               >
@@ -159,10 +159,14 @@
               class="flex lg:flex-row md:flex-col sm:flex-col xs:flex-col xxs:flex-col justify-between "
             >
               <div class="z-20">
-                <h3 class="uppercase text-xl  font-semibold mr-6 w-auto">
+                <h3 class="uppercase text-xl font-semibold mr-6 w-auto">
                   #episode
                 </h3>
-                <h3 class="text-white text-3xl">name</h3>
+                <h3
+                  class="text-white text-2xl sm:text-2xl xs:text-2xl xxs:text-2xl"
+                >
+                  name
+                </h3>
               </div>
               <div
                 class="z-20 flex flex-shrink-0 lg:pt-0 md:py-5 sm:py-4 xs:py-4 xxs:py-4"
@@ -184,7 +188,7 @@
               class="relative z-20 my-4 lg:h-[150px] md:h-[150px] sm:h-[120px] xs:h-[100px] xxs:h-[100px] overflow-scroll"
             >
               <p
-                class="lg:text-4xl md:text-4xl sm:text-3xl xs:text-3xl xxs:text-xl text-white font-serif font-semibold "
+                class="lg:text-4xl md:text-4xl sm:text-3xl xs:text-3xl xxs:text-2xl text-white font-serif font-semibold "
               >
                 Banks have shied away from this opportunity
               </p>
@@ -212,7 +216,11 @@
                 <h3 class="uppercase text-xl  font-semibold mr-6 w-auto">
                   #episode
                 </h3>
-                <h3 class="text-white text-3xl">name</h3>
+                <h3
+                  class="text-white text-2xl sm:text-2xl xs:text-2xl xxs:text-2xl"
+                >
+                  name
+                </h3>
               </div>
               <div
                 class="z-20 flex flex-shrink-0 lg:pt-0 md:py-5 sm:py-4 xs:py-4 xxs:py-4"
@@ -234,7 +242,7 @@
               class="relative z-20 my-4 lg:h-[150px] md:h-[150px] sm:h-[120px] xs:h-[100px] xxs:h-[100px] overflow-scroll"
             >
               <p
-                class="lg:text-4xl md:text-4xl sm:text-3xl xs:text-3xl xxs:text-xl text-white font-serif font-semibold "
+                class="lg:text-4xl md:text-4xl sm:text-3xl xs:text-3xl xxs:text-2xl text-white font-serif font-semibold "
               >
                 Banks have shied away from this opportunity
               </p>
@@ -262,7 +270,11 @@
                 <h3 class="uppercase text-xl  font-semibold mr-6 w-auto">
                   #episode
                 </h3>
-                <h3 class="text-white text-3xl">name</h3>
+                <h3
+                  class="text-white text-2xl sm:text-2xl xs:text-2xl xxs:text-2xl"
+                >
+                  name
+                </h3>
               </div>
               <div
                 class="z-20 flex flex-shrink-0 lg:pt-0 md:py-5 sm:py-4 xs:py-4 xxs:py-4"
@@ -284,7 +296,7 @@
               class="relative z-20 my-4 lg:h-[150px] md:h-[150px] sm:h-[120px] xs:h-[100px] xxs:h-[100px] overflow-scroll"
             >
               <p
-                class="lg:text-4xl md:text-4xl sm:text-3xl xs:text-3xl xxs:text-xl text-white font-serif font-semibold "
+                class="lg:text-4xl md:text-4xl sm:text-3xl xs:text-3xl xxs:text-2xl text-white font-serif font-semibold "
               >
                 Banks have shied away from this opportunity
               </p>

@@ -14,6 +14,7 @@ module.exports = {
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
         mono: ["ui-monospace", "PTMono-Regular"],
+        gtplanar: ["GT-Planar"],
       },
       colors: {
         "bg-primary": "#4E30A0",
@@ -37,7 +38,7 @@ module.exports = {
           ".text-outline": {
             color: "#fff",
             "-webkit-text-fill-color": "rgba(255,255,255,0)",
-            "-webkit-text-stroke-width": "2px",
+            "-webkit-text-stroke-width": "1px",
             "-webkit-text-stroke-color": "#fff",
           },
         },
