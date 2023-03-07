@@ -156,7 +156,7 @@
             <div class="flex flex-row justify-between mx-6 my-8">
               <div class="z-20">
                 <h3
-                  class="uppercase lg:px-5 lg:py-3 md:px-4 md:py-2 sm:px-3 sm:py-2 xs:px-2 xs:py-2 xxs:px-1 xxs:py-1 font-semibold mr-6 w-auto"
+                  class="uppercase text-xl lg:px-1 lg:py-3 md:px-4 md:py-2 sm:px-2 sm:py-2 xs:px-1 xs:py-2 xxs:px-1 xxs:py-1 font-semibold mr-6 w-auto"
                 >
                   #episode
                 </h3>
@@ -200,7 +200,7 @@
             <div class="flex flex-row justify-between mx-6 my-8">
               <div class="z-20">
                 <h3
-                  class="uppercase lg:px-5 lg:py-3 md:px-4 md:py-2 sm:px-3 sm:py-2 xs:px-2 xs:py-2 xxs:px-1 xxs:py-1 font-semibold mr-6 w-auto"
+                  class="uppercase text-xl lg:px-1 lg:py-3 md:px-4 md:py-2 sm:px-2 sm:py-2 xs:px-1 xs:py-2 xxs:px-1 xxs:py-1 font-semibold mr-6 w-auto"
                 >
                   #episode
                 </h3>
@@ -244,7 +244,7 @@
             <div class="flex flex-row justify-between mx-6 my-8">
               <div class="z-20">
                 <h3
-                  class="uppercase lg:px-5 lg:py-3 md:px-4 md:py-2 sm:px-3 sm:py-2 xs:px-2 xs:py-2 xxs:px-1 xxs:py-1 font-semibold mr-6 w-auto"
+                  class="uppercase text-xl lg:px-1 lg:py-3 md:px-4 md:py-2 sm:px-2 sm:py-2 xs:px-1 xs:py-2 xxs:px-1 xxs:py-1 font-semibold mr-6 w-auto"
                 >
                   #episode
                 </h3>
@@ -266,7 +266,7 @@
             </div>
             <div class="relative z-20">
               <p
-                class="text-4xl text-white mx-4 pb-36 font-serif font-semibold"
+                class="text-4xl text-white mx-4 pb-36 font-serif font-semibold "
               >
                 Banks have shied away from this opportunity
               </p>
