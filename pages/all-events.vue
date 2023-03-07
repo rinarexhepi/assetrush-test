@@ -152,12 +152,55 @@
               loading="lazy"
             />
           </div>
-          <div class="">
-            <div class="flex flex-row justify-between mx-6 my-8">
+          <div class="m-7 p-4 ">
+            <div class="flex flex-row justify-between">
               <div class="z-20">
-                <h3
-                  class="uppercase text-xl lg:px-1 lg:py-3 md:px-4 md:py-2 sm:px-2 sm:py-2 xs:px-1 xs:py-2 xxs:px-1 xxs:py-1 font-semibold mr-6 w-auto"
-                >
+                <h3 class="uppercase text-xl  font-semibold mr-6 w-auto">
+                  #episode
+                </h3>
+                <h3 class="text-white text-3xl">name</h3>
+              </div>
+              <div>
+                <StrapiButton
+                  buttonVariant="secondary"
+                  class="uppercase px-5 py-3 font-semibold"
+                  text="PLAY"
+                  :reverse="true"
+                  :iconBackground="true"
+                  icon="https://static1.squarespace.com/static/6278bb92688b50292499e115/t/6278e1b2b3b9d8705d65d301/1652089266787/icon--video-play+%281%29.png"
+                  alt="play"
+                  loading="lazy"
+                  @click="openModal()"
+                />
+              </div>
+            </div>
+            <div class="relative z-20 my-8 h-[150px]">
+              <p
+                class="lg:text-4xl md:text-4xl sm:text-2xl xs:text-3xl xxs:text-2xl text-white font-serif font-semibold "
+              >
+                Banks have shied away from this opportunity Banks have shied
+                away
+              </p>
+            </div>
+          </div>
+        </VideoCard>
+      </li>
+      <li class="splide__slide">
+        <VideoCard variant="episodesCard" episodeNumber="" :hasOverlay="true">
+          <div>
+            <img
+              class="rounded-t-2xl"
+              src="https://www.g2fp.com/hubfs/trevor.png"
+              alt="image"
+              loading="lazy"
+            />
+          </div>
+          <div
+            class="m-7 lg:px-1 lg:py-3 md:px-4 md:py-2 sm:px-2 sm:py-2 xs:px-1 xs:py-2 xxs:px-1 xxs:py-1 "
+          >
+            <div class="flex flex-row justify-between">
+              <div class="z-20">
+                <h3 class="uppercase text-xl  font-semibold mr-6 w-auto">
                   #episode
                 </h3>
                 <h3 class="text-white text-3xl">name</h3>
@@ -177,9 +220,7 @@
               </div>
             </div>
             <div class="relative z-20">
-              <p
-                class="text-4xl text-white mx-4 pb-36 font-serif font-semibold"
-              >
+              <p class="text-4xl text-white mt-8 font-serif font-semibold ">
                 Banks have shied away from this opportunity
               </p>
             </div>
@@ -196,12 +237,12 @@
               loading="lazy"
             />
           </div>
-          <div class="">
-            <div class="flex flex-row justify-between mx-6 my-8">
+          <div
+            class="m-7 lg:px-1 lg:py-3 md:px-4 md:py-2 sm:px-2 sm:py-2 xs:px-1 xs:py-2 xxs:px-1 xxs:py-1 "
+          >
+            <div class="flex flex-row justify-between">
               <div class="z-20">
-                <h3
-                  class="uppercase text-xl lg:px-1 lg:py-3 md:px-4 md:py-2 sm:px-2 sm:py-2 xs:px-1 xs:py-2 xxs:px-1 xxs:py-1 font-semibold mr-6 w-auto"
-                >
+                <h3 class="uppercase text-xl  font-semibold mr-6 w-auto">
                   #episode
                 </h3>
                 <h3 class="text-white text-3xl">name</h3>
@@ -221,60 +262,14 @@
               </div>
             </div>
             <div class="relative z-20">
-              <p
-                class="text-4xl text-white mx-4 pb-36 font-serif font-semibold"
-              >
+              <p class="text-4xl text-white mt-8 font-serif font-semibold ">
                 Banks have shied away from this opportunity
               </p>
             </div>
           </div>
         </VideoCard>
       </li>
-      <li class="splide__slide">
-        <VideoCard variant="episodesCard" episodeNumber="" :hasOverlay="true">
-          <div>
-            <img
-              class="rounded-t-2xl"
-              src="https://www.g2fp.com/hubfs/trevor.png"
-              alt="image"
-              loading="lazy"
-            />
-          </div>
-          <div class="">
-            <div class="flex flex-row justify-between mx-6 my-8">
-              <div class="z-20">
-                <h3
-                  class="uppercase text-xl lg:px-1 lg:py-3 md:px-4 md:py-2 sm:px-2 sm:py-2 xs:px-1 xs:py-2 xxs:px-1 xxs:py-1 font-semibold mr-6 w-auto"
-                >
-                  #episode
-                </h3>
-                <h3 class="text-white text-3xl">name</h3>
-              </div>
-              <div>
-                <StrapiButton
-                  buttonVariant="secondary"
-                  class="uppercase px-5 py-3 font-semibold"
-                  text="PLAY"
-                  :reverse="true"
-                  :iconBackground="true"
-                  icon="https://static1.squarespace.com/static/6278bb92688b50292499e115/t/6278e1b2b3b9d8705d65d301/1652089266787/icon--video-play+%281%29.png"
-                  alt="play"
-                  loading="lazy"
-                  @click="openModal()"
-                />
-              </div>
-            </div>
-            <div class="relative z-20">
-              <p
-                class="text-4xl text-white mx-4 pb-36 font-serif font-semibold "
-              >
-                Banks have shied away from this opportunity
-              </p>
-            </div>
-          </div>
-        </VideoCard>
-      </li></BaseSlider
-    >
+    </BaseSlider>
 
     <Transition>
       <Modal
