@@ -9,7 +9,7 @@
 
     <div v-if="number" class="bottom-5 -left-5 absolute z-20 float-right">
       <span
-        class="text-outline semibold lg:text-9xl md:text-8xl sm:text-7xl xs:text-9xl"
+        class="text-outline semibold lg:text-9xl md:text-8xl sm:text-8xl xs:text-9xl xxs:text-8xl"
       >
         {{ number }}
       </span>

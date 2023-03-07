@@ -55,7 +55,7 @@
           >
             <div class=" h-full flex-1">
               <h3
-                class="text-white lg:text-4xl md:text-3xl xs:text-3xl xxs:text-2xl font-semibold mx-5 lg:mt-6 md:mt-5 sm:mt-4 xs:mt-4"
+                class="text-white lg:text-4xl md:text-3xl xs:text-2xl xxs:text-lg font-semibold mx-5 lg:mt-6 md:mt-5 sm:mt-4 xs:mt-4"
               >
                 How Web 3.0 will impact our collective financial future
               </h3>
@@ -87,7 +87,7 @@
           >
             <div class="h-full flex-1">
               <h3
-                class="text-white lg:text-4xl md:text-3xl xs:text-3xl xxs:text-2xl font-semibold mx-5 lg:mt-6 md:mt-5 sm:mt-4 xs:mt-4"
+                class="text-white lg:text-4xl md:text-3xl xs:text-2xl xxs:text-lg font-semibold mx-5 lg:mt-6 md:mt-5 sm:mt-4 xs:mt-4"
               >
                 How Web 3.0 will impact our collective financial future
               </h3>
@@ -119,7 +119,7 @@
           >
             <div class="flex-1">
               <h3
-                class="text-white lg:text-4xl md:text-3xl xs:text-3xl xxs:text-2xl font-semibold mx-5 lg:mt-6 md:mt-5 sm:mt-4 xs:mt-4"
+                class="text-white lg:text-4xl md:text-3xl xs:text-2xl xxs:text-lg font-semibold mx-5 lg:mt-6 md:mt-5 sm:mt-4 xs:mt-4"
               >
                 How Web 3.0 will impact our collective financial future
               </h3>
@@ -162,7 +162,9 @@
                 </h3>
                 <h3 class="text-white text-3xl">name</h3>
               </div>
-              <div class="z-20 flex flex-shrink-0 sm: mt-4">
+              <div
+                class="z-20 flex flex-shrink-0 lg:pt-0 md:pt-0 sm:pt-4 xs:pt-4 xxs:pt-4"
+              >
                 <StrapiButton
                   buttonVariant="secondary"
                   class="uppercase px-5 py-3 font-semibold"
@@ -197,14 +199,18 @@
             />
           </div>
           <div class="m-7 p-4">
-            <div class="flex flex-row justify-between ">
-              <div class=" z-20">
+            <div
+              class="flex lg:flex-row md:flex-row sm:flex-col xs:flex-col xxs:flex-col justify-between "
+            >
+              <div class="z-20">
                 <h3 class="uppercase text-xl  font-semibold mr-6 w-auto">
                   #episode
                 </h3>
                 <h3 class="text-white text-3xl">name</h3>
               </div>
-              <div class="z-20 flex-shrink-0">
+              <div
+                class="z-20 flex flex-shrink-0 lg:pt-0 md:pt-0 sm:pt-4 xs:pt-4 xxs:pt-4"
+              >
                 <StrapiButton
                   buttonVariant="secondary"
                   class="uppercase px-5 py-3 font-semibold"
@@ -222,7 +228,7 @@
               <p
                 class="lg:text-4xl md:text-4xl sm:text-3xl xs:text-3xl xxs:text-2xl text-white font-serif font-semibold "
               >
-                Banks have shied away from this opportunity this opportunity
+                Banks have shied away from this opportunity
               </p>
             </div>
           </div>
@@ -239,17 +245,21 @@
             />
           </div>
           <div class="m-7 p-4">
-            <div class="flex flex-row justify-between">
+            <div
+              class="flex lg:flex-row md:flex-row sm:flex-col xs:flex-col xxs:flex-col justify-between "
+            >
               <div class="z-20">
                 <h3 class="uppercase text-xl  font-semibold mr-6 w-auto">
                   #episode
                 </h3>
                 <h3 class="text-white text-3xl">name</h3>
               </div>
-              <div class="z-20 flex-shrink-0">
+              <div
+                class="z-20 flex flex-shrink-0 lg:pt-0 md:pt-0 sm:pt-4 xs:pt-4 xxs:pt-4"
+              >
                 <StrapiButton
                   buttonVariant="secondary"
-                  class="uppercase lg:px-5 lg:py-3 md:px-4 md:py-2 sm:px-3 sm:py-2 xs:px-3 xs:py-2 xxs:px-1 xxs:py-1 font-semibold lg:mr-6 w-auto"
+                  class="uppercase px-5 py-3 font-semibold"
                   text="PLAY"
                   :reverse="true"
                   :iconBackground="true"
@@ -264,7 +274,7 @@
               <p
                 class="lg:text-4xl md:text-4xl sm:text-3xl xs:text-3xl xxs:text-2xl text-white font-serif font-semibold "
               >
-                Banks have shied away from this opportunity this opportunity
+                Banks have shied away from this opportunity
               </p>
             </div>
           </div>
