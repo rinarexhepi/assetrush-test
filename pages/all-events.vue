@@ -117,14 +117,14 @@
           <div
             class=" flex-1 absolute top-0 flex flex-col h-full items-end justify-between"
           >
-            <div class="h-full flex-1">
+            <div class="flex-1">
               <h3
                 class="text-white lg:text-4xl md:text-3xl xs:text-2xl font-semibold mx-5 lg:mt-4 md:mt-3 sm:mt-3 xs:mt-3"
               >
                 How Web 3.0 will impact our collective financial future
               </h3>
             </div>
-            <div class="h-full flex-1">
+            <div class="flex-1">
               <StrapiButton
                 buttonVariant="secondary"
                 class="uppercase lg:px-5 lg:py-3 md:px-4 md:py-2 sm:px-3 sm:py-2 xs:px-2 xs:py-2 xxs:px-1 xxs:py-1 font-semibold mr-6 w-auto"
@@ -160,7 +160,7 @@
                 </h3>
                 <h3 class="text-white text-3xl">name</h3>
               </div>
-              <div>
+              <div class="z-20 flex flex-shrink-0">
                 <StrapiButton
                   buttonVariant="secondary"
                   class="uppercase px-5 py-3 font-semibold"
@@ -178,8 +178,49 @@
               <p
                 class="lg:text-4xl md:text-4xl sm:text-3xl xs:text-3xl xxs:text-2xl text-white font-serif font-semibold "
               >
-                Banks have shied away from this opportunity Banks have shied
-                away
+                Banks have shied away from this opportunity
+              </p>
+            </div>
+          </div>
+        </VideoCard>
+      </li>
+      <li class="splide__slide">
+        <VideoCard variant="episodesCard" episodeNumber="" :hasOverlay="true">
+          <div>
+            <img
+              class="rounded-t-2xl"
+              src="https://www.g2fp.com/hubfs/trevor.png"
+              alt="image"
+              loading="lazy"
+            />
+          </div>
+          <div class="m-7 p-4">
+            <div class="flex flex-row justify-between ">
+              <div class=" z-20">
+                <h3 class="uppercase text-xl  font-semibold mr-6 w-auto">
+                  #episode
+                </h3>
+                <h3 class="text-white text-3xl">name</h3>
+              </div>
+              <div class="z-20 flex-shrink-0">
+                <StrapiButton
+                  buttonVariant="secondary"
+                  class="uppercase px-5 py-3 font-semibold"
+                  text="PLAY"
+                  :reverse="true"
+                  :iconBackground="true"
+                  icon="https://static1.squarespace.com/static/6278bb92688b50292499e115/t/6278e1b2b3b9d8705d65d301/1652089266787/icon--video-play+%281%29.png"
+                  alt="play"
+                  loading="lazy"
+                  @click="openModal()"
+                />
+              </div>
+            </div>
+            <div class="relative z-20 my-8 h-[150px]">
+              <p
+                class="lg:text-4xl md:text-4xl sm:text-3xl xs:text-3xl xxs:text-2xl text-white font-serif font-semibold "
+              >
+                Banks have shied away from this opportunity this opportunity
               </p>
             </div>
           </div>
@@ -203,10 +244,10 @@
                 </h3>
                 <h3 class="text-white text-3xl">name</h3>
               </div>
-              <div>
+              <div class="z-20 flex-shrink-0">
                 <StrapiButton
                   buttonVariant="secondary"
-                  class="uppercase px-5 py-3 font-semibold"
+                  class="uppercase lg:px-5 lg:py-3 md:px-4 md:py-2 sm:px-3 sm:py-2 xs:px-3 xs:py-2 xxs:px-1 xxs:py-1 font-semibold lg:mr-6 w-auto"
                   text="PLAY"
                   :reverse="true"
                   :iconBackground="true"
@@ -221,51 +262,7 @@
               <p
                 class="lg:text-4xl md:text-4xl sm:text-3xl xs:text-3xl xxs:text-2xl text-white font-serif font-semibold "
               >
-                Banks have shied away from this opportunity Banks have shied
-                away
-              </p>
-            </div>
-          </div>
-        </VideoCard>
-      </li>
-      <li class="splide__slide">
-        <VideoCard variant="episodesCard" episodeNumber="" :hasOverlay="true">
-          <div>
-            <img
-              class="rounded-t-2xl"
-              src="https://www.g2fp.com/hubfs/trevor.png"
-              alt="image"
-              loading="lazy"
-            />
-          </div>
-          <div class="m-7 p-4">
-            <div class="flex flex-row justify-between">
-              <div class="z-20">
-                <h3 class="uppercase text-xl  font-semibold mr-6 w-auto">
-                  #episode
-                </h3>
-                <h3 class="text-white text-3xl">name</h3>
-              </div>
-              <div>
-                <StrapiButton
-                  buttonVariant="secondary"
-                  class="uppercase px-5 py-3 font-semibold"
-                  text="PLAY"
-                  :reverse="true"
-                  :iconBackground="true"
-                  icon="https://static1.squarespace.com/static/6278bb92688b50292499e115/t/6278e1b2b3b9d8705d65d301/1652089266787/icon--video-play+%281%29.png"
-                  alt="play"
-                  loading="lazy"
-                  @click="openModal()"
-                />
-              </div>
-            </div>
-            <div class="relative z-20 my-8 h-[150px]">
-              <p
-                class="lg:text-4xl md:text-4xl sm:text-3xl xs:text-3xl xxs:text-2xl text-white font-serif font-semibold "
-              >
-                Banks have shied away from this opportunity Banks have shied
-                away
+                Banks have shied away from this opportunity this opportunity
               </p>
             </div>
           </div>
