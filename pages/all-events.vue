@@ -152,9 +152,11 @@
               loading="lazy"
             />
           </div>
-          <div class="m-7 p-4">
+          <div
+            class="m-4 p-4 flex lg:flex-col sm:flex-col-reverse xs:flex-col-reverse xxs:flex-col-reverse"
+          >
             <div
-              class="flex lg:flex-row md:flex-row sm:flex-col xs:flex-col xxs:flex-col justify-between "
+              class="flex lg:flex-row md:flex-col sm:flex-col xs:flex-col xxs:flex-col justify-between "
             >
               <div class="z-20">
                 <h3 class="uppercase text-xl  font-semibold mr-6 w-auto">
@@ -163,7 +165,7 @@
                 <h3 class="text-white text-3xl">name</h3>
               </div>
               <div
-                class="z-20 flex flex-shrink-0 lg:pt-0 md:pt-0 sm:pt-4 xs:pt-4 xxs:pt-4"
+                class="z-20 flex flex-shrink-0 lg:pt-0 md:py-5 sm:py-4 xs:py-4 xxs:py-4"
               >
                 <StrapiButton
                   buttonVariant="secondary"
@@ -178,9 +180,11 @@
                 />
               </div>
             </div>
-            <div class="relative z-20 my-8 h-[150px]">
+            <div
+              class="relative z-20 my-4 lg:h-[150px] md:h-[150px] sm:h-[120px] xs:h-[100px] xxs:h-[100px] overflow-scroll"
+            >
               <p
-                class="lg:text-4xl md:text-4xl sm:text-3xl xs:text-3xl xxs:text-2xl text-white font-serif font-semibold "
+                class="lg:text-4xl md:text-4xl sm:text-3xl xs:text-3xl xxs:text-xl text-white font-serif font-semibold "
               >
                 Banks have shied away from this opportunity
               </p>
@@ -198,9 +202,11 @@
               loading="lazy"
             />
           </div>
-          <div class="m-7 p-4">
+          <div
+            class="m-4 p-4 flex lg:flex-col sm:flex-col-reverse xs:flex-col-reverse xxs:flex-col-reverse"
+          >
             <div
-              class="flex lg:flex-row md:flex-row sm:flex-col xs:flex-col xxs:flex-col justify-between "
+              class="flex lg:flex-row md:flex-col sm:flex-col xs:flex-col xxs:flex-col justify-between "
             >
               <div class="z-20">
                 <h3 class="uppercase text-xl  font-semibold mr-6 w-auto">
@@ -209,7 +215,7 @@
                 <h3 class="text-white text-3xl">name</h3>
               </div>
               <div
-                class="z-20 flex flex-shrink-0 lg:pt-0 md:pt-0 sm:pt-4 xs:pt-4 xxs:pt-4"
+                class="z-20 flex flex-shrink-0 lg:pt-0 md:py-5 sm:py-4 xs:py-4 xxs:py-4"
               >
                 <StrapiButton
                   buttonVariant="secondary"
@@ -224,9 +230,11 @@
                 />
               </div>
             </div>
-            <div class="relative z-20 my-8 h-[150px]">
+            <div
+              class="relative z-20 my-4 lg:h-[150px] md:h-[150px] sm:h-[120px] xs:h-[100px] xxs:h-[100px] overflow-scroll"
+            >
               <p
-                class="lg:text-4xl md:text-4xl sm:text-3xl xs:text-3xl xxs:text-2xl text-white font-serif font-semibold "
+                class="lg:text-4xl md:text-4xl sm:text-3xl xs:text-3xl xxs:text-xl text-white font-serif font-semibold "
               >
                 Banks have shied away from this opportunity
               </p>
@@ -244,9 +252,11 @@
               loading="lazy"
             />
           </div>
-          <div class="m-7 p-4">
+          <div
+            class="m-4 p-4 flex lg:flex-col sm:flex-col-reverse xs:flex-col-reverse xxs:flex-col-reverse"
+          >
             <div
-              class="flex lg:flex-row md:flex-row sm:flex-col xs:flex-col xxs:flex-col justify-between "
+              class="flex lg:flex-row md:flex-col sm:flex-col xs:flex-col xxs:flex-col justify-between "
             >
               <div class="z-20">
                 <h3 class="uppercase text-xl  font-semibold mr-6 w-auto">
@@ -255,7 +265,7 @@
                 <h3 class="text-white text-3xl">name</h3>
               </div>
               <div
-                class="z-20 flex flex-shrink-0 lg:pt-0 md:pt-0 sm:pt-4 xs:pt-4 xxs:pt-4"
+                class="z-20 flex flex-shrink-0 lg:pt-0 md:py-5 sm:py-4 xs:py-4 xxs:py-4"
               >
                 <StrapiButton
                   buttonVariant="secondary"
@@ -270,9 +280,11 @@
                 />
               </div>
             </div>
-            <div class="relative z-20 my-8 h-[150px]">
+            <div
+              class="relative z-20 my-4 lg:h-[150px] md:h-[150px] sm:h-[120px] xs:h-[100px] xxs:h-[100px] overflow-scroll"
+            >
               <p
-                class="lg:text-4xl md:text-4xl sm:text-3xl xs:text-3xl xxs:text-2xl text-white font-serif font-semibold "
+                class="lg:text-4xl md:text-4xl sm:text-3xl xs:text-3xl xxs:text-xl text-white font-serif font-semibold "
               >
                 Banks have shied away from this opportunity
               </p>
