@@ -152,7 +152,7 @@
               loading="lazy"
             />
           </div>
-          <div class="m-7 p-4 ">
+          <div class="m-7 p-4">
             <div class="flex flex-row justify-between">
               <div class="z-20">
                 <h3 class="uppercase text-xl  font-semibold mr-6 w-auto">
@@ -176,7 +176,7 @@
             </div>
             <div class="relative z-20 my-8 h-[150px]">
               <p
-                class="lg:text-4xl md:text-4xl sm:text-2xl xs:text-3xl xxs:text-2xl text-white font-serif font-semibold "
+                class="lg:text-4xl md:text-4xl sm:text-3xl xs:text-3xl xxs:text-2xl text-white font-serif font-semibold "
               >
                 Banks have shied away from this opportunity Banks have shied
                 away
@@ -195,9 +195,7 @@
               loading="lazy"
             />
           </div>
-          <div
-            class="m-7 lg:px-1 lg:py-3 md:px-4 md:py-2 sm:px-2 sm:py-2 xs:px-1 xs:py-2 xxs:px-1 xxs:py-1 "
-          >
+          <div class="m-7 p-4">
             <div class="flex flex-row justify-between">
               <div class="z-20">
                 <h3 class="uppercase text-xl  font-semibold mr-6 w-auto">
@@ -219,9 +217,12 @@
                 />
               </div>
             </div>
-            <div class="relative z-20">
-              <p class="text-4xl text-white mt-8 font-serif font-semibold ">
-                Banks have shied away from this opportunity
+            <div class="relative z-20 my-8 h-[150px]">
+              <p
+                class="lg:text-4xl md:text-4xl sm:text-3xl xs:text-3xl xxs:text-2xl text-white font-serif font-semibold "
+              >
+                Banks have shied away from this opportunity Banks have shied
+                away
               </p>
             </div>
           </div>
@@ -237,9 +238,7 @@
               loading="lazy"
             />
           </div>
-          <div
-            class="m-7 lg:px-1 lg:py-3 md:px-4 md:py-2 sm:px-2 sm:py-2 xs:px-1 xs:py-2 xxs:px-1 xxs:py-1 "
-          >
+          <div class="m-7 p-4">
             <div class="flex flex-row justify-between">
               <div class="z-20">
                 <h3 class="uppercase text-xl  font-semibold mr-6 w-auto">
@@ -261,9 +260,12 @@
                 />
               </div>
             </div>
-            <div class="relative z-20">
-              <p class="text-4xl text-white mt-8 font-serif font-semibold ">
-                Banks have shied away from this opportunity
+            <div class="relative z-20 my-8 h-[150px]">
+              <p
+                class="lg:text-4xl md:text-4xl sm:text-3xl xs:text-3xl xxs:text-2xl text-white font-serif font-semibold "
+              >
+                Banks have shied away from this opportunity Banks have shied
+                away
               </p>
             </div>
           </div>
