@@ -44,26 +44,26 @@
 
   <div class="w-screen overflow-hidden">
     <BaseSlider>
-      <li class="splide__slide bg-slate-300">
+      <li class="splide__slide bg-bg-primary">
         <VideoCard variant="pastPresenters" number="1"
           ><img
             class="rounded-xl max-h-full"
             src="https://static1.squarespace.com/static/6278bb92688b50292499e115/t/62b0a7c82d21161d968a5d8f/1655744461795/Nicolas+De+Skowronski+Cover+Picture-min.png"
           />
           <div
-            class="flex-1 absolute top-0 flex flex-col h-full items-end justify-between"
+            class="absolute top-0 flex flex-col h-full items-end justify-between"
           >
             <div class=" h-full flex-1">
               <h3
-                class="text-white lg:text-4xl md:text-3xl xs:text-2xl xxs:text-lg font-semibold mx-5 lg:mt-6 md:mt-5 sm:mt-4 xs:mt-4"
+                class="text-white lg:text-4xl md:text-3xl xs:text-2xl xxs:text-xl font-semibold mx-5 lg:mt-6 md:mt-5 sm:mt-4 xs:mt-4 xxs:mt-4"
               >
                 How Web 3.0 will impact our collective financial future
               </h3>
             </div>
-            <div class="h-full flex-1">
+            <div class="h-full flex-1 pr-2">
               <StrapiButton
                 buttonVariant="secondary"
-                class="uppercase lg:px-5 lg:py-3 md:px-4 md:py-2 sm:px-3 sm:py-2 xs:px-3 xs:py-2 xxs:px-1 xxs:py-1 font-semibold lg:mr-6 w-auto"
+                class="uppercase lg:px-5 lg:py-3 md:px-4 md:py-3 sm:px-3 sm:py-2 xs:px-3 xs:py-3 xxs:px-2 xxs:py-2 font-semibold lg:mr-6"
                 text="PLAY"
                 :reverse="true"
                 :iconBackground="true"
@@ -76,26 +76,26 @@
           </div>
         </VideoCard>
       </li>
-      <li class="splide__slide bg-slate-300">
+      <li class="splide__slide bg-bg-primary">
         <VideoCard variant="pastPresenters" number="2"
           ><img
             class="rounded-xl max-h-full"
             src="https://static1.squarespace.com/static/6278bb92688b50292499e115/t/62b0a7c82d21161d968a5d8f/1655744461795/Nicolas+De+Skowronski+Cover+Picture-min.png"
           />
           <div
-            class=" flex-1 absolute top-0 flex flex-col h-full items-end justify-between"
+            class="absolute top-0 flex flex-col h-full items-end justify-between"
           >
-            <div class="h-full flex-1">
+            <div class=" h-full flex-1">
               <h3
-                class="text-white lg:text-4xl md:text-3xl xs:text-2xl xxs:text-lg font-semibold mx-5 lg:mt-6 md:mt-5 sm:mt-4 xs:mt-4"
+                class="text-white lg:text-4xl md:text-3xl xs:text-2xl xxs:text-xl font-semibold mx-5 lg:mt-6 md:mt-5 sm:mt-4 xs:mt-4 xxs:mt-4"
               >
                 How Web 3.0 will impact our collective financial future
               </h3>
             </div>
-            <div class="h-full flex-1">
+            <div class="h-full flex-1 pr-2">
               <StrapiButton
                 buttonVariant="secondary"
-                class="uppercase lg:px-5 lg:py-3 md:px-4 md:py-2 sm:px-3 sm:py-2 xs:px-3 xs:py-2 xxs:px-1 xxs:py-1 font-semibold lg:mr-6 w-auto"
+                class="uppercase lg:px-5 lg:py-3 md:px-4 md:py-3 sm:px-3 sm:py-2 xs:px-3 xs:py-3 xxs:px-2 xxs:py-2 font-semibold lg:mr-6"
                 text="PLAY"
                 :reverse="true"
                 :iconBackground="true"
@@ -108,26 +108,26 @@
           </div>
         </VideoCard>
       </li>
-      <li class="splide__slide bg-slate-300">
+      <li class="splide__slide bg-bg-primary">
         <VideoCard variant="pastPresenters" number="3"
           ><img
             class="rounded-xl max-h-full"
             src="https://static1.squarespace.com/static/6278bb92688b50292499e115/t/62b0a7c82d21161d968a5d8f/1655744461795/Nicolas+De+Skowronski+Cover+Picture-min.png"
           />
           <div
-            class=" flex-1 absolute top-0 flex flex-col h-full items-end justify-between"
+            class="absolute top-0 flex flex-col h-full items-end justify-between"
           >
-            <div class="flex-1">
+            <div class=" h-full flex-1">
               <h3
-                class="text-white lg:text-4xl md:text-3xl xs:text-2xl xxs:text-lg font-semibold mx-5 lg:mt-6 md:mt-5 sm:mt-4 xs:mt-4"
+                class="text-white lg:text-4xl md:text-3xl xs:text-2xl xxs:text-xl font-semibold mx-5 lg:mt-6 md:mt-5 sm:mt-4 xs:mt-4 xxs:mt-4"
               >
                 How Web 3.0 will impact our collective financial future
               </h3>
             </div>
-            <div class="flex-1">
+            <div class="h-full flex-1 pr-2">
               <StrapiButton
                 buttonVariant="secondary"
-                class="uppercase lg:px-5 lg:py-3 md:px-4 md:py-2 sm:px-3 sm:py-2 xs:px-2 xs:py-2 xxs:px-1 xxs:py-1 font-semibold mr-6 w-auto"
+                class="uppercase lg:px-5 lg:py-3 md:px-4 md:py-3 sm:px-3 sm:py-2 xs:px-3 xs:py-3 xxs:px-2 xxs:py-2 font-semibold lg:mr-6"
                 text="PLAY"
                 :reverse="true"
                 :iconBackground="true"
