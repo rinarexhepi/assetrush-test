@@ -9,8 +9,8 @@
 
 @layer base {
   @font-face {
-    font-family: GT-Planar;
-    src: local("GT-Planar"), url(/assets/fonts/GT-Planar-Regular.svg),
-      format("svg");
+    font-family: "GT-Planar";
+    src: local("GT-Planar"), url(/assets/fonts/GT-Planar.ttf),
+      format("truetype");
   }
 }

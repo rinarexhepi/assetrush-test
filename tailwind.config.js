@@ -14,7 +14,7 @@ module.exports = {
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
         mono: ["ui-monospace", "PTMono-Regular"],
-        gtplanar: ["GT-Planar"],
+        gtplanar: ["GT-Planar", "sans-serif"],
       },
       colors: {
         "bg-primary": "#4E30A0",
