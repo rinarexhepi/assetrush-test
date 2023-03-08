@@ -17,7 +17,7 @@ module.exports = {
         gtplanar: ["GT-Planar", "sans-serif"],
       },
       colors: {
-        "bg-primary": "#4E30A0",
+        primary: "#4E30A0",
       },
       backgroundImage: (theme) => ({
         "custom-gradient":

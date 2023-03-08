@@ -1,7 +1,7 @@
 export const variantClasses = {
   episodesCard:
-    " relative h-auto border-none rounded-2xl bg-bg-primary text-white z-0 m-4",
+    " relative h-auto border-none rounded-2xl bg-primary text-white z-0 m-4",
   pastPresenters: "relative text-white z-30 h-full my-6 mx-8",
   top10Card:
-    "lg:col-start-5 lg:col-end-9 md:col-start-3 md:col-end-5 sm:col-start-3 sm:col-end-5 xs:col-start-2 xs:col-end-6 bg-bg-primary p-8 mx-16 border-none rounded-xl ",
+    "lg:col-start-5 lg:col-end-9 md:col-start-3 md:col-end-5 sm:col-start-3 sm:col-end-5 xs:col-start-2 xs:col-end-6 bg-primary p-8 mx-16 border-none rounded-xl ",
 };
