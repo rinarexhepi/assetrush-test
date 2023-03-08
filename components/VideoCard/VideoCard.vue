@@ -1,12 +1,33 @@
 <template>
   <div :class="selectedVariant">
-    <template v-if="hasOverlay">
-      <span
-        class=" absolute h-full w-1/2 float-left bg-gradient-to-b from-blue-600 to-pink-500 opacity-80 z-0 rounded-l-2xl"
-      >
-      </span>
-    </template>
-
+    <img
+      class="rounded-xl max-h-full max-w-full"
+      src="https://static1.squarespace.com/static/6278bb92688b50292499e115/t/62b0a7c82d21161d968a5d8f/1655744461795/Nicolas+De+Skowronski+Cover+Picture-min.png"
+    />
+    <div
+      class="absolute top-0 flex flex-col h-full items-end justify-between over"
+    >
+      <div class=" h-full flex-1">
+        <h3
+          class="text-white lg:text-4xl md:text-2xl sm:text-md text-xl font-semibold mx-5 lg:mt-6 md:mt-5 sm:mt-4 mt-4"
+        >
+          {{ shortDescription }}
+        </h3>
+      </div>
+      <div class="h-full flex-1 pr-2">
+        <StrapiButton
+          buttonVariant="secondary"
+          class="uppercase lg:px-5 lg:py-3 px-3 py-3 font-semibold lg:mr-6"
+          text="PLAY"
+          :reverse="true"
+          :iconBackground="true"
+          icon="https://static1.squarespace.com/static/6278bb92688b50292499e115/t/6278e1b2b3b9d8705d65d301/1652089266787/icon--video-play+%281%29.png"
+          alt="play"
+          loading="lazy"
+          @@click="$emit('openModal')"
+        />
+      </div>
+    </div>
     <div v-if="number" class="bottom-5 -left-5 absolute z-20 float-right">
       <span
         class="text-outline font-gt-planar semibold lg:text-9xl md:text-8xl sm:text-8xl text-7xl"
