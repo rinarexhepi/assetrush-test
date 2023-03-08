@@ -55,7 +55,7 @@
           >
             <div class=" h-full flex-1">
               <h3
-                class="text-white lg:text-4xl md:text-3xl xs:text-2xl xxs:text-md font-semibold mx-5 lg:mt-6 md:mt-5 sm:mt-4 xs:mt-4 xxs:mt-4 xxs:leading-tight"
+                class="text-white lg:text-4xl md:text-2xl sm:text-md text-xl font-semibold mx-5 lg:mt-6 md:mt-5 sm:mt-4 mt-4"
               >
                 How Web 3.0 will impact our collective financial future
               </h3>
@@ -63,7 +63,7 @@
             <div class="h-full flex-1 pr-2">
               <StrapiButton
                 buttonVariant="secondary"
-                class="uppercase lg:px-5 lg:py-3 md:px-4 md:py-3 sm:px-3 sm:py-2 xs:px-3 xs:py-3 xxs:px-2 xxs:py-2 font-semibold lg:mr-6"
+                class="uppercase lg:px-5 lg:py-3 px-3 py-3 font-semibold lg:mr-6"
                 text="PLAY"
                 :reverse="true"
                 :iconBackground="true"
@@ -79,15 +79,15 @@
       <li class="splide__slide bg-primary">
         <VideoCard variant="pastPresenters" number="2"
           ><img
-            class="rounded-xl max-h-full"
+            class="rounded-xl max-h-full max-w-full"
             src="https://static1.squarespace.com/static/6278bb92688b50292499e115/t/62b0a7c82d21161d968a5d8f/1655744461795/Nicolas+De+Skowronski+Cover+Picture-min.png"
           />
           <div
-            class="absolute top-0 flex flex-col h-full items-end justify-between"
+            class="absolute top-0 flex flex-col h-full items-end justify-between over"
           >
             <div class=" h-full flex-1">
               <h3
-                class="text-white lg:text-4xl md:text-3xl xs:text-2xl xxs:text-md font-semibold mx-5 lg:mt-6 md:mt-5 sm:mt-4 xs:mt-4 xxs:mt-4"
+                class="text-white lg:text-4xl md:text-2xl sm:text-md text-xl font-semibold mx-5 lg:mt-6 md:mt-5 sm:mt-4 mt-4"
               >
                 How Web 3.0 will impact our collective financial future
               </h3>
@@ -95,39 +95,7 @@
             <div class="h-full flex-1 pr-2">
               <StrapiButton
                 buttonVariant="secondary"
-                class="uppercase lg:px-5 lg:py-3 md:px-4 md:py-3 sm:px-3 sm:py-2 xs:px-3 xs:py-3 xxs:px-2 xxs:py-2 font-semibold lg:mr-6"
-                text="PLAY"
-                :reverse="true"
-                :iconBackground="true"
-                icon="https://static1.squarespace.com/static/6278bb92688b50292499e115/t/6278e1b2b3b9d8705d65d301/1652089266787/icon--video-play+%281%29.png"
-                alt="play"
-                loading="lazy"
-                @click="openModal()"
-              />
-            </div>
-          </div>
-        </VideoCard>
-      </li>
-      <li class="splide__slide bg-primary">
-        <VideoCard variant="pastPresenters" number="2"
-          ><img
-            class="rounded-xl max-h-full"
-            src="https://static1.squarespace.com/static/6278bb92688b50292499e115/t/62b0a7c82d21161d968a5d8f/1655744461795/Nicolas+De+Skowronski+Cover+Picture-min.png"
-          />
-          <div
-            class="absolute top-0 flex flex-col h-full items-end justify-between"
-          >
-            <div class=" h-full flex-1">
-              <h3
-                class="text-white lg:text-4xl md:text-3xl xs:text-2xl xxs:text-md font-semibold mx-5 lg:mt-6 md:mt-5 sm:mt-4 xs:mt-4 xxs:mt-4"
-              >
-                How Web 3.0 will impact our collective financial future
-              </h3>
-            </div>
-            <div class="h-full flex-1 pr-2">
-              <StrapiButton
-                buttonVariant="secondary"
-                class="uppercase lg:px-5 lg:py-3 md:px-4 md:py-3 sm:px-3 sm:py-2 xs:px-3 xs:py-3 xxs:px-2 xxs:py-2 font-semibold lg:mr-6"
+                class="uppercase lg:px-5 lg:py-3 px-3 py-3 font-semibold lg:mr-6"
                 text="PLAY"
                 :reverse="true"
                 :iconBackground="true"
@@ -143,15 +111,15 @@
       <li class="splide__slide bg-primary">
         <VideoCard variant="pastPresenters" number="3"
           ><img
-            class="rounded-xl max-h-full"
+            class="rounded-xl max-h-full max-w-full"
             src="https://static1.squarespace.com/static/6278bb92688b50292499e115/t/62b0a7c82d21161d968a5d8f/1655744461795/Nicolas+De+Skowronski+Cover+Picture-min.png"
           />
           <div
-            class="absolute top-0 flex flex-col h-full items-end justify-between"
+            class="absolute top-0 flex flex-col h-full items-end justify-between over"
           >
-            <div class="h-full flex-1">
+            <div class=" h-full flex-1">
               <h3
-                class="text-white lg:text-4xl md:text-3xl xs:text-2xl xxs:text-md font-semibold mx-5 lg:mt-6 md:mt-5 sm:mt-4 xs:mt-4 xxs:mt-4"
+                class="text-white lg:text-4xl md:text-2xl sm:text-md text-xl font-semibold mx-5 lg:mt-6 md:mt-5 sm:mt-4 mt-4"
               >
                 How Web 3.0 will impact our collective financial future
               </h3>
@@ -159,7 +127,39 @@
             <div class="h-full flex-1 pr-2">
               <StrapiButton
                 buttonVariant="secondary"
-                class="uppercase lg:px-5 lg:py-3 md:px-4 md:py-3 sm:px-3 sm:py-2 xs:px-3 xs:py-3 xxs:px-2 xxs:py-2 font-semibold lg:mr-6"
+                class="uppercase lg:px-5 lg:py-3 px-3 py-3 font-semibold lg:mr-6"
+                text="PLAY"
+                :reverse="true"
+                :iconBackground="true"
+                icon="https://static1.squarespace.com/static/6278bb92688b50292499e115/t/6278e1b2b3b9d8705d65d301/1652089266787/icon--video-play+%281%29.png"
+                alt="play"
+                loading="lazy"
+                @click="openModal()"
+              />
+            </div>
+          </div>
+        </VideoCard>
+      </li>
+      <li class="splide__slide bg-primary">
+        <VideoCard variant="pastPresenters" number="4"
+          ><img
+            class="rounded-xl max-h-full max-w-full"
+            src="https://static1.squarespace.com/static/6278bb92688b50292499e115/t/62b0a7c82d21161d968a5d8f/1655744461795/Nicolas+De+Skowronski+Cover+Picture-min.png"
+          />
+          <div
+            class="absolute top-0 flex flex-col h-full items-end justify-between over"
+          >
+            <div class=" h-full flex-1">
+              <h3
+                class="text-white lg:text-4xl md:text-2xl sm:text-md text-xl font-semibold mx-5 lg:mt-6 md:mt-5 sm:mt-4 mt-4"
+              >
+                How Web 3.0 will impact our collective financial future
+              </h3>
+            </div>
+            <div class="h-full flex-1 pr-2">
+              <StrapiButton
+                buttonVariant="secondary"
+                class="uppercase lg:px-5 lg:py-3 px-3 py-3 font-semibold lg:mr-6"
                 text="PLAY"
                 :reverse="true"
                 :iconBackground="true"
@@ -175,166 +175,35 @@
     </BaseSlider>
     <BaseSlider>
       <li class="splide__slide">
-        <VideoCard variant="episodesCard" episodeNumber="" :hasOverlay="true">
-          <div>
-            <img
-              class="rounded-t-2xl"
-              src="https://www.g2fp.com/hubfs/trevor.png"
-              alt="image"
-              loading="lazy"
-            />
-          </div>
-          <div
-            class="m-4 p-4 flex lg:flex-col sm:flex-col-reverse xs:flex-col-reverse xxs:flex-col-reverse"
-          >
-            <div
-              class="flex lg:flex-row md:flex-col sm:flex-col xs:flex-col xxs:flex-col justify-between "
-            >
-              <div class="z-20">
-                <h3 class="uppercase text-xl font-semibold mr-6 w-auto">
-                  #episode
-                </h3>
-                <h3
-                  class="text-white text-2xl sm:text-2xl xs:text-2xl xxs:text-2xl"
-                >
-                  name
-                </h3>
-              </div>
-              <div
-                class="z-20 flex flex-shrink-0 lg:pt-0 md:py-5 sm:py-4 xs:py-4 xxs:py-4"
-              >
-                <StrapiButton
-                  buttonVariant="secondary"
-                  class="uppercase px-5 py-3 font-semibold"
-                  text="PLAY"
-                  :reverse="true"
-                  :iconBackground="true"
-                  icon="https://static1.squarespace.com/static/6278bb92688b50292499e115/t/6278e1b2b3b9d8705d65d301/1652089266787/icon--video-play+%281%29.png"
-                  alt="play"
-                  loading="lazy"
-                  @click="openModal()"
-                />
-              </div>
-            </div>
-            <div
-              class="relative z-20 my-4 lg:h-[150px] md:h-[150px] sm:h-[120px] xs:h-[100px] xxs:h-[100px] overflow-scroll"
-            >
-              <p
-                class="lg:text-4xl md:text-4xl sm:text-3xl xs:text-3xl xxs:text-2xl text-white font-serif font-semibold "
-              >
-                Banks have shied away from this opportunity
-              </p>
-            </div>
-          </div>
-        </VideoCard>
+        <EpisodeCard
+          variant="episodesCard"
+          episodeNumber="2"
+          author="name"
+          shortDescription="Banks have shied away from this opportunity"
+          :hasOverlay="true"
+        >
+        </EpisodeCard>
       </li>
       <li class="splide__slide">
-        <VideoCard variant="episodesCard" episodeNumber="" :hasOverlay="true">
-          <div>
-            <img
-              class="rounded-t-2xl"
-              src="https://www.g2fp.com/hubfs/trevor.png"
-              alt="image"
-              loading="lazy"
-            />
-          </div>
-          <div
-            class="m-4 p-4 flex lg:flex-col sm:flex-col-reverse xs:flex-col-reverse xxs:flex-col-reverse"
-          >
-            <div
-              class="flex lg:flex-row md:flex-col sm:flex-col xs:flex-col xxs:flex-col justify-between "
-            >
-              <div class="z-20">
-                <h3 class="uppercase text-xl  font-semibold mr-6 w-auto">
-                  #episode
-                </h3>
-                <h3
-                  class="text-white text-2xl sm:text-2xl xs:text-2xl xxs:text-2xl"
-                >
-                  name
-                </h3>
-              </div>
-              <div
-                class="z-20 flex flex-shrink-0 lg:pt-0 md:py-5 sm:py-4 xs:py-4 xxs:py-4"
-              >
-                <StrapiButton
-                  buttonVariant="secondary"
-                  class="uppercase px-5 py-3 font-semibold"
-                  text="PLAY"
-                  :reverse="true"
-                  :iconBackground="true"
-                  icon="https://static1.squarespace.com/static/6278bb92688b50292499e115/t/6278e1b2b3b9d8705d65d301/1652089266787/icon--video-play+%281%29.png"
-                  alt="play"
-                  loading="lazy"
-                  @click="openModal()"
-                />
-              </div>
-            </div>
-            <div
-              class="relative z-20 my-4 lg:h-[150px] md:h-[150px] sm:h-[120px] xs:h-[100px] xxs:h-[100px] overflow-scroll"
-            >
-              <p
-                class="lg:text-4xl md:text-4xl sm:text-3xl xs:text-3xl xxs:text-2xl text-white font-serif font-semibold "
-              >
-                Banks have shied away from this opportunity
-              </p>
-            </div>
-          </div>
-        </VideoCard>
+        <EpisodeCard
+          variant="episodesCard"
+          episodeNumber="2"
+          author="name"
+          shortDescription="Banks have shied away from this opportunity"
+          :hasOverlay="true"
+        >
+        </EpisodeCard>
       </li>
       <li class="splide__slide">
-        <VideoCard variant="episodesCard" episodeNumber="" :hasOverlay="true">
-          <div>
-            <img
-              class="rounded-t-2xl"
-              src="https://www.g2fp.com/hubfs/trevor.png"
-              alt="image"
-              loading="lazy"
-            />
-          </div>
-          <div
-            class="m-4 p-4 flex lg:flex-col sm:flex-col-reverse xs:flex-col-reverse xxs:flex-col-reverse"
-          >
-            <div
-              class="flex lg:flex-row md:flex-col sm:flex-col xs:flex-col xxs:flex-col justify-between "
-            >
-              <div class="z-20">
-                <h3 class="uppercase text-xl  font-semibold mr-6 w-auto">
-                  #episode
-                </h3>
-                <h3
-                  class="text-white text-2xl sm:text-2xl xs:text-2xl xxs:text-2xl"
-                >
-                  name
-                </h3>
-              </div>
-              <div
-                class="z-20 flex flex-shrink-0 lg:pt-0 md:py-5 sm:py-4 xs:py-4 xxs:py-4"
-              >
-                <StrapiButton
-                  buttonVariant="secondary"
-                  class="uppercase px-5 py-3 font-semibold"
-                  text="PLAY"
-                  :reverse="true"
-                  :iconBackground="true"
-                  icon="https://static1.squarespace.com/static/6278bb92688b50292499e115/t/6278e1b2b3b9d8705d65d301/1652089266787/icon--video-play+%281%29.png"
-                  alt="play"
-                  loading="lazy"
-                  @click="openModal()"
-                />
-              </div>
-            </div>
-            <div
-              class="relative z-20 my-4 lg:h-[150px] md:h-[150px] sm:h-[120px] xs:h-[100px] xxs:h-[100px] overflow-scroll"
-            >
-              <p
-                class="lg:text-4xl md:text-4xl sm:text-3xl xs:text-3xl xxs:text-2xl text-white font-serif font-semibold "
-              >
-                Banks have shied away from this opportunity
-              </p>
-            </div>
-          </div>
-        </VideoCard>
+        <EpisodeCard
+          variant="episodesCard"
+          episodeNumber="2"
+          author="name"
+          shortDescription="Banks have shied away from this opportunity"
+          :hasOverlay="true"
+          @openModal="openModal"
+        >
+        </EpisodeCard>
       </li>
     </BaseSlider>
 
@@ -366,11 +235,13 @@
   </div>
 </template>
 <script lang="ts">
+import EpisodeCard from "~/components/VideoCard/EpisodeCard.vue";
 import Modal from "~/components/VueFinalModal/Modal.vue";
 
 export default {
   components: {
     Modal,
+    EpisodeCard,
   },
   setup() {
     const shouldRenderModal = ref(false);
