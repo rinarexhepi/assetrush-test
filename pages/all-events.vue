@@ -152,7 +152,6 @@ import Modal from "~/components/VueFinalModal/Modal.vue";
 export default {
   components: {
     Modal,
-    // EpisodeCard,
   },
   setup() {
     const shouldRenderModal = ref(false);
