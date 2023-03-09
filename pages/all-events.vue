@@ -45,57 +45,57 @@
   <div class="w-screen overflow-hidden">
     <BaseSlider>
       <li class="splide__slide bg-primary">
-        <VideoCard
+        <CardTypeVideoCard
           variant="pastPresenters"
           number="1"
           shortDescription="How web 3.0 will impact our collective financial future"
           @openModal="openModal"
         >
-        </VideoCard>
+        </CardTypeVideoCard>
       </li>
       <li class="splide__slide bg-primary">
-        <VideoCard
+        <CardTypeVideoCard
           variant="pastPresenters"
           number="2"
           shortDescription="How web 3.0 will impact our collective financial future"
           @openModal="openModal"
         >
-        </VideoCard>
+        </CardTypeVideoCard>
       </li>
       <li class="splide__slide bg-primary">
-        <VideoCard
+        <CardTypeVideoCard
           variant="pastPresenters"
           number="3"
           shortDescription="How web 3.0 will impact our collective financial future"
           @openModal="openModal"
         >
-        </VideoCard>
+        </CardTypeVideoCard>
       </li>
       <li class="splide__slide bg-primary">
-        <VideoCard
+        <CardTypeVideoCard
           variant="pastPresenters"
           number="4"
           shortDescription="How web 3.0 will impact our collective financial future"
           @openModal="openModal"
         >
-        </VideoCard>
+        </CardTypeVideoCard>
       </li>
     </BaseSlider>
 
     <BaseSlider>
       <li class="splide__slide">
-        <EpisodeCard
+        <CardTypeEpisodeCard
           variant="episodesCard"
-          episodeNumber="2"
+          episodeNumber=""
           author="name"
           shortDescription="Banks have shied away from this opportunity"
           :hasOverlay="true"
           @openModal="openModal"
         >
-        </EpisodeCard>
+        </CardTypeEpisodeCard>
       </li>
       <li class="splide__slide">
-        <EpisodeCard
+        <CardTypeEpisodeCard
           variant="episodesCard"
           episodeNumber="2"
           author="name"
@@ -103,10 +103,10 @@
           :hasOverlay="true"
           @openModal="openModal"
         >
-        </EpisodeCard>
+        </CardTypeEpisodeCard>
       </li>
       <li class="splide__slide">
-        <EpisodeCard
+        <CardTypeEpisodeCard
           variant="episodesCard"
           episodeNumber="2"
           author="name"
@@ -114,7 +114,7 @@
           :hasOverlay="true"
           @openModal="openModal"
         >
-        </EpisodeCard>
+        </CardTypeEpisodeCard>
       </li>
     </BaseSlider>
 
@@ -146,13 +146,13 @@
   </div>
 </template>
 <script lang="ts">
-import EpisodeCard from "~/components/VideoCard/EpisodeCard.vue";
+// import EpisodeCard from "~/components/VideoCard/EpisodeCard.vue";
 import Modal from "~/components/VueFinalModal/Modal.vue";
 
 export default {
   components: {
     Modal,
-    EpisodeCard,
+    // EpisodeCard,
   },
   setup() {
     const shouldRenderModal = ref(false);

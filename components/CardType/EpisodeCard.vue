@@ -59,13 +59,9 @@
 <script lang="ts">
 import { variantClasses } from "./const";
 import type { PropType } from 'vue'
-import { Variant } from "~/components/VideoCard/types.ts";
-import Modal from "~/components/VueFinalModal/Modal.vue";
+import { Variant } from "./types";
 
 export default defineComponent({
-    components: {
-    Modal,
-  },
   props: {
     number: {
       type: String,

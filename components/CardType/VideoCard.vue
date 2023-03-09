@@ -42,7 +42,7 @@
 <script lang="ts">
 import { variantClasses } from "./const";
 import type { PropType } from 'vue'
-import { Variant } from "~/components/VideoCard/types.ts";
+import { Variant } from "./types";
 
 export default defineComponent({
   props: {
