@@ -15,7 +15,7 @@ export default {
   image: {
     // Options
   },
-  components: { dirs: ["~~/components", "~~/components/*"] },
+  components: { dirs: ["~~/components"] },
   build: {
     vendor: ["vue-vimeo-player"],
   },
