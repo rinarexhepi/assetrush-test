@@ -28,9 +28,9 @@
         />
       </div>
     </div>
-    <div v-if="number" class="bottom-5 -left-5 absolute z-20 float-right">
+    <div v-if="number" class="bottom-5 -left-6 absolute z-20 float-right">
       <span
-        class="text-outline font-gtplanar semibold lg:text-[160px] md:text-8xl sm:text-8xl text-7xl"
+        class="text-outline font-gtplanar semibold lg:text-[160px] md:text-9xl sm:text-8xl text-8xl"
       >
         {{ number }}
       </span>
