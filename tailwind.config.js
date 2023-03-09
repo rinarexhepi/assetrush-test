@@ -23,11 +23,6 @@ module.exports = {
         "custom-gradient":
           "linear-gradient(90deg, rgba(0,64,192,1) 0%, rgba(78,48,160,1) 10%, rgba(160,32,128,1) 100%)",
       }),
-      screens: {
-        xs: "390px",
-        xxs: "250px",
-        // => @media (min-width: 640px) { ... }
-      },
     },
   },
   variants: {},
