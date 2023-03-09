@@ -141,12 +141,12 @@
             class="m-16 w-full z-0 "
             video-url="https://vimeo.com/444369368"
           />
-        </div> </Modal
-    ></Transition>
+        </div>
+      </Modal>
+    </Transition>
   </div>
 </template>
 <script lang="ts">
-// import EpisodeCard from "~/components/VideoCard/EpisodeCard.vue";
 import Modal from "~/components/VueFinalModal/Modal.vue";
 
 export default {
