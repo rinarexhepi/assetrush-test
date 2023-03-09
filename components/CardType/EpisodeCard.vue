@@ -13,12 +13,8 @@
           loading="lazy"
         />
       </div>
-      <div
-        class="m-4 p-4 flex lg:flex-col sm:flex-col-reverse flex-col-reverse"
-      >
-        <div
-          class="flex lg:flex-row md:flex-col sm:flex-col flex-col justify-between "
-        >
+      <div class="m-4 p-4 flex lg:flex-col flex-col-reverse">
+        <div class="flex lg:flex-row flex-col justify-between ">
           <div class="z-20 py-2">
             <h3 class="uppercase text-xl font-semibold mr-6 w-auto">
               Episode {{ episodeNumber }}
