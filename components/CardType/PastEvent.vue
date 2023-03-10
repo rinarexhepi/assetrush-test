@@ -1,9 +1,6 @@
 <template>
   <div :class="selectedVariant">
-    <img
-      class="rounded-xl h-full w-full"
-      src="https://static1.squarespace.com/static/6278bb92688b50292499e115/t/627aaface054d65a97809aca/1652207537442/AR-space.jpg"
-    />
+    <img class="rounded-xl h-full w-full" src="~/assets/img/AR-space.jpeg" />
     <div
       class="absolute top-0 flex flex-col gap-16 h-full w-full p-12 justify-between"
     >
