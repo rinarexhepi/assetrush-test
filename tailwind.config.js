@@ -15,6 +15,7 @@ module.exports = {
         poppins: ["Poppins", "sans-serif"],
         mono: ["ui-monospace", "PTMono-Regular"],
         gtplanar: ["GT-Planar", "sans-serif"],
+        abril: ["Abril-Fatface"],
       },
       colors: {
         primary: "#4E30A0",
