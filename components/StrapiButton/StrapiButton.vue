@@ -8,17 +8,17 @@
       class="flex"
       :class="[reverse ? 'flex-row-reverse gap-4 items-center' : '']"
     >
-      <div v-if="!iconBackground">
-        <img :src="icon" alt="" />
-      </div>
-
-      <div
-        v-if="iconBackground"
-        class="bg-white relative rounded-full lg:py-4 lg:px-5 md:py-3 md:px-4 sm:py-2 sm:px-3 py-1 px-2  "
+            <div
+        :class="[
+          iconBackground
+            ? 'bg-white relative rounded-full lg:py-4 lg:px-5 md:py-3 md:px-4 sm:py-2 sm:px-3 py-1 px-2'
+            : '',
+        ]"
       >
         <img :src="icon" />
       </div>
-
+        <img :src="icon" />
+      </div>
       <p class="text-2xl mx-1">{{ text }}</p>
     </div>
     <template v-if="variants">
