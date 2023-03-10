@@ -1,4 +1,5 @@
 <template>
+  testing template
   <Headline level="h1" headingVariant="heading" text="The Next Chapter" />
   <Headline
     level="h4"
@@ -26,6 +27,16 @@
   />
   <Headline level="h6" headingVariant="pastEventsDate" text="June 15th, 2022" />
   <Headline level="h6" headingVariant="pulseDate" text="2023-02-15" />
+
+  <div class="flex flex-row">
+    <CardTypePastEvent
+      variant="pastEvents"
+      shortDescription="Asset Rush x Metaverse"
+      date="July 15th, 2022"
+    >
+    </CardTypePastEvent>
+  </div>
+
   <Grids gridVariant="fullBleed">
     <h2>full-bleed</h2>
   </Grids>

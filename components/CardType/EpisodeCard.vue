@@ -54,14 +54,14 @@
 
 <script lang="ts">
 import { variantClasses } from "./const";
-import type { PropType } from 'vue'
+import { PropType } from "vue";
 import { Variant } from "./types";
 
 export default defineComponent({
   props: {
     number: {
       type: String,
-      required: false
+      required: false,
     },
     title: {
       type: String,
@@ -92,16 +92,12 @@ export default defineComponent({
       default: "",
     },
     hasOverlay: { type: Boolean, default: false },
-
   },
-  setup(props){
-    const selectedVariant = computed(
-        () => variantClasses[props.variant]
-    );
+  setup(props) {
+    const selectedVariant = computed(() => variantClasses[props.variant]);
     return {
-        selectedVariant,
-
+      selectedVariant,
     };
-  }
+  },
 });
 </script>
