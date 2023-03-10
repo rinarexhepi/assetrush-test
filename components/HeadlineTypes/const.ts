@@ -1,8 +1,8 @@
 export const variantClasses = {
-  h1: "text-6xl text-black",
-  h2: "text-5xl text-black",
-  h3: "text-4xl text-black",
-  h4: "text-3xl text-black",
-  h5: "text-2xl text-black",
-  h6: "text-xl text-black",
+  heading: "text-[80px] font-bold font-gtplanar text-white bg-primary ",
+  subheading: "text-[56px] leading-relaxed font-medium text-white bg-primary",
+  subtitles: "text-4xl text-white bg-primary",
+  h4: "text-[24px] text-white bg-primary",
+  h5: "text-2xl text-white bg-primary",
+  h6: "text-xl text-white bg-primary",
 };
