@@ -1,5 +1,19 @@
 /* @config "./tailwind.site.config.js"; */
 
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "GT-Planar";
+    src: local("GT-Planar"), url(/assets/fonts/GT-Planar-Regular.woff2),
+      url(/assets/fonts/GT-Planar-Regular.woff);
+    font-weight: 300;
+    font-style: normal;
+    font-display: fallback;
+  }
+}

@@ -1,4 +1,42 @@
 <template>
+  testing template
+  <Headline level="h1" headingVariant="heading" text="The Next Chapter" />
+  <Headline
+    level="h4"
+    headingVariant="subtitles"
+    text="Creating the future of finance"
+  />
+  <Headline level="h2" headingVariant="subheading" text="Latest Event" />
+  <Headline
+    level="h3"
+    headingVariant="videoCardText"
+    text="
+                  «Banks have shied away from this opportunity.»
+                "
+  />
+  <Headline
+    level="h4"
+    headingVariant="pastEventsCard"
+    text="AssetRush x Metaverse"
+  />
+
+  <Headline
+    level="h5"
+    headingVariant="pastARPresenters"
+    text="«How Web 3.0 will impact our collective financial future»"
+  />
+  <Headline level="h6" headingVariant="pastEventsDate" text="June 15th, 2022" />
+  <Headline level="h6" headingVariant="pulseDate" text="2023-02-15" />
+
+  <div class="flex flex-row">
+    <CardTypePastEvent
+      variant="pastEvents"
+      shortDescription="Asset Rush x Metaverse"
+      date="July 15th, 2022"
+    >
+    </CardTypePastEvent>
+  </div>
+
   <Grids gridVariant="fullBleed">
     <h2>full-bleed</h2>
   </Grids>
@@ -15,7 +53,6 @@
       </template>
     </FlexLayoutTwoItems>
   </Grids>
-
   <Grids gridVariant="standard">
     <StandardLayout>
       <template v-slot:first>
@@ -23,7 +60,6 @@
       </template>
     </StandardLayout>
   </Grids>
-
   <Grids gridVariant="centered">
     <CenteredLayout>
       <template v-slot:first>
@@ -31,7 +67,6 @@
       </template>
     </CenteredLayout>
   </Grids>
-
   <Grids gridVariant="cards">
     <div :class="'single-card'">
       <h2>single card</h2>
@@ -45,8 +80,82 @@
     </div>
   </Grids>
 
-  <div>
-    <button @click="openModal()">Open Modal</button>
+  <div class="w-screen overflow-hidden">
+    <BaseSlider>
+      <li class="splide__slide bg-primary">
+        <CardTypeVideoCard
+          variant="pastPresenters"
+          number="1"
+          shortDescription="How web 3.0 will impact our collective financial future"
+          @openModal="openModal"
+        >
+        </CardTypeVideoCard>
+      </li>
+      <li class="splide__slide bg-primary">
+        <CardTypeVideoCard
+          variant="pastPresenters"
+          number="2"
+          shortDescription="How web 3.0 will impact our collective financial future"
+          @openModal="openModal"
+        >
+        </CardTypeVideoCard>
+      </li>
+      <li class="splide__slide bg-primary">
+        <CardTypeVideoCard
+          variant="pastPresenters"
+          number="3"
+          shortDescription="How web 3.0 will impact our collective financial future"
+          @openModal="openModal"
+        >
+        </CardTypeVideoCard>
+      </li>
+      <li class="splide__slide bg-primary">
+        <CardTypeVideoCard
+          variant="pastPresenters"
+          number="4"
+          shortDescription="How web 3.0 will impact our collective financial future"
+          @openModal="openModal"
+        >
+        </CardTypeVideoCard>
+      </li>
+    </BaseSlider>
+
+    <BaseSlider>
+      <li class="splide__slide">
+        <CardTypeEpisodeCard
+          variant="episodesCard"
+          episodeNumber=""
+          author="name"
+          shortDescription="Banks have shied away from this opportunity"
+          :hasOverlay="true"
+          @openModal="openModal"
+        >
+        </CardTypeEpisodeCard>
+      </li>
+      <li class="splide__slide">
+        <CardTypeEpisodeCard
+          variant="episodesCard"
+          episodeNumber="2"
+          author="name"
+          shortDescription="Banks have shied away from this opportunity"
+          :hasOverlay="true"
+          @openModal="openModal"
+        >
+        </CardTypeEpisodeCard>
+      </li>
+      <li class="splide__slide">
+        <CardTypeEpisodeCard
+          variant="episodesCard"
+          episodeNumber="2"
+          author="name"
+          shortDescription="Banks have shied away from this opportunity"
+          :hasOverlay="true"
+          @openModal="openModal"
+        >
+        </CardTypeEpisodeCard>
+      </li>
+    </BaseSlider>
+
     <Transition>
       <Modal
         :showModal="shouldRenderModal"
@@ -70,42 +179,14 @@
             class="m-16 w-full z-0 "
             video-url="https://vimeo.com/444369368"
           />
-        </div> </Modal
-    ></Transition>
+        </div>
+      </Modal>
+    </Transition>
   </div>
-
-  <!-- <div>
-    <BaseSlider :config="sliderConfig">
-      <div
-        v-for="testimonial in filteredTestimonials"
-        :key="testimonial.id"
-        class="mr-12 md:mr-20"
-      >
-        <div>1</div>
-        <div>2</div>
-        <div>3</div>
-        <div>4</div>
-      </div>
-    </BaseSlider>
-  </div> -->
 </template>
 <script lang="ts">
 import Modal from "~/components/VueFinalModal/Modal.vue";
-// import { VueSlickConfig } from "~/components/BaseSlider/BaseSlider.vue";
-// import VideoTestimonials from "~/components/Video/VideoTestimonials.vue";
-// const sliderConfig: VueSlickConfig = {
-//   infinite: true,
-//   speed: 600,
-//   variableWidth: false,
-//   adaptiveHeight: false,
-//   autoplay: true,
-//   slidesToScroll: 1,
-//   slidesToShow: 5,
-//   responsive: [
-//     { breakpoint: 1280, settings: { slidesToShow: 2 } },
-//     { breakpoint: 640, settings: { slidesToShow: 1 } },
-//   ],
-// };
+
 export default {
   components: {
     Modal,

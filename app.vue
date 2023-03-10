@@ -1,19 +1,9 @@
 <template>
   <div>
     <NuxtLayout>
-      <NuxtPage/> 
+      <NuxtPage />
     </NuxtLayout>
   </div>
 </template>
 
-<script>
-  // export default{
-  //   components: {
-  //     Test
-  //   },
-  //   setup(){
-
-  //   }
-  // }
-  
-</script>
+<script></script>

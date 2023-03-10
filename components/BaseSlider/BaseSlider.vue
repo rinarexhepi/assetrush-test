@@ -1,101 +1,103 @@
 <template>
   <div class="slider-container">
     <div class="mb-6">
-      <!-- HACK: v-if is a work-around for https://github.com/gs-shop/vue-slick-carousel/issues/214#issuecomment-1044351228 -->
-      <VueSlickCarousel
-        v-if="$slots.default && $slots.default.length"
-        v-bind="config"
-        ref="sliderEl"
-      >
-        <div v-for="card in cards">
-          <slot :card="card"></slot>
-        </div>
-      </VueSlickCarousel>
+      <Splide ref="splideEl" :options="splideOptions">
+        <slot></slot>
+      </Splide>
     </div>
     <div
-      class="slider-arrows mt-atuo flex flex-row gap-3"
+      class="slider-arrows mt-auto flex flex-row gap-3"
       :class="sliderArrowsClass"
     >
       <button @click="showPrev">
-        <LeftEncircled class="w-10 h-10" />
+        <SvgLeftEncircled :class="leftArrowClass" />
       </button>
       <button @click="showNext">
-        <RightEncircled class="w-10 h-10" />
+        <SvgRightEncircled :class="rightArrowClass" />
       </button>
     </div>
   </div>
 </template>
 
 <script lang="ts">
+import { Splide } from '@splidejs/splide'
 import type { PropType } from 'vue'
 
-interface VueSlickResponsive {
-  breakpoint?: number
-  settings?: VueSlickConfig
+export const slideComponentName = 'SplideSlide'
+
+export interface SplideOptions {
+    speed: number
+    autoplay: boolean
+    interval: number
+    rewind: boolean
+    perMove: number
+    perPage: number
+    breakpoints: Record<string | number, { perPage: number }>
 }
 
-export interface VueSlickConfig {
-  infinite?: boolean
-  speed?: number
-  autoplaySpeed?: number
-  variableWidth?: boolean
-  adaptiveHeight?: boolean
-  autoplay?: boolean
-  slidesToScroll?: number
-  slidesToShow?: number
-  responsive?: VueSlickResponsive[]
+const splideFixedOptions = {
+  arrows: false,
+  pagination: false
 }
 
-const vueSlickCarouselConfig = {
-  infinite: true,
-  speed: 10,
-  autoplaySpeed: 10,
-  variableWidth: false,
-  adaptiveHeight: false,
-  autoplay: true,
-  slidesToScroll: 1,
-  slidesToShow: 3,
-  responsive: [
-    { breakpoint: 1280, settings: { slidesToShow: 2 } },
-    { breakpoint: 640, settings: { slidesToShow: 1 } },
-  ],
+const splideDefaultOptions: SplideOptions = {
+  speed: 1200,
+  autoplay: false,
+  interval: 5000,
+  rewind: false,
+  perMove: 1,
+  perPage: 3,
+  breakpoints: {
+    1280: { perPage: 2 },
+    640: { perPage: 1 },
+  },
 }
 
 export default defineComponent({
   props: {
-    cards: {
-        type: Array,
-        required: true
+    cards:{
+      type: Array,
+      default: () => [],
     },
-    config: {
-      type: Object as PropType<VueSlickConfig>,
-      default: () => vueSlickCarouselConfig,
+    options: {
+      type: Object as PropType<SplideOptions>,
+      default: () => splideDefaultOptions,
     },
     sliderArrowsClass: {
       type: Array,
       default: () => [],
     },
     class: {
-        type: String,
-        default: ''
-    }
+      type: String,
+      default: ''
+    },
+    leftArrowClass: {
+      type: String ,
+      default: ''
+   },
+    rightArrowClass: {
+      type: String,
+      default: ''
+   }
   },
-  setup() {
-    const sliderEl = ref()
+  setup(props) {
+    const splideEl = ref<Splide>()
+    const splideOptions = { ...splideFixedOptions, ...props.options}
+
      function showPrev() {
-      sliderEl.value?.prev()
+      splideEl.value?.go('<')
     }
 
     function showNext() {
-      sliderEl.value?.next()
+      splideEl.value?.go('>')
     }
-    return { sliderEl, showPrev, showNext }
+    return { splideEl, showPrev, showNext, splideOptions }
   },
 })
 </script>
 
 <style lang="scss" scoped>
-:deep(.slick-list) {
-  overflow: visible;
+:deep(.splide__track) {
+  @apply overflow-visible;
 }
 </style>

@@ -37,6 +37,7 @@
           buttonVariant="secondary"
           class="uppercase px-5 py-4"
           text="button"
+          :reverse="false"
         />
       </div>
 
