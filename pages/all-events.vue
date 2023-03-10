@@ -1,7 +1,7 @@
 <template>
-  <Headline level="h1" headingVariant="h1" text="The Next Chapter" />
-  <Headline level="h2" headingVariant="h2" text="The Next Chapter" />
-  <Headline level="h3" headingVariant="h3" text="The Next Chapter" />
+  <Headline level="h1" headingVariant="heading" text="The Next Chapter" />
+  <Headline level="h2" headingVariant="subheading" text="The Next Chapter" />
+  <Headline level="h3" headingVariant="subtitles" text="The Next Chapter" />
   <Headline level="h4" headingVariant="h4" text="The Next Chapter" />
   <Headline level="h5" headingVariant="h5" text="The Next Chapter" />
   <Headline level="h6" headingVariant="h6" text="The Next Chapter" />
