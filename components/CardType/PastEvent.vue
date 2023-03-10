@@ -5,7 +5,7 @@
       src="https://static1.squarespace.com/static/6278bb92688b50292499e115/t/627aaface054d65a97809aca/1652207537442/AR-space.jpg"
     />
     <div
-      class="absolute top-0 flex flex-col gap-16 h-full w-full p-12 justify-between over"
+      class="absolute top-0 flex flex-col gap-16 h-full w-full p-12 justify-between"
     >
       <div class=" h-full flex-1 flex flex-col gap-8">
         <Headline level="h6" headingVariant="pastEventsDate">
