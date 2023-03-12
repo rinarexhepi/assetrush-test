@@ -5,4 +5,5 @@ export const variantClasses = {
   top10Card:
     "lg:col-start-5 lg:col-end-9 md:col-start-3 md:col-end-5 sm:col-start-3 sm:col-end-5 bg-primary p-8 mx-16 border-none rounded-xl ",
   pastEvents: "mx-5 relative w-[500px] h-[500px]",
+  pulseCard: "m-5 relative bg-indigo-900 rounded-xl w-[500px] h-[500px]",
 };

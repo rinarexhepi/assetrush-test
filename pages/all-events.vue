@@ -1,6 +1,6 @@
 <template>
   testing template
-  <Headline level="h1" headingVariant="heading" text="The Next Chapter" />
+  <!-- <Headline level="h1" headingVariant="heading" text="The Next Chapter" />
   <Headline
     level="h4"
     headingVariant="subtitles"
@@ -26,7 +26,7 @@
     text="«How Web 3.0 will impact our collective financial future»"
   />
   <Headline level="h6" headingVariant="pastEventsDate" text="June 15th, 2022" />
-  <Headline level="h6" headingVariant="pulseDate" text="2023-02-15" />
+  <Headline level="h6" headingVariant="pulseDate" text="2023-02-15" /> -->
 
   <div class="flex flex-row">
     <CardTypePastEvent
@@ -35,6 +35,26 @@
       date="July 15th, 2022"
     >
     </CardTypePastEvent>
+    <CardTypePastEvent
+      variant="pastEvents"
+      shortDescription="Asset Rush x Metaverse"
+      date="July 15th, 2022"
+    >
+    </CardTypePastEvent>
+    <CardTypePastEvent
+      variant="pastEvents"
+      shortDescription="Asset Rush x Metaverse"
+      date="July 15th, 2022"
+    >
+    </CardTypePastEvent>
+  </div>
+
+  <div>
+    <CardTypePulseCard
+      variant="pulseCard"
+      shortDescription="Build your actively managed certificate"
+      date="2023-02-15"
+    ></CardTypePulseCard>
   </div>
 
   <Grids gridVariant="fullBleed">
