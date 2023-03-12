@@ -28,7 +28,7 @@
   <Headline level="h6" headingVariant="pastEventsDate" text="June 15th, 2022" />
   <Headline level="h6" headingVariant="pulseDate" text="2023-02-15" /> -->
 
-  <div class="flex flex-row">
+  <div class="flex lg:flex-row flex-col items-center">
     <CardTypePastEvent
       variant="pastEvents"
       shortDescription="Asset Rush x Metaverse"
@@ -49,7 +49,12 @@
     </CardTypePastEvent>
   </div>
 
-  <div>
+  <div class="flex lg:flex-row flex-col items-center">
+    <CardTypePulseCard
+      variant="pulseCard"
+      shortDescription="Build your actively managed certificate"
+      date="2023-02-15"
+    ></CardTypePulseCard>
     <CardTypePulseCard
       variant="pulseCard"
       shortDescription="Build your actively managed certificate"

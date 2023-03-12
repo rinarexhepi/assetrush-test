@@ -1,13 +1,15 @@
 <template>
   <div :class="selectedVariant">
-    <img
-      class="rounded-xl"
-      src="~/assets/img/banking.jpeg"
-      alt="image"
-      loading="lazy"
-    />
+    <div class="flex-1">
+      <img
+        class="rounded-xl max-h-[250px] w-full"
+        src="~/assets/img/banking.jpeg"
+        alt="image"
+        loading="lazy"
+      />
+    </div>
     <div
-      class="p-4 flex flex-col justify-between gap-7 relative m-6 lg:h-[150px] md:h-[150px] sm:h-[120px] h-[100px]"
+      class="p-4 flex flex-col flex-1 justify-between gap-7 relative m-6 lg:h-[150px] md:h-[150px] sm:h-[120px] h-[100px]"
     >
       <p class="lg:text-3xl text-2xl text-white font-semibold ">
         {{ shortDescription }}
