@@ -11,4 +11,5 @@ export const variantClasses = {
     "lg:text-4xl text-3xl font-gtplanar font-bold text-gray-400 border-b-2 border-white w-max pb-2 ",
   pulseDate: "text-2xl font-gtplanar font-bold text-gray-400 font-bold ",
   footerText: "text-lg text-white",
+  ecosystem: "text-6xl font-gtplanar font-bold text-white ",
 };

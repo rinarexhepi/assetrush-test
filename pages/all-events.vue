@@ -180,6 +180,12 @@
         </CardTypeEpisodeCard>
       </li>
     </BaseSlider>
+    <div>
+      <CardTypeEcosystemCard
+        title="Join the ecosystem"
+        shortDescription="Innovate with us"
+      />
+    </div>
 
     <Transition>
       <Modal

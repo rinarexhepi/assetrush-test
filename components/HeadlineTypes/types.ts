@@ -8,6 +8,7 @@ const headlineVariants = [
   "pastEventsDate",
   "pulseDate",
   "footerText",
+  "ecosystem",
 ] as const;
 const levels = ["h1", "h2", "h3", "h4", "h5", "h6"] as const;
 
