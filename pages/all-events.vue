@@ -1,32 +1,32 @@
 <template>
   testing template
-  <!-- <Headline level="h1" headingVariant="heading" text="The Next Chapter" />
-  <Headline
-    level="h4"
-    headingVariant="subtitles"
-    text="Creating the future of finance"
-  />
-  <Headline level="h2" headingVariant="subheading" text="Latest Event" />
-  <Headline
-    level="h3"
-    headingVariant="videoCardText"
-    text="
-                  «Banks have shied away from this opportunity.»
-                "
-  />
-  <Headline
-    level="h4"
-    headingVariant="pastEventsCard"
-    text="AssetRush x Metaverse"
-  />
+  <div class="bg-primary">
+    <Headline level="h1" headingVariant="heading" text="The Next Chapter" />
+    <Headline
+      level="h4"
+      headingVariant="subtitles"
+      text="Creating the future of finance"
+    />
+    <Headline level="h2" headingVariant="subheading" text="Latest Event" />
+    <Headline
+      level="h3"
+      headingVariant="videoCardText"
+      text="«Banks have shied away from this opportunity.»"
+    />
+    <Headline headingVariant="pastEventsCard" text="AssetRush x Metaverse" />
 
-  <Headline
-    level="h5"
-    headingVariant="pastARPresenters"
-    text="«How Web 3.0 will impact our collective financial future»"
-  />
-  <Headline level="h6" headingVariant="pastEventsDate" text="June 15th, 2022" />
-  <Headline level="h6" headingVariant="pulseDate" text="2023-02-15" /> -->
+    <Headline
+      level="h5"
+      headingVariant="pastARPresenters"
+      text="«How Web 3.0 will impact our collective financial future»"
+    />
+    <Headline
+      level="h6"
+      headingVariant="pastEventsDate"
+      text="June 15th, 2022"
+    />
+    <Headline level="h6" headingVariant="pulseDate" text="2023-02-15" />
+  </div>
 
   <div class="flex lg:flex-row flex-col items-center">
     <CardTypePastEvent

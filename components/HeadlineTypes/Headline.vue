@@ -1,6 +1,7 @@
 <template>
   <Component :is="level" :class="selectedHeadlineVariant">
     <slot></slot>
+    {{ text }}
   </Component>
 </template>
 <script lang="ts">
