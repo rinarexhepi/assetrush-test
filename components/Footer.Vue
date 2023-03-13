@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex flex-col items-center gap-6 lg:px-96 md:px-36 px-20 bg-primary"
+    class="flex flex-col items-center gap-6 xl:px-96 md:px-36 px-20 bg-primary"
   >
     <div class="flex lg:flex-row flex-col w-full justify-around my-10 gap-16">
       <div class="flex flex-col flex-1 gap-8">
@@ -41,7 +41,7 @@
     </div>
     <div class="text-white flex lg:flex-row flex-col lg:gap-8 w-full py-5">
       <div class="lg:w-1/5 w-full float-left">
-        <ul class="flex flex-col lg:gap-2 gap-5">
+        <ul class="flex flex-col lg:gap-2 gap-5 w-auto">
           <li>
             <img src="~/assets/img/logo-full.png" alt="" />
           </li>
@@ -57,14 +57,14 @@
           </li>
         </ul>
       </div>
-      <div class="lg:w-1/5">
+      <div class="">
         <ul class="flex lg:flex-col ">
           <li>
             <NuxtLink to="">Pulse</NuxtLink>
           </li>
         </ul>
       </div>
-      <div class="lg:w-1/5">
+      <div class="">
         <ul class="flex lg:flex-col">
           <li>
             <NuxtLink to="">Events</NuxtLink>
@@ -74,7 +74,7 @@
           </li>
         </ul>
       </div>
-      <div class="lg:w-1/5">
+      <div class="">
         <ul>
           <li class="flex lg:flex-col">
             <NuxtLink to="">About Us</NuxtLink>
@@ -90,7 +90,7 @@
       <div
         class="relative bg-gray-900 bg-opacity-40 items-center w-[200px] h-full py-5 px-7 rounded-full"
       >
-        <ul class="flex lg:flex-row gap-3">
+        <ul class="flex lg:flex-row items-center gap-3">
           <li>
             <NuxtLink to="">
               <img

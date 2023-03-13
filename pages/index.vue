@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-custom-gradient h-screen">
+  <div class="bg-slate-500 h-screen">
     <h1 class="text-white text-lg">------main template------</h1>
     <div class="flex flex-row gap-4 justify-center items-center">
       <div>
