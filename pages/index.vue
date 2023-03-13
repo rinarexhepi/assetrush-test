@@ -37,9 +37,9 @@
       </div>
     </section>
     <section>
-      <div class="relative w-full h-1/2">
+      <div class="relative w-full h-min">
         <img
-          class="absolute w-full"
+          class="absolute w-full h-[550px]"
           src="~/assets/img/Geneva_Key-Art.png"
           alt=""
         />
