@@ -1,6 +1,8 @@
 <template>
-  <div class="flex flex-col items-center gap-6 px-56 bg-primary">
-    <div class="flex flex-row w-full justify-around my-10 gap-16">
+  <div
+    class="flex flex-col items-center gap-6 lg:px-96 md:px-36 px-20 bg-primary"
+  >
+    <div class="flex lg:flex-row flex-col w-full justify-around my-10 gap-16">
       <div class="flex flex-col flex-1 gap-8">
         <div class=" flex flex-col">
           <Headline
@@ -12,7 +14,7 @@
             stay in the loop with our monthly newsletter
           </p>
         </div>
-        <div class="flex flex-row">
+        <div class="flex lg:flex-row flex-col gap-2 sm:px-10 ">
           <input
             type="text"
             placeholder="Your Email Address"
@@ -23,7 +25,7 @@
           <StrapiButton buttonVariant="primary" text="Subscribe" />
         </div>
       </div>
-      <div class="flex flex-row flex-1 items-center gap-4">
+      <div class="flex lg:flex-row flex-col flex-1 items-center gap-4">
         <Headline
           class="flex-1"
           level="h5"
@@ -31,15 +33,15 @@
           text="Asset Rush on Youtube"
         />
         <img
-          class="flex-1 flex w-2 h10"
+          class="flex-1 flex shrink-0  h-[65px]"
           src="~/assets/img/youtube.png"
           alt="youtube"
         />
       </div>
     </div>
-    <div class="text-white flex flex-row gap-8 w-full">
-      <div class="w-1/5 float-left">
-        <ul class="flex flex-col gap-2">
+    <div class="text-white flex lg:flex-row flex-col lg:gap-8 w-full py-5">
+      <div class="lg:w-1/5 w-full float-left">
+        <ul class="flex flex-col lg:gap-2 gap-5">
           <li>
             <img src="~/assets/img/logo-full.png" alt="" />
           </li>
@@ -55,15 +57,15 @@
           </li>
         </ul>
       </div>
-      <div class="w-1/5">
-        <ul class="flex flex-col ">
+      <div class="lg:w-1/5">
+        <ul class="flex lg:flex-col ">
           <li>
             <NuxtLink to="">Pulse</NuxtLink>
           </li>
         </ul>
       </div>
-      <div class="w-1/5">
-        <ul class="flex flex-col">
+      <div class="lg:w-1/5">
+        <ul class="flex lg:flex-col">
           <li>
             <NuxtLink to="">Events</NuxtLink>
           </li>
@@ -72,9 +74,9 @@
           </li>
         </ul>
       </div>
-      <div class="w-1/5">
+      <div class="lg:w-1/5">
         <ul>
-          <li class="flex flex-col">
+          <li class="flex lg:flex-col">
             <NuxtLink to="">About Us</NuxtLink>
           </li>
           <li>
@@ -85,26 +87,44 @@
           </li>
         </ul>
       </div>
-      <div class="bg-gray-900 bg-opacity-40 w-1/5 h-full  p-7 rounded-full">
-        <ul class="flex flex-row gap-3">
+      <div
+        class="relative bg-gray-900 bg-opacity-40 items-center w-[200px] h-full py-5 px-7 rounded-full"
+      >
+        <ul class="flex lg:flex-row gap-3">
           <li>
             <NuxtLink to="">
-              <img src="~/assets/img/icon-social--envelope.png" alt="" />
+              <img
+                class="max-w-[25px]"
+                src="~/assets/img/icon-social--envelope.png"
+                alt=""
+              />
             </NuxtLink>
           </li>
           <li>
             <NuxtLink to="">
-              <img src="~/assets/img/icon-social--map.png" alt="" />
+              <img
+                class="max-w-[25px]"
+                src="~/assets/img/icon-social--map.png"
+                alt=""
+              />
             </NuxtLink>
           </li>
           <li>
             <NuxtLink to="">
-              <img src="~/assets/img/icon-social--linkedin.png" alt="" />
+              <img
+                class="max-w-[25px]"
+                src="~/assets/img/icon-social--linkedin.png"
+                alt=""
+              />
             </NuxtLink>
           </li>
           <li>
             <NuxtLink to="">
-              <img src="~/assets/img/icon-social--youtube.png" alt="" />
+              <img
+                class="max-w-[25px]"
+                src="~/assets/img/icon-social--youtube.png"
+                alt=""
+              />
             </NuxtLink>
           </li>
         </ul>
