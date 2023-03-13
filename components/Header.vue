@@ -41,7 +41,7 @@
     </div>
   </div>
   <div
-    class="fixed xl:hidden md:hidden flex h-full w-full bg-custom-gradient"
+    class="fixed z-40 xl:hidden md:hidden flex h-full w-full bg-custom-gradient"
     v-show="isActive"
   >
     <span class="fixed w-full h-full"></span>

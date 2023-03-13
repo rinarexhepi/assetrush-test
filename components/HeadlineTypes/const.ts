@@ -1,5 +1,5 @@
 export const variantClasses = {
-  heading: "text-[80px] font-bold font-gtplanar text-white text-center",
+  heading: "text-[80px] font-extrabold font-gtplanar text-white text-center",
   subheading:
     "text-[56px] leading-relaxed font-medium text-white  font-gtplanar",
   subtitles: "text-[24px] font-gtplanar text-white ",

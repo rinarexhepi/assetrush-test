@@ -1,23 +1,50 @@
 <template>
-  <div class="bg-slate-500 h-screen">
-    <h1 class="text-white text-lg">------main template------</h1>
-    <div class="flex flex-row gap-4 justify-center items-center">
-      <div>
-        <!-- StrapiButton renders button, NuxtLink for internal and a-link for external links -->
-        <!-- StrapiButton has variants for designs: primary, secondary, third -->
-        <!-- StrapiButton has reverse prop for switching position of icon and text -->
-
-        <!-- <StrapiButton
-          :variants="[
-            { text: 'All Events', value: '/all-events' },
-            { text: 'Upcoming Events', value: '/upcoming-events' },
-            { text: 'Past Events', value: '/past-events' },
-          ]"
-        /> -->
+  <div class="bg-primary h-screen relative">
+    <section>
+      <div
+        class="absolute flex flex-col justify-between gap-6 items-center mt-[200px] w-full"
+      >
+        <Headline
+          level="h4"
+          headingVariant="subtitles"
+          text="Creating the future of finance"
+        />
+        <Headline level="h1" headingVariant="heading" text="The Next Chapter" />
+        <StrapiButton
+          buttonVariant="secondary"
+          class=" uppercase px-5 py-3 font-semibold w-max"
+          text="Intro"
+          :reverse="true"
+          :iconBackground="true"
+          icon="https://static1.squarespace.com/static/6278bb92688b50292499e115/t/6278e1b2b3b9d8705d65d301/1652089266787/icon--video-play+%281%29.png"
+          alt="play"
+          loading="lazy"
+          @click="$emit('openModal')"
+        />
       </div>
-      <!-- </div> -->
-    </div>
-    <!-- </Grids>  -->
+    </section>
+    <section>
+      <BaseSlider></BaseSlider>
+    </section>
+    <section>
+      <div class="relative">
+        <Headline
+          level="h2"
+          headingVariant="subheading"
+          text="Latest Event"
+          class="absolute"
+        />
+      </div>
+    </section>
+    <section>
+      <div class="relative w-full h-1/2">
+        <img
+          class="absolute w-full"
+          src="~/assets/img/Geneva_Key-Art.png"
+          alt=""
+        />
+      </div>
+    </section>
   </div>
 </template>
 <script lang="ts">
