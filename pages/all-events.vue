@@ -27,16 +27,6 @@
     />
     <Headline level="h6" headingVariant="pulseDate" text="2023-02-15" />
   </div>
-  <!-- <div>
-    <EventsLatest
-      posterImage="~/assets/img/join-ecosystem.jpeg"
-      headline="Latest Event"
-      variant="events"
-      title="AssetRush x Geneva 2023"
-      shortDescription="Wednesday, 1 March 2023"
-      :button="true"
-    />
-  </div> -->
   <div>
     <CardTypeBecomeCard
       subtitle="Become a"
@@ -55,39 +45,15 @@
     />
   </div>
 
-  <!-- <div class="flex lg:flex-row flex-col items-center">
-    <CardTypePastEvent
-      variant="pastEvents"
-      shortDescription="Asset Rush x Metaverse"
-      date="July 15th, 2022"
-    >
-    </CardTypePastEvent>
-    <CardTypePastEvent
-      variant="pastEvents"
-      shortDescription="Asset Rush x Metaverse"
-      date="July 15th, 2022"
-    >
-    </CardTypePastEvent>
-    <CardTypePastEvent
-      variant="pastEvents"
-      shortDescription="Asset Rush x Metaverse"
-      date="July 15th, 2022"
-    >
-    </CardTypePastEvent>
-  </div> -->
-
-  <!-- <div class="flex lg:flex-row flex-col items-center">
-    <CardTypePulseCard
-      variant="pulseCard"
-      shortDescription="Build your actively managed certificate"
-      date="2023-02-15"
-    ></CardTypePulseCard>
-    <CardTypePulseCard
-      variant="pulseCard"
-      shortDescription="Build your actively managed certificate"
-      date="2023-02-15"
-    ></CardTypePulseCard>
-  </div> -->
+  <div>
+    <CardTypeSingleTalk
+      variant="singleTalk"
+      subtitle="AssetRush"
+      title="TALK"
+      posterImage="~/assets/img/elonmusk.jpeg"
+      shortDescription="Meet the innovators and pioneers"
+    />
+  </div>
 
   <Grids gridVariant="fullBleed">
     <h2>full-bleed</h2>
@@ -131,117 +97,6 @@
       <slot />
     </div>
   </Grids>
-
-  <div class="w-screen overflow-hidden">
-    <BaseSlider>
-      <li class="splide__slide bg-primary">
-        <CardTypeVideoCard
-          variant="pastPresenters"
-          number="1"
-          shortDescription="How web 3.0 will impact our collective financial future"
-          @openModal="openModal"
-        >
-        </CardTypeVideoCard>
-      </li>
-      <li class="splide__slide bg-primary">
-        <CardTypeVideoCard
-          variant="pastPresenters"
-          number="2"
-          shortDescription="How web 3.0 will impact our collective financial future"
-          @openModal="openModal"
-        >
-        </CardTypeVideoCard>
-      </li>
-      <li class="splide__slide bg-primary">
-        <CardTypeVideoCard
-          variant="pastPresenters"
-          number="3"
-          shortDescription="How web 3.0 will impact our collective financial future"
-          @openModal="openModal"
-        >
-        </CardTypeVideoCard>
-      </li>
-      <li class="splide__slide bg-primary">
-        <CardTypeVideoCard
-          variant="pastPresenters"
-          number="4"
-          shortDescription="How web 3.0 will impact our collective financial future"
-          @openModal="openModal"
-        >
-        </CardTypeVideoCard>
-      </li>
-    </BaseSlider>
-  </div>
-  <div class="w-screen overflow-hidden">
-    <BaseSlider>
-      <li class="splide__slide">
-        <CardTypeEpisodeCard
-          variant="episodesCard"
-          episodeNumber=""
-          author="name"
-          shortDescription="Banks have shied away from this opportunity"
-          :hasOverlay="true"
-          @openModal="openModal"
-        >
-        </CardTypeEpisodeCard>
-      </li>
-      <li class="splide__slide">
-        <CardTypeEpisodeCard
-          variant="episodesCard"
-          episodeNumber="2"
-          author="name"
-          shortDescription="Banks have shied away from this opportunity"
-          :hasOverlay="true"
-          @openModal="openModal"
-        >
-        </CardTypeEpisodeCard>
-      </li>
-      <li class="splide__slide">
-        <CardTypeEpisodeCard
-          variant="episodesCard"
-          episodeNumber="2"
-          author="name"
-          shortDescription="Banks have shied away from this opportunity"
-          :hasOverlay="true"
-          @openModal="openModal"
-        >
-        </CardTypeEpisodeCard>
-      </li>
-    </BaseSlider>
-    <div>
-      <CardTypeEcosystemCard
-        title="Join the ecosystem"
-        shortDescription="Innovate with us"
-      />
-    </div>
-
-    <Transition>
-      <Modal
-        :showModal="shouldRenderModal"
-        @closeModal="shouldRenderModal = false"
-        class=" fixed inset-0 align-center"
-      >
-        <div class="flex justify-center flex-row ">
-          <div class="absolute z-10 mt-60">
-            <h1 class="text-3xl">This is a title</h1>
-            <p class="text-lgs">This is a description</p>
-            <NuxtLink
-              class="border absolute bg-slate-900 p-3 rounded-xl"
-              href="join"
-            >
-              <span>index page</span>
-            </NuxtLink>
-          </div>
-
-          <VideoTestimonials
-            :options="{ responsive: true }"
-            class="m-16 w-full z-0 "
-            video-url="https://vimeo.com/444369368"
-          />
-        </div>
-      </Modal>
-    </Transition>
-  </div>
 </template>
 <script lang="ts">
 import AutoplaySlider from "~/components/BaseSlider/AutoplaySlider.vue";
