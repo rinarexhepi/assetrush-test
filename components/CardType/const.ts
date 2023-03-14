@@ -8,7 +8,7 @@ export const variantClasses = {
   pulseCard:
     "m-5 flex flex-col relative bg-indigo-900 rounded-xl w-[500px] h-[500px]",
   talkCard:
-    "bg-primary hover:bg-indigo-800 relative flex lg:flex-row flex-col-reverse w-full h-full rounded-xl",
+    "bg-secondary hover:bg-indigo-800 relative flex lg:flex-row flex-col-reverse w-full h-full rounded-xl",
   becomeCard:
     "relative flex flex-col justify-between gap-16 bg-white rounded-xl p-10 border-2 border-indigo-800 my-6",
   singleTalk: "bg-gradient-to-b from-indigo-700 to-pink-500 rounded-2xl px-20",
