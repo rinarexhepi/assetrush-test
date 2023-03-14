@@ -54,7 +54,7 @@
     </section>
     <section class="relative py-6">
       <EventsLatest
-        posterImage="~/assets/img/join-ecosystem.jpeg"
+        posterImage="~/assets/img/Geneva_Key-Art.png"
         headline="Latest Event"
         variant="events"
         title="AssetRush x Geneva 2023"
@@ -69,7 +69,7 @@
     </section>
     <section class="relative py-6">
       <EventsLatest
-        posterImage="~/assets/img/join-ecosystem.jpeg"
+        posterImage="~/assets/img/Geneva_Key-Art.png"
         headline="Latest Event"
         variant="events"
         title="AssetRush x Geneva 2023"
