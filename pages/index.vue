@@ -1,6 +1,6 @@
 <template>
   <div class="bg-primary h-screen relative">
-    <section>
+    <!-- <section>
       <div
         class="absolute flex flex-col justify-between gap-6 items-center mt-[200px] w-full"
       >
@@ -44,7 +44,7 @@
           alt=""
         />
       </div>
-    </section>
+    </section> -->
   </div>
 </template>
 <script lang="ts">
