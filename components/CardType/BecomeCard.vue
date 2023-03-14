@@ -11,9 +11,13 @@
             {{ title }}
           </Headline>
         </div>
-        <div><img src="" alt="" /> -</div>
+        <div>
+          <button @click="toggleBurger()">
+            +
+          </button>
+        </div>
       </div>
-      <div class="flex flex-row gap-4">
+      <div class="flex flex-row gap-4" v-show="isActive">
         <div>
           <Headline headingVariant="becomeSubheading">
             Selected innovators can freely present their ideas and share their
@@ -63,10 +67,12 @@ export default defineComponent({
   },
   setup(props) {
     const selectedVariant = computed(() => variantClasses[props.variant]);
+    const isActive = ref(false);
 
-    return {
-      selectedVariant,
-    };
+    function toggleBurger() {
+      isActive.value = !isActive.value;
+    }
+    return { selectedVariant, toggleBurger, isActive };
   },
 });
 </script>
