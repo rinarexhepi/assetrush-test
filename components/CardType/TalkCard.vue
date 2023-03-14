@@ -5,7 +5,7 @@
         <div :class="selectedVariant">
           <template v-if="hasOverlay">
             <div class="p-4 flex lg:flex-col flex-1">
-              <div class="flex flex-col justify-between lg:gap-4">
+              <div class="flex flex-col justify-between lg:gap-4 p-3">
                 <div class="z-20 py-4 flex flex-col lg:gap-4">
                   <h3 class="uppercase text-xl  text-white">
                     Episode {{ episodeNumber }}
