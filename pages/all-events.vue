@@ -27,27 +27,37 @@
     />
     <Headline level="h6" headingVariant="pulseDate" text="2023-02-15" />
   </div>
-
-  <div class="flex lg:flex-row flex-col items-center">
-    <CardTypePastEvent
-      variant="pastEvents"
-      shortDescription="Asset Rush x Metaverse"
-      date="July 15th, 2022"
-    >
-    </CardTypePastEvent>
-    <CardTypePastEvent
-      variant="pastEvents"
-      shortDescription="Asset Rush x Metaverse"
-      date="July 15th, 2022"
-    >
-    </CardTypePastEvent>
-    <CardTypePastEvent
-      variant="pastEvents"
-      shortDescription="Asset Rush x Metaverse"
-      date="July 15th, 2022"
-    >
-    </CardTypePastEvent>
+  <div>
+    <EventsLatest
+      posterImage="~/assets/img/join-ecosystem.jpeg"
+      headline="Latest Event"
+      variant="events"
+      title="AssetRush x Geneva 2023"
+      shortDescription="Wednesday, 1 March 2023"
+      :button="true"
+    />
   </div>
+
+  <!-- <div class="flex lg:flex-row flex-col items-center">
+    <CardTypePastEvent
+      variant="pastEvents"
+      shortDescription="Asset Rush x Metaverse"
+      date="July 15th, 2022"
+    >
+    </CardTypePastEvent>
+    <CardTypePastEvent
+      variant="pastEvents"
+      shortDescription="Asset Rush x Metaverse"
+      date="July 15th, 2022"
+    >
+    </CardTypePastEvent>
+    <CardTypePastEvent
+      variant="pastEvents"
+      shortDescription="Asset Rush x Metaverse"
+      date="July 15th, 2022"
+    >
+    </CardTypePastEvent>
+  </div> -->
 
   <div class="flex lg:flex-row flex-col items-center">
     <CardTypePulseCard
