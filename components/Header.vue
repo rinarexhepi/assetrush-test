@@ -11,8 +11,9 @@
         </div>
       </button>
     </div>
-    <div class="sm:flex">
+    <div class="sm:flex flex-col h-max">
       <img src="~/assets/img/ArLogo.png" alt="" />
+      <span class="text-white text-[10px]">Powered by GenTwo</span>
     </div>
     <div class="flex lg:flex-row justify-around" v-show="!isActive">
       <StrapiButton
