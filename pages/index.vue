@@ -143,7 +143,7 @@
     </section>
     <section class="relative py-6">
       <div class="w-screen overflow-hidden my-8">
-        <div class="flex flex-row w-full">
+        <div class="flex lg:flex-row flex-col w-full">
           <li class="splide__slide w-1/4">
             <CardTypePastEvent
               variant="pastEvents"
