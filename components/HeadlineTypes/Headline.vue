@@ -1,14 +1,20 @@
 <template>
-  <Component :is="level" :class="selectedHeadlineVariant">
+  <Component
+    :is="level"
+    :class="selectedHeadlineVariant"
+    :titleColor="selectedColor"
+  >
     <slot></slot>
-    {{ text }}
   </Component>
 </template>
 <script lang="ts">
-import { variantClasses } from "../HeadlineTypes/const";
+import { variantClasses, colorClasses } from "../HeadlineTypes/const";
 import { PropType } from "vue";
-import { HeadlineVariant } from "~/components/HeadlineTypes/types.ts";
-import { LevelsVariant } from "~/components/HeadlineTypes/types.ts";
+import {
+  HeadlineVariant,
+  LevelsVariant,
+  Color,
+} from "~/components/HeadlineTypes/types.ts";
 export default defineComponent({
   props: {
     text: {
@@ -23,14 +29,20 @@ export default defineComponent({
       type: String as PropType<HeadlineVariant>,
       default: "",
     },
+    titleColor: {
+      type: String as PropType<Color>,
+      default: "",
+    },
   },
   setup(props) {
+    const selectedColor = computed(() => colorClasses[props.titleColor]);
     const selectedHeadlineVariant = computed(
       () => variantClasses[props.headingVariant]
     );
 
     return {
       selectedHeadlineVariant,
+      selectedColor,
     };
   },
 });

@@ -5,6 +5,6 @@ const variants = [
   "pastEvents",
   "pulseCard",
   "talkCard",
+  "becomeCard",
 ] as const;
-
 export type Variant = typeof variants[number];

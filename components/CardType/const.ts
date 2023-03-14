@@ -9,4 +9,6 @@ export const variantClasses = {
     "m-5 flex flex-col relative bg-indigo-900 rounded-xl w-[500px] h-[500px]",
   talkCard:
     "bg-primary hover:bg-indigo-800 relative flex lg:flex-row flex-col-reverse w-full h-full rounded-xl",
+  becomeCard:
+    "relative flex flex-col justify-between gap-16 bg-white rounded-xl p-10 border-2 border-indigo-800",
 };

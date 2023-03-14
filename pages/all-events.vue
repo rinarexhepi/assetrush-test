@@ -37,7 +37,14 @@
       :button="true"
     />
   </div> -->
-
+  <div>
+    <CardTypeBecomeCard
+      subtitle="Become a"
+      variant="becomeCard"
+      title="Publisher"
+      shortDescription="Publish and promote your professional expertise and insight with our audience and become a thought leader."
+    />
+  </div>
   <div>
     <CardTypeTalkCard
       variant="talkCard"
@@ -236,11 +243,13 @@
   </div>
 </template>
 <script lang="ts">
+import BecomeCard from "~/components/CardType/BecomeCard.vue";
 import Modal from "~/components/VueFinalModal/Modal.vue";
 
 export default {
   components: {
     Modal,
+    BecomeCard,
   },
   setup() {
     const shouldRenderModal = ref(false);
