@@ -18,7 +18,8 @@ module.exports = {
         abril: ["Abril-Fatface"],
       },
       colors: {
-        primary: "#4E30A0",
+        primary: "#121327",
+        secondary: "#4e30a0;",
       },
       backgroundImage: (theme) => ({
         "custom-gradient":

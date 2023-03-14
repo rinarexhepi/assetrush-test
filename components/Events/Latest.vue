@@ -5,7 +5,7 @@
       src="~/assets/img/join-ecosystem.jpeg"
     />
     <div
-      class="absolute top-0 flex flex-col justify-center gap-6 items-left w-max p-8"
+      class="absolute top-0 flex flex-col justify-center gap-6 items-left w-max p-8 ml-16"
     >
       <Headline level="h2" headingVariant="ecosystem">
         {{ title }}

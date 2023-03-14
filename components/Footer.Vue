@@ -1,15 +1,13 @@
 <template>
   <div
-    class="flex flex-col items-center gap-6 lg:px-96 md:px-36 px-20 bg-primary"
+    class="relative flex flex-col items-center gap-6 lg:px-96 md:px-36 px-20 bg-primary"
   >
     <div class="flex lg:flex-row flex-col w-full justify-around my-10 gap-16">
       <div class="flex flex-col flex-1 gap-8">
         <div class=" flex flex-col">
-          <Headline
-            level="h6"
-            headingVariant="subtitles"
-            text="AssetRush pulse newsletter"
-          />
+          <Headline level="h6" headingVariant="subtitles"
+            >AssetRush pulse newsletter</Headline
+          >
           <p class="text-md text-white">
             stay in the loop with our monthly newsletter
           </p>

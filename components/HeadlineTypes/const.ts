@@ -15,7 +15,7 @@ export const variantClasses = {
     "xl:text-6xl lg:text-5xl text-3xl font-gtplanar font-bold text-white ",
   becomeTitle: "text-8xl",
   becomeSubheading:
-    "text-[24px] leading-relaxed font-medium text-purple-900  font-gtplanar",
+    "text-[24px] leading-relaxed font-medium text-gray-600  font-gtplanar",
 };
 
 export const colorClasses = {

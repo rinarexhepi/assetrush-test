@@ -1,34 +1,36 @@
 <template>
-  <div :class="selectedVariant">
-    <div class="flex-1">
-      <img
-        class="rounded-xl max-h-[250px] w-full"
-        src="~/assets/img/banking.jpeg"
-        alt="image"
-        loading="lazy"
-      />
-    </div>
-    <div
-      class="p-4 flex flex-col flex-1 justify-between gap-7 relative m-6 lg:h-[150px] md:h-[150px] sm:h-[120px] h-[100px]"
-    >
-      <div v-if="buttonLabel">
-        <ul>
-          <li
-            class="text-slate-400 border-2 w-max border-slate-400 rounded-full px-2"
-          >
-            {{ buttonLabel }}
-          </li>
-        </ul>
+  <Grids gridVariant="guttersOnly">
+    <div :class="selectedVariant">
+      <div class="flex-1">
+        <img
+          class="rounded-xl max-h-[250px] w-full"
+          src="~/assets/img/banking.jpeg"
+          alt="image"
+          loading="lazy"
+        />
       </div>
-      <p class="lg:text-3xl text-2xl text-white font-semibold ">
-        {{ shortDescription }}
-      </p>
-      <span class="text-gray-300 font-gtplanar font-2xl">
-        {{ date }}
-      </span>
+      <div
+        class="p-4 flex flex-col flex-1 justify-between gap-7 relative m-6 lg:h-[150px] md:h-[150px] sm:h-[120px] h-[100px]"
+      >
+        <div v-if="buttonLabel">
+          <ul>
+            <li
+              class="text-slate-400 border-2 w-max border-slate-400 rounded-full px-2"
+            >
+              {{ buttonLabel }}
+            </li>
+          </ul>
+        </div>
+        <p class="lg:text-3xl text-2xl text-white font-semibold ">
+          {{ shortDescription }}
+        </p>
+        <span class="text-gray-300 font-gtplanar font-2xl">
+          {{ date }}
+        </span>
+      </div>
+      <slot :class="variant" />
     </div>
-    <slot :class="variant" />
-  </div>
+  </Grids>
 </template>
 
 <script lang="ts">

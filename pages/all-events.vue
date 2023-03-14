@@ -171,7 +171,8 @@
         </CardTypeVideoCard>
       </li>
     </BaseSlider>
-
+  </div>
+  <div class="w-screen overflow-hidden">
     <BaseSlider>
       <li class="splide__slide">
         <CardTypeEpisodeCard
@@ -243,6 +244,7 @@
   </div>
 </template>
 <script lang="ts">
+import AutoplaySlider from "~/components/BaseSlider/AutoplaySlider.vue";
 import BecomeCard from "~/components/CardType/BecomeCard.vue";
 import Modal from "~/components/VueFinalModal/Modal.vue";
 
@@ -250,6 +252,7 @@ export default {
   components: {
     Modal,
     BecomeCard,
+    AutoplaySlider,
   },
   setup() {
     const shouldRenderModal = ref(false);

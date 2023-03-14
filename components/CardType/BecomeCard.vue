@@ -15,12 +15,20 @@
             </div>
             <div>
               <button @click="toggleBurger()">
-                +
+                <span
+                  v-if="isActive"
+                  class="text-6xl font-light text-indigo-900"
+                >
+                  +
+                </span>
+                <span v-else class="text-6xl font-light text-indigo-900">
+                  -
+                </span>
               </button>
             </div>
           </div>
           <div class="flex flex-row gap-4" v-show="isActive">
-            <div>
+            <div class="pr-12">
               <Headline headingVariant="becomeSubheading">
                 Selected innovators can freely present their ideas and share
                 their aspirations to an exclusive audience of investors and
