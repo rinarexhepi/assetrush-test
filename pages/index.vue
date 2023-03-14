@@ -192,6 +192,37 @@
           />
         </div>
       </div>
+      <div class="relative py-4 pl-20">
+        <Headline level="h2" headingVariant="ecosystem">
+          Pulse
+        </Headline>
+      </div>
+      <div class="flex flex-col items-center">
+        <div class="flex flex-row">
+          <CardTypePulseCard
+            variant="pulseCard"
+            shortDescription="Build your actively managed certificate"
+            date="2023-02-15"
+          ></CardTypePulseCard>
+          <CardTypePulseCard
+            variant="pulseCard"
+            shortDescription="Build your actively managed certificate"
+            date="2023-02-15"
+          ></CardTypePulseCard>
+        </div>
+        <div class="flex flex-row">
+          <CardTypePulseCard
+            variant="pulseCard"
+            shortDescription="Build your actively managed certificate"
+            date="2023-02-15"
+          ></CardTypePulseCard>
+          <CardTypePulseCard
+            variant="pulseCard"
+            shortDescription="Build your actively managed certificate"
+            date="2023-02-15"
+          ></CardTypePulseCard>
+        </div>
+      </div>
     </section>
     <Transition>
       <Modal
