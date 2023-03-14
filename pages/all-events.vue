@@ -27,7 +27,7 @@
     />
     <Headline level="h6" headingVariant="pulseDate" text="2023-02-15" />
   </div>
-  <div>
+  <!-- <div>
     <EventsLatest
       posterImage="~/assets/img/join-ecosystem.jpeg"
       headline="Latest Event"
@@ -35,6 +35,16 @@
       title="AssetRush x Geneva 2023"
       shortDescription="Wednesday, 1 March 2023"
       :button="true"
+    />
+  </div> -->
+
+  <div>
+    <CardTypeTalkCard
+      variant="talkCard"
+      episodeNumber=""
+      author="name"
+      shortDescription="Banks have shied away from this opportunity"
+      :hasOverlay="true"
     />
   </div>
 
@@ -59,7 +69,7 @@
     </CardTypePastEvent>
   </div> -->
 
-  <div class="flex lg:flex-row flex-col items-center">
+  <!-- <div class="flex lg:flex-row flex-col items-center">
     <CardTypePulseCard
       variant="pulseCard"
       shortDescription="Build your actively managed certificate"
@@ -70,7 +80,7 @@
       shortDescription="Build your actively managed certificate"
       date="2023-02-15"
     ></CardTypePulseCard>
-  </div>
+  </div> -->
 
   <Grids gridVariant="fullBleed">
     <h2>full-bleed</h2>
