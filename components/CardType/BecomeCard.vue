@@ -1,6 +1,6 @@
 <template>
   <Grids gridVariant="standard">
-    <StandardLayout>
+    <StandardSmallLayout>
       <template v-slot:first>
         <div :class="selectedVariant">
           <div class="flex flex-row justify-between">
@@ -39,7 +39,7 @@
           </div>
         </div>
       </template>
-    </StandardLayout>
+    </StandardSmallLayout>
   </Grids>
 </template>
 <script lang="ts">
