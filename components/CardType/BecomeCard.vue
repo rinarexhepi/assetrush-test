@@ -1,41 +1,45 @@
 <template>
-  <Grids gridVariant="guttersOnly">
-    <div :class="selectedVariant">
-      <div class="flex flex-row justify-between">
-        <div class="flex flex-col">
-          <Headline headingVariant="becomeSubheading">
-            {{ subtitle }}
-          </Headline>
+  <Grids gridVariant="standard">
+    <StandardLayout>
+      <template v-slot:first>
+        <div :class="selectedVariant">
+          <div class="flex flex-row justify-between">
+            <div class="flex flex-col">
+              <Headline headingVariant="becomeSubheading">
+                {{ subtitle }}
+              </Headline>
 
-          <Headline headingVariant="becomeTitle" titleColor="darkPurple">
-            {{ title }}
-          </Headline>
+              <Headline headingVariant="becomeTitle" titleColor="darkPurple">
+                {{ title }}
+              </Headline>
+            </div>
+            <div>
+              <button @click="toggleBurger()">
+                +
+              </button>
+            </div>
+          </div>
+          <div class="flex flex-row gap-4" v-show="isActive">
+            <div>
+              <Headline headingVariant="becomeSubheading">
+                Selected innovators can freely present their ideas and share
+                their aspirations to an exclusive audience of investors and
+                market professionals.
+              </Headline>
+            </div>
+            <div>
+              <StrapiButton
+                buttonVariant="secondary"
+                class="uppercase px-5 py-3 font-semibold"
+                text="Enquire"
+                alt="play"
+                loading="lazy"
+              />
+            </div>
+          </div>
         </div>
-        <div>
-          <button @click="toggleBurger()">
-            +
-          </button>
-        </div>
-      </div>
-      <div class="flex flex-row gap-4" v-show="isActive">
-        <div>
-          <Headline headingVariant="becomeSubheading">
-            Selected innovators can freely present their ideas and share their
-            aspirations to an exclusive audience of investors and market
-            professionals.
-          </Headline>
-        </div>
-        <div>
-          <StrapiButton
-            buttonVariant="secondary"
-            class="uppercase px-5 py-3 font-semibold"
-            text="Enquire"
-            alt="play"
-            loading="lazy"
-          />
-        </div>
-      </div>
-    </div>
+      </template>
+    </StandardLayout>
   </Grids>
 </template>
 <script lang="ts">
