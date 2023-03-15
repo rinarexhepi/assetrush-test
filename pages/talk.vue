@@ -71,11 +71,32 @@
           </StandardSmallLayout>
         </Grids>
       </div>
-      <div>
-        <Headline headingVariant="talkParagraphLeft">
-          Episode Guide
-        </Headline>
+      <div class="flex flex-row w-full justify-center py-6">
+        <StrapiButton
+          class="rounded-l-full mx-0.5"
+          buttonVariant="primaryCornered"
+          text="episode guide"
+        />
+        <StrapiButton
+          class="rounded-r-full"
+          buttonVariant="primaryCornered"
+          text="subscribe"
+        />
       </div>
+      <div class="relative">
+        <Grids gridVariant="centered">
+          <StandardLayout>
+            <template v-slot:first>
+              <div class="relative mx-10">
+                <Headline headingVariant="talkParagraphLeft">
+                  Episode Guide
+                </Headline>
+              </div>
+            </template>
+          </StandardLayout>
+        </Grids>
+      </div>
+
       <div class="relative py-8 flex flex-col gap-8">
         <CardTypeTalkCard
           variant="talkCard"
