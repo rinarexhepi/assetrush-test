@@ -23,7 +23,8 @@ module.exports = {
         // primary: "#151935",
         primary: "#150b30",
         secondary: "#4e30a0;",
-        hover: "#150b40",
+        joinBackground: "#091537",
+        hover: "#001b49",
       },
       backgroundImage: (theme) => ({
         "custom-gradient":
