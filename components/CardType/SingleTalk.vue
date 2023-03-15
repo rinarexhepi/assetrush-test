@@ -1,6 +1,6 @@
 <template>
   <Grids gridVariant="centered">
-    <CenteredLayout>
+    <CenteredCardLayout>
       <template v-slot:first>
         <div :class="selectedVariant">
           <div class="m-4 p-4 flex lg:flex-col flex-col-reverse">
@@ -30,7 +30,7 @@
           <slot :class="variant" />
         </div>
       </template>
-    </CenteredLayout>
+    </CenteredCardLayout>
   </Grids>
 </template>
 
