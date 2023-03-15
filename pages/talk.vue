@@ -97,7 +97,7 @@
         </Grids>
       </div>
 
-      <div class="relative py-8 flex flex-col gap-8">
+      <div class="relative py-10 flex flex-col gap-8">
         <CardTypeTalkCard
           variant="talkCard"
           episodeNumber=""
@@ -127,12 +127,14 @@
           :hasOverlay="true"
         />
       </div>
-      <div class="flex flex-row">
-        <CardTypeEcosystemCard
+      <div class="flex flex-row gap-6 justify-center w-full py-10">
+        <CardTypeRowEcosystem
+          class="w-[37%] h-[40%]"
           title="Join the ecosystem"
           shortDescription="Innovate with us"
         />
-        <CardTypeEcosystemCard
+        <CardTypeRowEcosystem
+          class="w-[37%] h-[40%]"
           title="Join the ecosystem"
           shortDescription="Innovate with us"
         />
