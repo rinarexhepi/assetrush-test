@@ -1,5 +1,8 @@
 <template>
-  <Component :is="tag" class="grid col-start-5 col-end-9">
+  <Component
+    :is="tag"
+    class="grid lg:col-start-4 lg:col-end-9 md:col-start-3 md:col-end-9 col-start-1 col-end-13"
+  >
     <div
       class="transparent-scroll m-0 max-w-full shrink-0 overflow-x-auto sm:overflow-visible"
     >

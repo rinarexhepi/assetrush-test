@@ -5,26 +5,22 @@
         <div :class="selectedVariant">
           <div class="m-4 p-4 flex lg:flex-col flex-col-reverse">
             <div class="flex flex-col gap-4 items-center">
-              <div class="flex flex-col">
+              <div class="flex flex-col items-center gap-3">
                 <Headline headingVariant="subheading">
                   {{ subtitle }}
                 </Headline>
-                <Headline headingVariant="heading">
-                  {{ title }}
-                </Headline>
-              </div>
-              <div>
+                <Headline headingVariant="heading"> {{ title }} </Headline>
                 <img
-                  class="rounded-full border-8 border-rounded-full border-pink-800 flex shrink-0"
+                  class="rounded-full lg:h-64 lg:w-64 md:h-64 md:w-64 sm:h-64 sm:w-64 w-40 h-40 border-8 border-rounded-full border-pink-800 flex shrink-0"
                   src="~/assets/img/elonmusk.jpeg"
                   alt=""
                 />
+                <p
+                  class="lg:text-2xl md:text-2xl sm:text-2xl text-xl w-full text-center text-white font-gtplanar flex font-normal pt-2"
+                >
+                  {{ shortDescription }}
+                </p>
               </div>
-              <p
-                class="lg:text-4xl md:text-4xl sm:text-3xl text-2xl text-white flex font-semibold "
-              >
-                {{ shortDescription }}
-              </p>
             </div>
           </div>
           <slot :class="variant" />
