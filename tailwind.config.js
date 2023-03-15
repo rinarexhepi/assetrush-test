@@ -21,9 +21,9 @@ module.exports = {
         // primary: "#091537",
         // primary: "#12121c",
         // primary: "#151935",
-        primary: "#00042f",
+        primary: "#150b30",
         secondary: "#4e30a0;",
-        hover: "#000e48",
+        hover: "#150b40",
       },
       backgroundImage: (theme) => ({
         "custom-gradient":
