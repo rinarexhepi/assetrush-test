@@ -14,3 +14,10 @@ export const variantClasses = {
   singleTalk:
     "bg-gradient-to-b from-indigo-900 to-pink-500 rounded-2xl px-20 flex flex-col m-5",
 };
+
+export const colorClasses = {
+  blue: "text-blue-400",
+  lightPurple: "text-purple-400",
+  pink: "text-pink-800",
+  darkPurple: "text-indigo-500",
+};

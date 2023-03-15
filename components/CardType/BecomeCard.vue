@@ -9,7 +9,7 @@
                 {{ subtitle }}
               </Headline>
 
-              <Headline headingVariant="becomeTitle" titleColor="darkPurple">
+              <Headline headingVariant="becomeTitle">
                 {{ title }}
               </Headline>
             </div>
@@ -51,9 +51,9 @@
   </Grids>
 </template>
 <script lang="ts">
-import { variantClasses } from "./const";
+import { variantClasses, colorClasses } from "./const";
 import { PropType } from "vue";
-import { Variant } from "./types";
+import { Variant, Color } from "./types";
 export default defineComponent({
   props: {
     subtitle: {
@@ -76,15 +76,20 @@ export default defineComponent({
       type: String as PropType<Variant>,
       default: "",
     },
+    titleColor: {
+      type: String as PropType<Color>,
+      default: "",
+    },
   },
   setup(props) {
     const selectedVariant = computed(() => variantClasses[props.variant]);
+    const selectedColor = computed(() => colorClasses[props.titleColor]);
     const isActive = ref(false);
 
     function toggleBurger() {
       isActive.value = !isActive.value;
     }
-    return { selectedVariant, toggleBurger, isActive };
+    return { selectedVariant, toggleBurger, isActive, selectedColor };
   },
 });
 </script>

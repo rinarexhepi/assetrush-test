@@ -9,3 +9,7 @@ const variants = [
   "singleTalk",
 ] as const;
 export type Variant = typeof variants[number];
+
+const colors = ["blue", "lightPurple", "pink", "darkPurple"] as const;
+
+export type Color = typeof colors[number];
