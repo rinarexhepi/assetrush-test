@@ -4,8 +4,8 @@
       <template v-slot:first>
         <div :class="selectedVariant">
           <div class="m-4 p-4 flex lg:flex-col flex-col-reverse">
-            <div class="flex flex-col gap-6 items-center">
-              <div>
+            <div class="flex flex-col gap-4 items-center">
+              <div class="flex flex-col">
                 <Headline headingVariant="subheading">
                   {{ subtitle }}
                 </Headline>
@@ -15,7 +15,7 @@
               </div>
               <div>
                 <img
-                  class="rounded-full flex shrink-0"
+                  class="rounded-full border-8 border-rounded-full border-pink-800 flex shrink-0"
                   src="~/assets/img/elonmusk.jpeg"
                   alt=""
                 />
