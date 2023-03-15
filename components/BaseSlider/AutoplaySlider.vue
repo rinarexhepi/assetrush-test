@@ -10,7 +10,6 @@
 
 <script lang="ts">
 import { Splide } from '@splidejs/splide'
-import { isIdentifierOrPrivateIdentifier } from 'typescript'
 import type { PropType } from 'vue'
 
 export const slideComponentName = 'SplideSlide'
