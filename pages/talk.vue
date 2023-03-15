@@ -1,5 +1,3 @@
-<script lang="ts" setup></script>
-
 <template>
   <div class="bg-primary overflow-scroll">
     <section>
@@ -145,4 +143,4 @@
   </div>
 </template>
 
-<style scoped></style>
+<script lang="ts" setup></script>

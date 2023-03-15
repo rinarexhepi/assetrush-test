@@ -1,5 +1,4 @@
 <template>
-  testing template
   <div class="bg-primary">
     <Headline level="h1" headingVariant="heading" text="The Next Chapter" />
     <Headline

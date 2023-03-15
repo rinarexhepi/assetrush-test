@@ -25,6 +25,8 @@ module.exports = {
         secondary: "#4e30a0;",
         joinBackground: "#000048",
         hover: "#00010a",
+        pulseCard: "#1c1833",
+        pulseCardHover: "#242240",
       },
       backgroundImage: (theme) => ({
         "custom-gradient":
