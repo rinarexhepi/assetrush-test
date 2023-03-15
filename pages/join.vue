@@ -3,13 +3,13 @@
 <template>
   <div class="bg-joinBackground overflow-scroll">
     <section>
-      <div class="relative">
-        <CardTypeSingleTalk
-          variant="singleTalk"
-          subtitle="AssetRush"
-          title="TALK"
-          posterImage="~/assets/img/elonmusk.jpeg"
-          shortDescription="Meet the innovators and pioneers"
+      <div class="relative ">
+        <EventsLatest
+          posterImage="~/assets/img/Geneva_Key-Art.png"
+          headline="Latest Event"
+          variant="events"
+          title="AssetRush x Geneva 2023"
+          :button="false"
         />
       </div>
       <div class="relative w-screen overflow-hidden pt-16">

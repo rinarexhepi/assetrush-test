@@ -15,6 +15,7 @@
       </Headline>
 
       <StrapiButton
+        v-if="button"
         buttonVariant="third"
         class="uppercase lg:px-5 lg:py-3 px-3 py-3 font-semibold lg:mr-6 w-max"
         text="Find Out More"
@@ -51,7 +52,7 @@ export default defineComponent({
     },
     shortDescription: {
       type: String,
-      required: true,
+      required: false,
     },
     variant: {
       type: String as PropType<Variant>,

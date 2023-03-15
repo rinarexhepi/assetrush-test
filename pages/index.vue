@@ -58,7 +58,7 @@
           variant="events"
           title="AssetRush x Geneva 2023"
           shortDescription="Wednesday, 1 March 2023"
-          :button="true"
+          :button="false"
         />
       </div>
       <div class="relative py-6 p-8 ml-16">
