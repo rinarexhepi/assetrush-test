@@ -13,7 +13,7 @@ export const variantClasses = {
   footerText: "text-lg text-white",
   ecosystem:
     "xl:text-6xl lg:text-5xl text-3xl font-gtplanar font-bold text-white ",
-  becomeTitle: "lg:text-8xl md:text-7xl sm:text-6xl text-3xl",
+  becomeTitle: "lg:text-8xl md:text-7xl sm:text-6xl text-3xl text-blue-700",
   becomeSubheading:
     "text-[24px] leading-relaxed font-medium text-gray-600  font-gtplanar",
   talkHeading:
