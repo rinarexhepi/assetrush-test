@@ -13,11 +13,15 @@ export const variantClasses = {
   footerText: "text-lg text-white",
   ecosystem:
     "xl:text-6xl lg:text-5xl text-3xl font-gtplanar font-bold text-white ",
-  becomeTitle: "text-8xl",
+  becomeTitle: "lg:text-8xl md:text-7xl sm:text-6xl text-3xl",
   becomeSubheading:
     "text-[24px] leading-relaxed font-medium text-gray-600  font-gtplanar",
-  talkHeading: "text-white text-[46px] font-semibold leading-none",
-  talkSubheading: "text-white text-[48px] font-bold leading-none",
+  talkHeading:
+    "text-white lg:text-[46px] md:text-[44px] sm:text-[42px] text-[36px] font-semibold leading-none",
+  talkSubheading:
+    "text-white lg:text-[48px] md:text-[46px] sm:text-[44px] text-[32px] font-bold leading-none",
+  talkParagraph:
+    "text-white lg:text-[36px] text-[28px] font-gtplanar text-center",
 };
 
 export const colorClasses = {

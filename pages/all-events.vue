@@ -45,16 +45,6 @@
     />
   </div>
 
-  <div>
-    <CardTypeSingleTalk
-      variant="singleTalk"
-      subtitle="AssetRush"
-      title="TALK"
-      posterImage="~/assets/img/elonmusk.jpeg"
-      shortDescription="Meet the innovators and pioneers"
-    />
-  </div>
-
   <Grids gridVariant="fullBleed">
     <h2>full-bleed</h2>
   </Grids>

@@ -1,11 +1,11 @@
 <template>
-  <Grids gridVariant="centered">
+  <Grids gridVariant="standard">
     <CenteredCardLayout>
       <template v-slot:first>
         <div :class="selectedVariant">
           <div class="m-4 p-4 flex lg:flex-col flex-col-reverse">
             <div class="flex flex-col gap-4 items-center">
-              <div class="flex flex-col items-center gap-1">
+              <div class="flex flex-col items-center gap-2">
                 <Headline headingVariant="talkHeading">
                   {{ subtitle }}
                 </Headline>
@@ -13,9 +13,9 @@
                   {{ title }}
                 </Headline>
                 <img
-                  class="rounded-full lg:h-56 lg:w-64 md:h-56 md:w-64 sm:h-56 sm:w-64 w-40 h-40 border-8 border-rounded-full border-pink-800 flex shrink-0"
+                  class="rounded-full w-full h-full border-8 border-rounded-full border-pink-800 flex shrink-0"
                   src="~/assets/img/elonmusk.jpeg"
-                  alt=""
+                  alt="profile"
                 />
                 <p
                   class="lg:text-2xl md:text-2xl sm:text-2xl text-xl w-full text-center text-white font-gtplanar flex font-normal pt-2"

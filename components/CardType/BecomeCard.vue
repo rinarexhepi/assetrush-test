@@ -27,7 +27,7 @@
               </button>
             </div>
           </div>
-          <div class="flex flex-row gap-4" v-show="isActive">
+          <div class="flex lg:flex-row flex-col gap-4" v-show="isActive">
             <div class="pr-12">
               <Headline headingVariant="becomeSubheading">
                 Selected innovators can freely present their ideas and share

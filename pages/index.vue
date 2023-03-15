@@ -4,45 +4,45 @@
       <div class="relative w-screen overflow-hidden pt-32">
         <BaseSliderAutoplaySlider>
           <li class="splide__slide bg-primary">
-            <img src="" alt="" />
+            <img src="~/assets/img/ArLogo.png" alt="ArLogo" />
           </li>
           <li class="splide__slide bg-primary">
-            <img src="~/assets/img/ArLogo.png" alt="" />
+            <img src="~/assets/img/ArLogo.png" alt="ArLogo" />
           </li>
           <li class="splide__slide bg-primary">
-            <img src="~/assets/img/ArLogo.png" alt="" />
+            <img src="~/assets/img/ArLogo.png" alt="ArLogo" />
           </li>
           <li class="splide__slide bg-primary">
-            <img src="~/assets/img/ArLogo.png" alt="" />
-          </li>
-
-          <li class="splide__slide bg-primary">
-            <img src="~/assets/img/ArLogo.png" alt="" />
-          </li>
-          <li class="splide__slide bg-primary">
-            <img src="~/assets/img/ArLogo.png" alt="" />
-          </li>
-          <li class="splide__slide bg-primary">
-            <img src="~/assets/img/ArLogo.png" alt="" />
-          </li>
-          <li class="splide__slide bg-primary">
-            <img src="~/assets/img/ArLogo.png" alt="" />
-          </li>
-          <li class="splide__slide bg-primary">
-            <img src="~/assets/img/ArLogo.png" alt="" />
-          </li>
-          <li class="splide__slide bg-primary">
-            <img src="~/assets/img/ArLogo.png" alt="" />
+            <img src="~/assets/img/ArLogo.png" alt="ArLogo" />
           </li>
 
           <li class="splide__slide bg-primary">
-            <img src="~/assets/img/ArLogo.png" alt="" />
+            <img src="~/assets/img/ArLogo.png" alt="ArLogo" />
           </li>
           <li class="splide__slide bg-primary">
-            <img src="~/assets/img/ArLogo.png" alt="" />
+            <img src="~/assets/img/ArLogo.png" alt="ArLogo" />
           </li>
           <li class="splide__slide bg-primary">
-            <img src="~/assets/img/ArLogo.png" alt="" />
+            <img src="~/assets/img/ArLogo.png" alt="ArLogo" />
+          </li>
+          <li class="splide__slide bg-primary">
+            <img src="~/assets/img/ArLogo.png" alt="ArLogo" />
+          </li>
+          <li class="splide__slide bg-primary">
+            <img src="~/assets/img/ArLogo.png" alt="ArLogo" />
+          </li>
+          <li class="splide__slide bg-primary">
+            <img src="~/assets/img/ArLogo.png" alt="ArLogo" />
+          </li>
+
+          <li class="splide__slide bg-primary">
+            <img src="~/assets/img/ArLogo.png" alt="ArLogo" />
+          </li>
+          <li class="splide__slide bg-primary">
+            <img src="~/assets/img/ArLogo.png" alt="ArLogo" />
+          </li>
+          <li class="splide__slide bg-primary">
+            <img src="~/assets/img/ArLogo.png" alt="ArLogo" />
           </li>
         </BaseSliderAutoplaySlider>
       </div>

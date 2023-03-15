@@ -1,5 +1,5 @@
 <template>
-  <Grids gridVariant="standard">
+  <Grids gridVariant="centered">
     <StandardLayout>
       <template v-slot:first>
         <div :class="selectedVariant">

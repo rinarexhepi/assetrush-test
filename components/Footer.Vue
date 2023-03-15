@@ -16,7 +16,7 @@
           <input
             type="text"
             placeholder="Your Email Address"
-            name=""
+            name="email"
             id=""
             class="rounded-full border-2 py-3 px-7 border-slate-600 bg-transparent"
           />
