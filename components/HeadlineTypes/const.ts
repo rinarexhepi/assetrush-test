@@ -16,6 +16,8 @@ export const variantClasses = {
   becomeTitle: "text-8xl",
   becomeSubheading:
     "text-[24px] leading-relaxed font-medium text-gray-600  font-gtplanar",
+  talkHeading: "text-white text-[46px] font-semibold leading-none",
+  talkSubheading: "text-white text-[48px] font-bold leading-none",
 };
 
 export const colorClasses = {

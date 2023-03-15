@@ -5,13 +5,15 @@
         <div :class="selectedVariant">
           <div class="m-4 p-4 flex lg:flex-col flex-col-reverse">
             <div class="flex flex-col gap-4 items-center">
-              <div class="flex flex-col items-center gap-3">
-                <Headline headingVariant="subheading">
+              <div class="flex flex-col items-center gap-1">
+                <Headline headingVariant="talkHeading">
                   {{ subtitle }}
                 </Headline>
-                <Headline headingVariant="heading"> {{ title }} </Headline>
+                <Headline headingVariant="talkSubheading">
+                  {{ title }}
+                </Headline>
                 <img
-                  class="rounded-full lg:h-64 lg:w-64 md:h-64 md:w-64 sm:h-64 sm:w-64 w-40 h-40 border-8 border-rounded-full border-pink-800 flex shrink-0"
+                  class="rounded-full lg:h-56 lg:w-64 md:h-56 md:w-64 sm:h-56 sm:w-64 w-40 h-40 border-8 border-rounded-full border-pink-800 flex shrink-0"
                   src="~/assets/img/elonmusk.jpeg"
                   alt=""
                 />
