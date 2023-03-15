@@ -127,6 +127,16 @@
           :hasOverlay="true"
         />
       </div>
+      <div class="flex flex-row">
+        <CardTypeEcosystemCard
+          title="Join the ecosystem"
+          shortDescription="Innovate with us"
+        />
+        <CardTypeEcosystemCard
+          title="Join the ecosystem"
+          shortDescription="Innovate with us"
+        />
+      </div>
     </section>
   </div>
 </template>
