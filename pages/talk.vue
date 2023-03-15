@@ -127,14 +127,16 @@
           :hasOverlay="true"
         />
       </div>
-      <div class="flex flex-row gap-6 justify-center w-full py-10">
+      <div
+        class="flex lg:flex-row flex-col gap-6 justify-center items-center w-full py-10"
+      >
         <CardTypeRowEcosystem
-          class="w-[37%] h-[40%]"
+          class="lg:w-[37%] lg:h-[40%] w-[50%] box-border"
           title="Join the ecosystem"
           shortDescription="Innovate with us"
         />
         <CardTypeRowEcosystem
-          class="w-[37%] h-[40%]"
+          class="lg:w-[37%] lg:h-[40%] w-[50%]"
           title="Join the ecosystem"
           shortDescription="Innovate with us"
         />
