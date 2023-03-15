@@ -71,6 +71,11 @@
           </StandardSmallLayout>
         </Grids>
       </div>
+      <div>
+        <Headline headingVariant="talkParagraphLeft">
+          Episode Guide
+        </Headline>
+      </div>
       <div class="relative py-8 flex flex-col gap-8">
         <CardTypeTalkCard
           variant="talkCard"

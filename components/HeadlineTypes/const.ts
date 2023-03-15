@@ -22,6 +22,8 @@ export const variantClasses = {
     "text-white lg:text-[48px] md:text-[46px] sm:text-[44px] text-[32px] font-bold leading-none",
   talkParagraph:
     "text-white lg:text-[36px] text-[28px] font-gtplanar text-center",
+  talkParagraphLeft:
+    " text-white lg:text-[36px] text-[28px] font-gtplanar text-left",
 };
 
 export const colorClasses = {
