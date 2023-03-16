@@ -19,6 +19,11 @@
     </div>
     <div class="flex lg:flex-row justify-around" v-show="!isActive">
       <StrapiButton
+        :variants="[
+          { text: 'Upcoming Events', value: '~/upcoming-events.vue' },
+          { text: 'Past Events', value: '~/past-events.vue' },
+          { text: 'All Events', value: '~/all-events.vue' },
+        ]"
         class="lg:flex md:flex hidden"
         buttonVariant="primary"
         text="events"

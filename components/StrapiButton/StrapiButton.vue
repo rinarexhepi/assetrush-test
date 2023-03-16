@@ -5,7 +5,7 @@
     :class="selectButtonClass"
   >
     <div
-      class="flex"
+      class="flex w-full h-full"
       :class="[reverse ? 'flex-row-reverse gap-4 items-center' : '']"
     >
       <div
@@ -19,22 +19,28 @@
       </div>
       <p class="text-2xl mx-1">{{ text }}</p>
     </div>
-    <template v-if="variants">
-      <select
-        class=" hover:backdrop-blur-xl btn-primary px-7 py-3"
-        v-model="selectedVariant"
+
+    <div
+      v-if="variants && !icon"
+      class="absolute right-0 bottom-0 pt-10 group w-full h-full"
+      buttonVariant="selectButtonClass"
+    >
+      <div
+        class="w-[250px] backdrop-blur-md float-right hidden group-hover:flex btn-primary flex-col p-2"
+        v-for="variant in variants"
+        :key="variant.value"
+        :value="variant.value"
       >
-        <option
-          class=""
-          v-for="variant in variants"
-          key="variant.value"
-          value="variant.value"
-          >{{ variant.text }}</option
+        <span
+          class="w-full h-full border-2 border-transparent hover:border-2 hover:border-slate-300 ease-in duration-300 rounded-full py-3"
         >
-      </select>
-    </template>
+          {{ variant.text }}
+        </span>
+      </div>
+    </div>
   </Component>
 </template>
+
 <script lang="ts">
 import { buttonClasses } from "./const";
 import { PropType, defineComponent } from "vue";
