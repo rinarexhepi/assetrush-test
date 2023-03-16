@@ -2,25 +2,45 @@
   <Grids gridVariant="centered">
     <StandardLayout>
       <template v-slot:first>
-        <div :class="selectedVariant" class="h-full">
+        <div :class="selectedVariant" class="h-full hover:ease-in">
           <span
-            class=" absolute h-full w-1/2 hover:w-1/3 float-left bg-gradient-to-b from-blue-600 to-pink-500 opacity-80 z-0 rounded-l-2xl"
+            class="absolute h-full w-1/2 hover:w-1/3 hover:ease-in duration-300 float-left bg-gradient-to-b from-blue-700 to-pink-600 opacity-80 z-0 rounded-l-2xl"
           >
           </span>
           <div class="h-full">
-            <div class="absolute">
-              <p
-                class="lg:text-4xl md:text-4xl sm:text-3xl text-2xl text-white font-serif font-semibold"
-              >
-                {{ shortDescription }}
-              </p>
-              <img src="" alt="business icon" />
-              <Headline level="h4" headingVariant="subtitles">
-                {{ author }}
-              </Headline>
-              <Headline level="h4" headingVariant="subtitles">
-                {{ info }}
-              </Headline>
+            <div class="absolute flex flex-col gap-10 p-8">
+              <div class="flex">
+                <p
+                  class="lg:text-4xl md:text-4xl sm:text-3xl text-2xl text-white font-serif font-semibold"
+                >
+                  {{ shortDescription }}
+                </p>
+              </div>
+              <div class="flex flex-col w-full h-full">
+                <img
+                  src="~/assets/img/ArLogo.png"
+                  alt="business icon"
+                  class="w-[30px]"
+                />
+                <Headline level="h4" headingVariant="subtitles">
+                  {{ author }}
+                </Headline>
+                <Headline level="h4" headingVariant="subtitles">
+                  {{ info }}
+                </Headline>
+                <img
+                  src="~/assets/img/icon-social--linkedin.png"
+                  alt="linkedin"
+                  class="w-[20px]"
+                />
+              </div>
+              <div class="flex w-full h-full">
+                <StrapiButton
+                  text="more info"
+                  buttonVariant="third"
+                  class="font-semibold py-2 px-3 hover:bg-blue-700 hover:text-white duration-300 ease-in-out"
+                />
+              </div>
             </div>
             <div class="h-full w-full">
               <img

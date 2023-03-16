@@ -11,12 +11,12 @@
         </div>
       </button>
     </div>
-    <div class="sm:flex flex-col h-max">
+    <NuxtLink to="http://localhost:3000/" class="sm:flex flex-col h-max">
       <img src="~/assets/img/ArLogo.png" alt="" />
       <span class="text-white text-[8px] font-gtplanar font-extralight"
-        >Powered by GenTwo</span
-      >
-    </div>
+        >Powered by GenTwo
+      </span>
+    </NuxtLink>
     <div class="flex lg:flex-row justify-around" v-show="!isActive">
       <StrapiButton
         :variants="[

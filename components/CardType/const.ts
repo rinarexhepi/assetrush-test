@@ -8,7 +8,7 @@ export const variantClasses = {
   pulseCard:
     "m-5 flex flex-col bg-pulseCard relative hover:bg-pulseCardHover scale-100 hover:scale-105 transition duration-300 ease-in-out rounded-xl w-[500px] h-[500px]",
   talkCard:
-    "bg-primary hover:bg-hover scale-100 hover:scale-105 transition duration-300 ease-in-out relative flex lg:flex-row flex-col-reverse w-full h-full rounded-xl",
+    "bg-primary hover:bg-pulseCard scale-100 hover:scale-105 transition duration-300 ease-in-out relative flex lg:flex-row flex-col-reverse w-full h-full rounded-xl",
   becomeCard:
     "relative flex flex-col justify-between gap-16 bg-white rounded-xl p-10 border-2 border-indigo-800 my-6 cursor-pointer",
   singleTalk:

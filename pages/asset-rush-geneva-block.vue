@@ -1,5 +1,5 @@
 <template>
-  <div class="relative pt-20">
+  <div class="relative pt-20 bg-primary">
     <CardTypeBlockCard
       class="pt-32"
       variant="blockCard"
