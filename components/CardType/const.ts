@@ -13,6 +13,7 @@ export const variantClasses = {
     "relative flex flex-col justify-between gap-16 bg-white rounded-xl p-10 border-2 border-indigo-800 my-6 cursor-pointer",
   singleTalk:
     "bg-gradient-to-b from-indigo-900 to-pink-500 rounded-2xl px-20 flex flex-col m-5",
+  blockCard: "flex flex-row w-full transition duration-300 ease-in-out h-max",
 };
 
 export const colorClasses = {

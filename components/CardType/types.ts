@@ -7,6 +7,7 @@ const variants = [
   "talkCard",
   "becomeCard",
   "singleTalk",
+  "blockCard",
 ] as const;
 export type Variant = typeof variants[number];
 

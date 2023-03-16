@@ -1,6 +1,6 @@
 <template>
   <div
-    class="relative flex flex-col items-center gap-6 lg:px-96 md:px-36 px-20 bg-transparent"
+    class="relative flex flex-col items-center gap-6 lg:px-96 md:px-36 px-20"
   >
     <div class="flex lg:flex-row flex-col w-full justify-around my-10 gap-16">
       <div class="flex flex-col flex-1 gap-8">

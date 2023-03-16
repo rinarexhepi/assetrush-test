@@ -1,6 +1,6 @@
 <template>
   <div
-    class="fixed w-full backdrop-blur-lg py-6 flex lg:flex-row md:flex-row justify-around items-center z-50"
+    class="fixed w-full backdrop-blur-md py-6 flex lg:flex-row md:flex-row justify-around items-center z-50"
   >
     <div class="lg:hidden md:hidden sm:flex">
       <button class="" @click="toggleBurger()">
@@ -13,7 +13,9 @@
     </div>
     <div class="sm:flex flex-col h-max">
       <img src="~/assets/img/ArLogo.png" alt="" />
-      <span class="text-white text-[10px]">Powered by GenTwo</span>
+      <span class="text-white text-[8px] font-gtplanar font-extralight"
+        >Powered by GenTwo</span
+      >
     </div>
     <div class="flex lg:flex-row justify-around" v-show="!isActive">
       <StrapiButton
