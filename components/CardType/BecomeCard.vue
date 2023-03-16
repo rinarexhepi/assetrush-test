@@ -3,7 +3,9 @@
     <StandardSmallLayout>
       <template v-slot:first>
         <div :class="selectedVariant">
-          <div class="flex flex-row justify-between">
+          <div
+            class="flex flex-row justify-between transition ease-in-out duration-300 "
+          >
             <div class="flex flex-col">
               <Headline headingVariant="becomeSubheading">
                 {{ subtitle }}
@@ -17,7 +19,7 @@
               <button @click="toggleBurger()">
                 <span
                   v-if="isActive"
-                  class="text-6xl font-light text-indigo-900"
+                  class="text-6xl font-light text-indigo-900 "
                 >
                   +
                 </span>
@@ -27,7 +29,7 @@
               </button>
             </div>
           </div>
-          <div class="flex lg:flex-row flex-col gap-4" v-show="isActive">
+          <div class="flex lg:flex-row flex-col gap-4 " v-show="isActive">
             <div class="pr-12">
               <Headline headingVariant="becomeSubheading">
                 Selected innovators can freely present their ideas and share
