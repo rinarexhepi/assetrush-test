@@ -3,8 +3,10 @@
     <CardTypeBlockCard
       class="pt-32"
       variant="blockCard"
-      author="name"
-      shortDescription="Banks have shied away from this opportunity"
+      author="Marc Blunier"
+      info="Head Investment Promotion & Solutions"
+      shortDescription="After the Apocalypse"
+      icon="~/assets/img/ArLogo.png"
     />
   </div>
 </template>
