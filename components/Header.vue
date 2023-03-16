@@ -56,29 +56,64 @@
     v-show="isActive"
   >
     <span class="fixed w-full h-full flex items-center"></span>
-    <div class="flex flex-col justify-center gap-4 items-center">
+    <div class="flex flex-col justify-center w-full gap-4 items-center">
       <StrapiButton
+        @click="toggleOptions"
         class="lg:hidden md:hidden flex h-[50px] w-max"
         buttonVariant="primary"
         text="events"
       />
 
       <StrapiButton
+        :url="'talk'"
         class="lg:hidden md:hidden flex h-[50px] w-max"
         buttonVariant="primary"
         text="talk"
       />
 
       <StrapiButton
+        :url="'join'"
         class="lg:hidden md:hidden flex h-[50px] w-max"
         buttonVariant="primary"
         text="join"
       />
 
       <StrapiButton
+        :url="'talk'"
         class="lg:hidden md:hidden flex h-[50px] w-max"
         buttonVariant="primary"
         text="linkedin"
+      />
+    </div>
+  </div>
+  <div
+    class="fixed z-40 xl:hidden lg:hidden md:hidden flex h-full w-full bg-custom-gradient"
+    v-show="isOptions"
+  >
+    <span class="fixed w-full h-full flex items-center"></span>
+    <div class="flex flex-col w-full justify-center gap-4 items-center">
+      <StrapiButton
+        @click="toggleOptions"
+        class="lg:hidden md:hidden flex h-[50px] w-max"
+        buttonVariant="primary"
+        text="Back"
+      />
+      <StrapiButton
+        class="lg:hidden md:hidden flex h-[50px] w-max"
+        buttonVariant="primary"
+        text="All Events"
+      />
+
+      <StrapiButton
+        class="lg:hidden md:hidden flex h-[50px] w-max"
+        buttonVariant="primary"
+        text="Past Events"
+      />
+
+      <StrapiButton
+        class="lg:hidden md:hidden flex h-[50px] w-max"
+        buttonVariant="primary"
+        text="Upcoming Events"
       />
     </div>
   </div>

@@ -2,13 +2,13 @@
   <Grids gridVariant="centered">
     <StandardLayout>
       <template v-slot:first>
-        <div :class="selectedVariant" class="h-full hover:ease-in">
+        <div :class="selectedVariant">
           <span
             class="absolute h-full w-1/2 hover:w-1/3 hover:ease-in duration-300 float-left bg-gradient-to-b from-blue-700 to-pink-600 opacity-80 z-0 rounded-l-2xl"
           >
           </span>
-          <div class="h-full">
-            <div class="absolute flex flex-col gap-10 p-8">
+          <div class="flex flex-col">
+            <div class="absolute flex flex-col lg:gap-8 p-8 h-full">
               <div class="flex">
                 <p
                   class="lg:text-4xl md:text-4xl sm:text-3xl text-2xl text-white font-serif font-semibold"
@@ -34,7 +34,7 @@
                   class="w-[20px]"
                 />
               </div>
-              <div class="flex w-full h-full">
+              <div class="flex w-full h-max">
                 <StrapiButton
                   text="more info"
                   buttonVariant="third"

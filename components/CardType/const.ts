@@ -14,7 +14,7 @@ export const variantClasses = {
   singleTalk:
     "bg-gradient-to-b from-indigo-900 to-pink-500 rounded-2xl px-20 flex flex-col m-5",
   blockCard:
-    "relative flex flex-row w-full transition duration-300 ease-in-out h-[70%] w-full",
+    "relative flex flex-row w-full transition duration-300 ease-in-out h-[70%]",
 };
 
 export const colorClasses = {
