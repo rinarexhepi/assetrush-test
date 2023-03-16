@@ -28,18 +28,18 @@
       <div
         class="flex flex-col bg-transparent backdrop-blur-2xl backdrop-brightness-150 float-right rounded-xl overflow-hidden"
       >
-        <div
+        <NuxtLink
           class="w-[250px] hidden group-hover:flex btn-primary flex-col p-2"
           v-for="variant in variants"
           :key="variant.value"
-          :value="variant.value"
+          :to="variant.value"
         >
           <span
             class="w-full h-full border-2 border-transparent hover:border-2 hover:border-slate-300 ease-in duration-300 rounded-full py-3"
           >
             {{ variant.text }}
           </span>
-        </div>
+        </NuxtLink>
       </div>
     </div>
   </Component>

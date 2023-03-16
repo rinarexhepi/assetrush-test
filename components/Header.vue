@@ -20,9 +20,9 @@
     <div class="flex lg:flex-row justify-around" v-show="!isActive">
       <StrapiButton
         :variants="[
-          { text: 'Upcoming Events', value: '~/upcoming-events.vue' },
-          { text: 'Past Events', value: '~/past-events.vue' },
-          { text: 'All Events', value: '~/all-events.vue' },
+          { text: 'Upcoming Events', value: 'upcoming-events' },
+          { text: 'Past Events', value: 'past-events' },
+          { text: 'All Events', value: 'all-events' },
         ]"
         class="lg:flex md:flex hidden"
         buttonVariant="primary"
@@ -30,18 +30,21 @@
       />
 
       <StrapiButton
+        :url="'talk'"
         class="lg:flex md:flex hidden"
         buttonVariant="primary"
         text="talk"
       />
 
       <StrapiButton
+        :url="'join'"
         class="lg:flex md:flex hidden"
         buttonVariant="primary"
         text="join"
       />
 
       <StrapiButton
+        :url="'https://ch.linkedin.com/company/asset-rush?trk=similar-pages'"
         class="lg:flex md:flex hidden"
         buttonVariant="primary"
         text="linkedin"
