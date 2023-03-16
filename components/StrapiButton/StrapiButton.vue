@@ -22,20 +22,24 @@
 
     <div
       v-if="variants && !icon"
-      class="absolute right-0 bottom-0 pt-10 group w-full h-full"
+      class="absolute right-0 top-0 pt-10 group w-full"
       buttonVariant="selectButtonClass"
     >
       <div
-        class="w-[250px] backdrop-blur-md float-right hidden group-hover:flex btn-primary flex-col p-2"
-        v-for="variant in variants"
-        :key="variant.value"
-        :value="variant.value"
+        class="flex flex-col bg-transparent backdrop-blur-2xl backdrop-brightness-150 float-right rounded-xl overflow-hidden"
       >
-        <span
-          class="w-full h-full border-2 border-transparent hover:border-2 hover:border-slate-300 ease-in duration-300 rounded-full py-3"
+        <div
+          class="w-[250px] hidden group-hover:flex btn-primary flex-col p-2"
+          v-for="variant in variants"
+          :key="variant.value"
+          :value="variant.value"
         >
-          {{ variant.text }}
-        </span>
+          <span
+            class="w-full h-full border-2 border-transparent hover:border-2 hover:border-slate-300 ease-in duration-300 rounded-full py-3"
+          >
+            {{ variant.text }}
+          </span>
+        </div>
       </div>
     </div>
   </Component>

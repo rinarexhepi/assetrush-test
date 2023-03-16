@@ -49,31 +49,31 @@
     </div>
   </div>
   <div
-    class="fixed z-40 xl:hidden md:hidden flex h-full w-full bg-custom-gradient"
+    class="fixed z-40 xl:hidden lg:hidden md:hidden flex h-full w-full bg-custom-gradient"
     v-show="isActive"
   >
-    <span class="fixed w-full h-full"></span>
-    <div class="flex flex-col justify-center gap-4 items-center w-full">
+    <span class="fixed w-full h-full flex items-center"></span>
+    <div class="flex flex-col justify-center gap-4 items-center">
       <StrapiButton
-        class="lg:hidden md:hidden flex"
+        class="lg:hidden md:hidden flex h-[50px] w-max"
         buttonVariant="primary"
         text="events"
       />
 
       <StrapiButton
-        class="lg:hidden md:hidden flex"
+        class="lg:hidden md:hidden flex h-[50px] w-max"
         buttonVariant="primary"
         text="talk"
       />
 
       <StrapiButton
-        class="lg:hidden md:hidden flex"
+        class="lg:hidden md:hidden flex h-[50px] w-max"
         buttonVariant="primary"
         text="join"
       />
 
       <StrapiButton
-        class="lg:hidden md:hidden flex"
+        class="lg:hidden md:hidden flex h-[50px] w-max"
         buttonVariant="primary"
         text="linkedin"
       />
@@ -84,13 +84,19 @@
 export default {
   setup() {
     const isActive = ref(false);
+    const isOptions = ref(false);
 
     function toggleBurger() {
       isActive.value = !isActive.value;
     }
+    function toggleOptions() {
+      isOptions.value = !isOptions.value;
+    }
     return {
       toggleBurger,
       isActive,
+      toggleOptions,
+      isOptions,
     };
   },
 };
