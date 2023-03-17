@@ -52,13 +52,13 @@
           </ul>
         </div>
         <div
-          class="relative bg-gray-900 bg-opacity-40 w-[200px] h-full py-5 px-7 rounded-full"
+          class="relative bg-gray-900 bg-opacity-40 w-[180px] h-full py-5 px-7 rounded-full"
         >
           <ul class="flex lg:flex-row gap-3 items-center">
             <li>
               <NuxtLink to="">
                 <img
-                  class="max-w-[25px]"
+                  class="max-w-[20px]"
                   src="~/assets/img/icon-social--envelope.png"
                   alt=""
                 />
@@ -67,7 +67,7 @@
             <li>
               <NuxtLink to="">
                 <img
-                  class="max-w-[25px]"
+                  class="max-w-[20px]"
                   src="~/assets/img/icon-social--map.png"
                   alt=""
                 />
@@ -76,7 +76,7 @@
             <li>
               <NuxtLink to="">
                 <img
-                  class="max-w-[25px]"
+                  class="max-w-[20px]"
                   src="~/assets/img/icon-social--linkedin.png"
                   alt=""
                 />
@@ -85,7 +85,7 @@
             <li>
               <NuxtLink to="">
                 <img
-                  class="max-w-[25px]"
+                  class="max-w-[20px]"
                   src="~/assets/img/icon-social--youtube.png"
                   alt=""
                 />

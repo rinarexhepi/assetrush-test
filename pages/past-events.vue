@@ -4,7 +4,6 @@
       <div class="items-center">
         <EventsLatest
           posterImage="'~/assets/img/hero-join.jpeg'"
-          title="Join the future of finance today"
           :button="false"
         />
       </div>
