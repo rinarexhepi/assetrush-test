@@ -68,7 +68,7 @@
         </div>
       </div>
       <div class="relative w-screen overflow-hidden pt-32">
-        <BaseSliderAutoplaySlider>
+        <BaseSlider>
           <li class="splide__slide bg-primary">
             <img src="~/assets/img/ArLogo.png" alt="ArLogo" />
           </li>
@@ -110,7 +110,7 @@
           <li class="splide__slide bg-primary">
             <img src="~/assets/img/ArLogo.png" alt="ArLogo" />
           </li>
-        </BaseSliderAutoplaySlider>
+        </BaseSlider>
       </div>
       <div
         class="flex lg:flex-row flex-col gap-6 justify-center items-center w-full py-10"
@@ -130,15 +130,11 @@
   </div>
 </template>
 <script lang="ts">
-import AutoplaySlider from "~/components/BaseSlider/AutoplaySlider.vue";
-import BecomeCard from "~/components/CardType/BecomeCard.vue";
 import Modal from "~/components/VueFinalModal/Modal.vue";
 
 export default {
   components: {
     Modal,
-    BecomeCard,
-    AutoplaySlider,
   },
   setup() {
     const shouldRenderModal = ref(false);

@@ -87,7 +87,7 @@
     </div>
   </div>
   <div
-    class="fixed z-40 xl:hidden lg:hidden md:hidden flex h-full w-full bg-custom-gradient"
+    class="fixed z-40 xl:hidden lg:hidden md:hidden flex h-full w-full bg-custom-gradient ease-in-out duration-200"
     v-show="isOptions"
   >
     <span class="fixed w-full h-full flex items-center"></span>

@@ -4,7 +4,7 @@
     aria-label="Arrow pointing right"
     width="40"
     height="40"
-    fill="none"
+    fill="white"
   >
     <circle
       r="19"

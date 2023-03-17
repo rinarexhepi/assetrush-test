@@ -4,7 +4,7 @@
     aria-label="Arrow pointing left"
     width="40"
     height="40"
-    fill="none"
+    fill="white"
   >
     <circle cx="20" cy="20" r="19" stroke="currentColor" stroke-width="2" />
     <path

@@ -2,7 +2,7 @@
   <div class="bg-primary h-screen relative overflow-scroll">
     <section>
       <div class="relative w-screen overflow-hidden pt-32">
-        <BaseSliderAutoplaySlider>
+        <BaseSlider>
           <li class="splide__slide bg-primary">
             <img src="~/assets/img/ArLogo.png" alt="ArLogo" />
           </li>
@@ -44,7 +44,7 @@
           <li class="splide__slide bg-primary">
             <img src="~/assets/img/ArLogo.png" alt="ArLogo" />
           </li>
-        </BaseSliderAutoplaySlider>
+        </BaseSlider>
       </div>
       <div class="relative p-8 ml-16">
         <Headline level="h2" headingVariant="ecosystem">
@@ -68,11 +68,12 @@
       </div>
       <div class="relative py-6">
         <EventsLatest
-          posterImage="~/assets/img/Geneva_Key-Art.png"
+          posterImage="~/assets/img/zurich.png"
           headline="Latest Event"
           variant="events"
           title="AssetRush x Geneva 2023"
           shortDescription="Wednesday, 1 March 2023"
+          posterimage=""
           :button="true"
         />
       </div>
@@ -99,6 +100,28 @@
       <div class="relative py-6">
         <div class="w-screen overflow-hidden my-8">
           <BaseSlider>
+            <li class="splide__slide">
+              <CardTypeEpisodeCard
+                variant="episodesCard"
+                episodeNumber=""
+                author="name"
+                shortDescription="Banks have shied away from this opportunity"
+                :hasOverlay="true"
+                @openModal="openModal"
+              >
+              </CardTypeEpisodeCard>
+            </li>
+            <li class="splide__slide">
+              <CardTypeEpisodeCard
+                variant="episodesCard"
+                episodeNumber=""
+                author="name"
+                shortDescription="Banks have shied away from this opportunity"
+                :hasOverlay="true"
+                @openModal="openModal"
+              >
+              </CardTypeEpisodeCard>
+            </li>
             <li class="splide__slide">
               <CardTypeEpisodeCard
                 variant="episodesCard"

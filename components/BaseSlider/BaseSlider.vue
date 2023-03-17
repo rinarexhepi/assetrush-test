@@ -1,21 +1,20 @@
 <template>
   <div class="slider-container">
     <div class="mb-6">
-      <Splide ref="splideEl" :options="splideOptions">
-        <slot></slot>
-      </Splide>
-    </div>
-    <div
-      class="slider-arrows mt-auto flex flex-row gap-3"
-      :class="sliderArrowsClass"
-    >
       <button @click="showPrev">
         <SvgLeftEncircled :class="leftArrowClass" />
       </button>
+      <Splide ref="splideEl" :options="splideOptions">
+        <slot></slot>
+      </Splide>
       <button @click="showNext">
         <SvgRightEncircled :class="rightArrowClass" />
       </button>
     </div>
+    <div
+      class="slider-arrows mt-auto flex flex-row gap-3"
+      :class="sliderArrowsClass"
+    ></div>
   </div>
 </template>
 
@@ -78,6 +77,10 @@ export default defineComponent({
     rightArrowClass: {
       type: String,
       default: ''
+   },
+   autoplay:{
+    type: Boolean,
+    default: false
    }
   },
   setup(props) {

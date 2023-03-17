@@ -1,6 +1,9 @@
 <template>
   <div :class="selectedVariant">
-    <img class="h-[300px] w-full object-cover" src="~/assets/img/zurich.png" />
+    <img
+      class="h-[350px] w-full object-cover"
+      src="~/assets/img/Geneva_Key-Art.png"
+    />
     <div
       class="absolute top-0 flex flex-col justify-center gap-6 items-left w-max p-8 ml-16"
     >
