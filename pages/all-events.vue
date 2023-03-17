@@ -67,50 +67,8 @@
           </div>
         </div>
       </div>
-      <div class="relative w-screen overflow-hidden pt-32">
-        <BaseSlider>
-          <li class="splide__slide bg-primary">
-            <img src="~/assets/img/ArLogo.png" alt="ArLogo" />
-          </li>
-          <li class="splide__slide bg-primary">
-            <img src="~/assets/img/ArLogo.png" alt="ArLogo" />
-          </li>
-          <li class="splide__slide bg-primary">
-            <img src="~/assets/img/ArLogo.png" alt="ArLogo" />
-          </li>
-          <li class="splide__slide bg-primary">
-            <img src="~/assets/img/ArLogo.png" alt="ArLogo" />
-          </li>
-
-          <li class="splide__slide bg-primary">
-            <img src="~/assets/img/ArLogo.png" alt="ArLogo" />
-          </li>
-          <li class="splide__slide bg-primary">
-            <img src="~/assets/img/ArLogo.png" alt="ArLogo" />
-          </li>
-          <li class="splide__slide bg-primary">
-            <img src="~/assets/img/ArLogo.png" alt="ArLogo" />
-          </li>
-          <li class="splide__slide bg-primary">
-            <img src="~/assets/img/ArLogo.png" alt="ArLogo" />
-          </li>
-          <li class="splide__slide bg-primary">
-            <img src="~/assets/img/ArLogo.png" alt="ArLogo" />
-          </li>
-          <li class="splide__slide bg-primary">
-            <img src="~/assets/img/ArLogo.png" alt="ArLogo" />
-          </li>
-
-          <li class="splide__slide bg-primary">
-            <img src="~/assets/img/ArLogo.png" alt="ArLogo" />
-          </li>
-          <li class="splide__slide bg-primary">
-            <img src="~/assets/img/ArLogo.png" alt="ArLogo" />
-          </li>
-          <li class="splide__slide bg-primary">
-            <img src="~/assets/img/ArLogo.png" alt="ArLogo" />
-          </li>
-        </BaseSlider>
+      <div class="relative w-screen py-10">
+        <BaseSliderInfiniteSlider />
       </div>
       <div
         class="flex lg:flex-row flex-col gap-6 justify-center items-center w-full py-10"

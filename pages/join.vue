@@ -12,50 +12,8 @@
           :button="false"
         />
       </div>
-      <div class="relative w-screen overflow-hidden pt-16">
-        <BaseSlider>
-          <li class="splide__slide bg-joinBackground">
-            <img src="~/assets/img/ArLogo.png" alt="ArLogo" />
-          </li>
-          <li class="splide__slide bg-joinBackground">
-            <img src="~/assets/img/ArLogo.png" alt="ArLogo" />
-          </li>
-          <li class="splide__slide bg-joinBackground">
-            <img src="~/assets/img/ArLogo.png" alt="ArLogo" />
-          </li>
-          <li class="splide__slide bg-joinBackground">
-            <img src="~/assets/img/ArLogo.png" alt="ArLogo" />
-          </li>
-
-          <li class="splide__slide bg-joinBackground">
-            <img src="~/assets/img/ArLogo.png" alt="ArLogo" />
-          </li>
-          <li class="splide__slide bg-joinBackground">
-            <img src="~/assets/img/ArLogo.png" alt="ArLogo" />
-          </li>
-          <li class="splide__slide bg-joinBackground">
-            <img src="~/assets/img/ArLogo.png" alt="ArLogo" />
-          </li>
-          <li class="splide__slide bg-joinBackground">
-            <img src="~/assets/img/ArLogo.png" alt="ArLogo" />
-          </li>
-          <li class="splide__slide bg-joinBackground">
-            <img src="~/assets/img/ArLogo.png" alt="ArLogo" />
-          </li>
-          <li class="splide__slide bg-joinBackground">
-            <img src="~/assets/img/ArLogo.png" alt="ArLogo" />
-          </li>
-
-          <li class="splide__slide bg-joinBackground">
-            <img src="~/assets/img/ArLogo.png" alt="ArLogo" />
-          </li>
-          <li class="splide__slide bg-joinBackground">
-            <img src="~/assets/img/ArLogo.png" alt="ArLogo" />
-          </li>
-          <li class="splide__slide bg-primajoinBackgroundry">
-            <img src="~/assets/img/ArLogo.png" alt="ArLogo" />
-          </li>
-        </BaseSlider>
+      <div class="relative w-screen py-10">
+        <BaseSliderInfiniteSlider />
       </div>
       <div class="relative py-16">
         <Grids gridVariant="standard">
