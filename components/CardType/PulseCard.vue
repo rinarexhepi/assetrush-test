@@ -17,8 +17,8 @@
             <a
               class="text-slate-400 border-2 w-max border-slate-400 rounded-full px-3 mx-1 my-1"
               v-for="label in buttonLabel"
-              href="'label.value'"
-              target="blank"
+              :href="label.value"
+              target="_blank"
             >
               {{ label.text }}
             </a>
@@ -75,9 +75,14 @@ export default defineComponent({
   },
   setup(props) {
     const selectedVariant = computed(() => variantClasses[props.variant]);
+
     return {
       selectedVariant,
     };
+  },
+
+  created() {
+    console.log(this.buttonLabel);
   },
 });
 </script>
