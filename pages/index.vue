@@ -123,9 +123,9 @@
       </div>
 
       <div
-        class="relative py-6 flex lg:flex-row flex-col h-full w-full gap-2 items-center"
+        class="relative py-6 flex lg:flex-row flex-col h-full w-full gap-2 justify-evenly items-center"
       >
-        <div class="w-[25%]">
+        <div class="lg:w-full">
           <CardTypePastEvent
             variant="pastEvents"
             shortDescription="Asset Rush x Metaverse"
@@ -133,7 +133,7 @@
           >
           </CardTypePastEvent>
         </div>
-        <div class="w-[25%]">
+        <div class="lg:w-full">
           <CardTypePastEvent
             variant="pastEvents"
             shortDescription="Asset Rush x Metaverse"
@@ -141,7 +141,7 @@
           >
           </CardTypePastEvent>
         </div>
-        <div class="  w-[25%]">
+        <div class="lg:w-full">
           <CardTypePastEvent
             variant="pastEvents"
             shortDescription="Asset Rush x Metaverse"
@@ -149,7 +149,7 @@
           >
           </CardTypePastEvent>
         </div>
-        <div class=" w-[25%]">
+        <div class="lg:w-full">
           <CardTypePastEvent
             variant="pastEvents"
             shortDescription="Asset Rush x Metaverse"
