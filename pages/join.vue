@@ -13,7 +13,7 @@
         />
       </div>
       <div class="relative w-screen overflow-hidden pt-16">
-        <BaseSliderAutoplaySlider>
+        <BaseSlider>
           <li class="splide__slide bg-joinBackground">
             <img src="~/assets/img/ArLogo.png" alt="ArLogo" />
           </li>
@@ -55,7 +55,7 @@
           <li class="splide__slide bg-primajoinBackgroundry">
             <img src="~/assets/img/ArLogo.png" alt="ArLogo" />
           </li>
-        </BaseSliderAutoplaySlider>
+        </BaseSlider>
       </div>
       <div class="relative py-16">
         <Grids gridVariant="standard">

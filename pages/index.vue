@@ -2,7 +2,7 @@
   <div class="bg-primary h-screen relative overflow-scroll">
     <section>
       <div class="relative w-screen overflow-hidden pt-32">
-        <BaseSlider>
+        <BaseSliderInfiniteSlider>
           <li class="splide__slide bg-primary">
             <img src="~/assets/img/ArLogo.png" alt="ArLogo" />
           </li>
@@ -44,7 +44,7 @@
           <li class="splide__slide bg-primary">
             <img src="~/assets/img/ArLogo.png" alt="ArLogo" />
           </li>
-        </BaseSlider>
+        </BaseSliderInfiniteSlider>
       </div>
       <div class="relative p-8 ml-16">
         <Headline level="h2" headingVariant="ecosystem">
