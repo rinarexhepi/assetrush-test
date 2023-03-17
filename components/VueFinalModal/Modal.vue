@@ -1,6 +1,6 @@
 <template>
   <div
-    class="absolute top-0 left-0 bg-slate-800 bg-opacity-40 "
+    class="fixed bg-slate-800 bg-opacity-40 w-full h-full overflow-scroll"
     v-if="showModal"
     @click="closeModal()"
   >

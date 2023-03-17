@@ -272,18 +272,18 @@
       <Modal
         :showModal="shouldRenderModal"
         @closeModal="shouldRenderModal = false"
-        class=" fixed inset-0 align-center"
+        class="inset-0 align-center"
       >
         <div class="flex justify-center flex-row ">
-          <div class="absolute z-10 mt-60">
-            <h1 class="text-3xl">This is a title</h1>
+          <div class="absolute z-10">
+            <!-- <h1 class="text-3xl">This is a title</h1>
             <p class="text-lgs">This is a description</p>
             <NuxtLink
               class="border absolute bg-slate-900 p-3 rounded-xl"
               href="join"
             >
               <span>index page</span>
-            </NuxtLink>
+            </NuxtLink> -->
           </div>
 
           <VideoTestimonials
