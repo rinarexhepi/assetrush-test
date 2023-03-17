@@ -1,9 +1,12 @@
 <template>
   <Grids gridVariant="guttersOnly">
     <div :class="selectedVariant">
-      <img class="rounded-xl h-full w-full" src="~/assets/img/AR-space.jpeg" />
+      <img
+        class=" absolute top-0 left-0 rounded-xl h-full w-full "
+        src="~/assets/img/AR-space.jpeg"
+      />
       <div
-        class="absolute top-0 flex flex-col gap-16 h-full w-full p-12 justify-between"
+        class="top-0 flex flex-col gap-24 h-full w-full px-12 py-24 justify-between z-10"
       >
         <div class=" h-full flex-1 flex flex-col gap-8">
           <Headline level="h6" headingVariant="pastEventsDate">
@@ -16,7 +19,7 @@
         <div class="h-full flex-1 pr-2">
           <StrapiButton
             buttonVariant="third"
-            class="uppercase h-max w-full lg:px-5 lg:py-3 px-3 py-3 font-semibold lg:mr-6"
+            class="uppercase h-max w-max lg:px-5 lg:py-3 px-3 py-3 font-semibold lg:mr-6"
             text="Find out more"
             alt="play"
             loading="lazy"

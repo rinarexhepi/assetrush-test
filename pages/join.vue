@@ -1,7 +1,7 @@
 <script lang="ts" setup></script>
 
 <template>
-  <div class="bg-joinBackground overflow-scroll">
+  <div class="bg-joinBackground">
     <section>
       <div class="relative ">
         <EventsLatest

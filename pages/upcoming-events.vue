@@ -1,10 +1,9 @@
 <template>
-  <div class="bg-primary overflow-scroll">
+  <div class="bg-primary">
     <section>
-      <div class="py-16">space</div>
-      <div class="relative p-8 ml-16">
+      <div class="relative p-8 pt-28">
         <Headline level="h2" headingVariant="ecosystem">
-          Upcoming Event
+          Upcoming Events
         </Headline>
       </div>
       <div class="relative py-6">
@@ -16,6 +15,9 @@
           shortDescription="Wednesday, 1 March 2023"
           :button="true"
         />
+      </div>
+      <div>
+        <InfoNewsletter />
       </div>
       <div
         class="flex lg:flex-row flex-col gap-6 justify-center items-center w-full py-10"

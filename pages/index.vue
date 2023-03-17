@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-primary h-screen relative overflow-scroll">
+  <div class="bg-primary relative">
     <section>
       <div class="relative w-screen pt-32">
         <BaseSliderInfiniteSlider />
@@ -121,42 +121,39 @@
           Past Events
         </Headline>
       </div>
-      <div class="relative py-6">
-        <div class="w-screen overflow-hidden my-8">
-          <div class="flex lg:flex-row flex-col w-full">
-            <li class="splide__slide w-1/4">
-              <CardTypePastEvent
-                variant="pastEvents"
-                shortDescription="Asset Rush x Metaverse"
-                date="July 15th, 2022"
-              >
-              </CardTypePastEvent>
-            </li>
-            <li class="splide__slide  w-1/4">
-              <CardTypePastEvent
-                variant="pastEvents"
-                shortDescription="Asset Rush x Metaverse"
-                date="July 15th, 2022"
-              >
-              </CardTypePastEvent>
-            </li>
-            <li class="splide__slide  w-1/4">
-              <CardTypePastEvent
-                variant="pastEvents"
-                shortDescription="Asset Rush x Metaverse"
-                date="July 15th, 2022"
-              >
-              </CardTypePastEvent>
-            </li>
-            <li class="splide__slide  w-1/4">
-              <CardTypePastEvent
-                variant="pastEvents"
-                shortDescription="Asset Rush x Metaverse"
-                date="July 15th, 2022"
-              >
-              </CardTypePastEvent>
-            </li>
-          </div>
+
+      <div class="relative py-6 flex lg:flex-row flex-col h-full w-full gap-2">
+        <div class=" w-[25%]">
+          <CardTypePastEvent
+            variant="pastEvents"
+            shortDescription="Asset Rush x Metaverse"
+            date="July 15th, 2022"
+          >
+          </CardTypePastEvent>
+        </div>
+        <div class=" w-[25%]">
+          <CardTypePastEvent
+            variant="pastEvents"
+            shortDescription="Asset Rush x Metaverse"
+            date="July 15th, 2022"
+          >
+          </CardTypePastEvent>
+        </div>
+        <div class="  w-[25%]">
+          <CardTypePastEvent
+            variant="pastEvents"
+            shortDescription="Asset Rush x Metaverse"
+            date="July 15th, 2022"
+          >
+          </CardTypePastEvent>
+        </div>
+        <div class=" w-[25%]">
+          <CardTypePastEvent
+            variant="pastEvents"
+            shortDescription="Asset Rush x Metaverse"
+            date="July 15th, 2022"
+          >
+          </CardTypePastEvent>
         </div>
       </div>
       <div class="relative py-4 ml-16">
@@ -228,16 +225,15 @@
       <div>
         <InfoNewsletter />
       </div>
-    </section>
-    <Transition>
-      <Modal
-        :showModal="shouldRenderModal"
-        @closeModal="shouldRenderModal = false"
-        class="inset-0 align-center"
-      >
-        <div class="flex justify-center flex-row ">
-          <div class="absolute z-10">
-            <!-- <h1 class="text-3xl">This is a title</h1>
+      <Transition>
+        <Modal
+          :showModal="shouldRenderModal"
+          @closeModal="shouldRenderModal = false"
+          class="inset-0 align-center"
+        >
+          <div class="flex justify-center flex-row ">
+            <div class="absolute z-10">
+              <!-- <h1 class="text-3xl">This is a title</h1>
             <p class="text-lgs">This is a description</p>
             <NuxtLink
               class="border absolute bg-slate-900 p-3 rounded-xl"
@@ -245,16 +241,17 @@
             >
               <span>index page</span>
             </NuxtLink> -->
-          </div>
+            </div>
 
-          <VideoTestimonials
-            :options="{ responsive: true }"
-            class="m-16 w-full z-0 "
-            video-url="https://vimeo.com/444369368"
-          />
-        </div>
-      </Modal>
-    </Transition>
+            <VideoTestimonials
+              :options="{ responsive: true }"
+              class="m-16 w-full z-0 "
+              video-url="https://vimeo.com/444369368"
+            />
+          </div>
+        </Modal>
+      </Transition>
+    </section>
   </div>
 </template>
 <script lang="ts">

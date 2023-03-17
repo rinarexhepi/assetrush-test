@@ -1,5 +1,5 @@
 <template>
-  <div class="py-10 flex flex-row w-full justify-center gap-8">
+  <div class="py-10 flex flex-row justify-center gap-8 w-full">
     <div class="flex flex-col gap-8">
       <div class=" flex flex-col w-full">
         <Headline level="h6" headingVariant="subtitles"
@@ -17,15 +17,15 @@
           id=""
           class="rounded-full border-2 py-3 px-7 border-slate-600 bg-transparent"
         />
-        <StrapiButton buttonVariant="primary" text="Subscribe" />
+        <StrapiButton buttonVariant="primary" text="Subscribe" class="w-max" />
       </div>
     </div>
-    <div class=" flex lg:flex-row flex-col items-center gap-4">
+    <div class=" flex  lg:flex-row flex-col items-center gap-4  ">
       <Headline level="h5" headingVariant="pastARPresenters"
         >Asset Rush on Youtube</Headline
       >
       <img
-        class="flex-1 flex shrink-0  h-[65px]"
+        class="flex shrink-0  h-[65px]"
         src="~/assets/img/youtube.png"
         alt="youtube"
       />
