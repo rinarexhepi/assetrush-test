@@ -6,7 +6,7 @@
           <div
             class="flex flex-row justify-between transition ease-in-out duration-300 "
           >
-            <div class="flex flex-col">
+            <div class="flex flex-col p-2">
               <Headline headingVariant="becomeSubheading">
                 {{ subtitle }}
               </Headline>
@@ -19,11 +19,11 @@
               <button @click="toggleBurger()">
                 <span
                   v-if="isActive"
-                  class="text-6xl font-light text-indigo-900 "
+                  class="text-6xl font-thin text-indigo-900 "
                 >
                   +
                 </span>
-                <span v-else class="text-6xl font-light text-indigo-900">
+                <span v-else class="text-6xl font-thin text-indigo-900">
                   -
                 </span>
               </button>
@@ -37,15 +37,14 @@
                 market professionals.
               </Headline>
             </div>
-            <div>
-              <StrapiButton
-                buttonVariant="secondary"
-                class="uppercase px-5 py-3 font-semibold"
-                text="Enquire"
-                alt="play"
-                loading="lazy"
-              />
-            </div>
+            <StrapiButton
+              buttonVariant="secondary"
+              class="uppercase px-5 py-3 font-semibold"
+              text="Enquire"
+              alt="play"
+              loading="lazy"
+              url="https://share.hsforms.com/1WlnP5KHRSlmZM4xLgev0Vg3prjk"
+            />
           </div>
         </div>
       </template>

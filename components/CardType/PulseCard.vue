@@ -1,7 +1,10 @@
 <template>
   <Grids gridVariant="guttersOnly">
     <div :class="selectedVariant">
-      <div class="flex-1">
+      <div class="relative flex-1 w-full h-full">
+        <span
+          class="absolute before:w-full before:h-full before:bg-cyan-900  before:bg-opacity-70 flex hover:hidden z-50"
+        ></span>
         <img
           class="rounded-xl max-h-[250px] w-full"
           src="~/assets/img/banking.jpeg"
@@ -17,7 +20,7 @@
             <a
               class="text-slate-400 border-2 w-max border-slate-400 rounded-full px-3 mx-1 my-1"
               v-for="label in buttonLabel"
-              :href?="label.value"
+              :href="label.value"
               target="_blank"
             >
               {{ label.text }}
@@ -43,7 +46,7 @@ import { Variant } from "./types";
 
 interface Labels {
   text: String;
-  value: String;
+  value: string;
 }
 
 export default defineComponent({

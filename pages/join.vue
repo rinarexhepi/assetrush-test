@@ -55,6 +55,9 @@
           shortDescription="Publish and promote your professional expertise and insight with our audience and become a thought leader."
         />
       </div>
+      <div class="py-10">
+        <InfoNewsletter />
+      </div>
     </section>
   </div>
 </template>

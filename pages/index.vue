@@ -46,14 +46,13 @@
               Martha Boeckenfeld and leading FinTech innovators.
             </Headline>
           </div>
-          <div>
-            <StrapiButton
-              class="font-md text-xs"
-              buttonVariant="primary"
-              text="All episodes"
-              url="talk"
-            />
-          </div>
+
+          <StrapiButton
+            class="font-md text-xs w-max"
+            buttonVariant="primary"
+            text="All episodes"
+            url="talk"
+          />
         </div>
       </div>
       <div class="relative py-6">
