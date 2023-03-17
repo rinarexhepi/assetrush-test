@@ -4,7 +4,7 @@
       class="relative flex flex-col items-center gap-6 lg:px-96 md:px-36 px-20 bg-indigo-900"
     >
       <div class="text-white flex lg:flex-row flex-col lg:gap-8 w-full py-5">
-        <div class="lg:w-1/5 w-full float-left">
+        <div class="lg:w-1/5 w-auto float-left">
           <ul class="flex flex-col lg:gap-2 gap-5">
             <li>
               <img src="~/assets/img/logo-full.png" alt="" />
@@ -22,32 +22,32 @@
           </ul>
         </div>
         <div class="lg:w-1/5">
-          <ul class="flex lg:flex-col ">
-            <li>
-              <NuxtLink to="">Pulse</NuxtLink>
+          <ul class="flex lg:flex-col">
+            <li class="p-1">
+              <NuxtLink to="pulse">Pulse</NuxtLink>
             </li>
           </ul>
         </div>
         <div class="lg:w-1/5">
           <ul class="flex lg:flex-col">
-            <li>
-              <NuxtLink to="">Events</NuxtLink>
+            <li class="p-1">
+              <NuxtLink to="all-events">Events</NuxtLink>
             </li>
-            <li>
-              <NuxtLink to="">Talk</NuxtLink>
+            <li class="p-1">
+              <NuxtLink to="talk">Talk</NuxtLink>
             </li>
           </ul>
         </div>
         <div class="lg:w-1/5">
-          <ul>
-            <li class="flex lg:flex-col">
-              <NuxtLink to="">About Us</NuxtLink>
+          <ul class="flex lg:flex-col flex-row">
+            <li class=" p-1">
+              <NuxtLink to="about">About Us</NuxtLink>
             </li>
-            <li>
-              <NuxtLink to="">Contact</NuxtLink>
+            <li class=" p-1">
+              <NuxtLink to="contact-us">Contact</NuxtLink>
             </li>
-            <li>
-              <NuxtLink to="">Join</NuxtLink>
+            <li class=" p-1">
+              <NuxtLink to="join">Join</NuxtLink>
             </li>
           </ul>
         </div>
