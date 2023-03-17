@@ -220,52 +220,52 @@
           Pulse
         </Headline>
       </div>
-      <div class="flex flex-col items-center">
-        <div class="flex flex-row">
-          <CardTypePulseCard
-            :buttonLabel="[
-              { text: 'BANK' },
-              { text: 'AMC' },
-              { text: 'NEWS' },
-              { text: 'BANK' },
-              { text: 'AMC' },
-              { text: 'NEWS' },
-            ]"
-            variant="pulseCard"
-            shortDescription="Build your actively managed certificate"
-            date="2023-02-15"
-          ></CardTypePulseCard>
-          <CardTypePulseCard
-            :buttonLabel="[
-              { text: 'BANK' },
-              { text: 'AMC' },
-              { text: 'NEWS' },
-              { text: 'BANK' },
-            ]"
-            variant="pulseCard"
-            shortDescription="Build your actively managed certificate"
-            date="2023-02-15"
-          ></CardTypePulseCard>
-        </div>
-        <div class="flex flex-row">
-          <CardTypePulseCard
-            :buttonLabel="[
-              { text: 'BANK' },
-              { text: 'AMC' },
-              { text: 'NEWS' },
-              { text: 'BANK' },
-            ]"
-            variant="pulseCard"
-            shortDescription="Build your actively managed certificate"
-            date="2023-02-15"
-          ></CardTypePulseCard>
-          <CardTypePulseCard
-            :buttonLabel="[{ text: 'BANK' }, { text: 'AMC' }]"
-            variant="pulseCard"
-            shortDescription="Build your actively managed certificate"
-            date="2023-02-15"
-          ></CardTypePulseCard>
-        </div>
+      <div class="flex flex-row flex-wrap justify-center w-full">
+        <CardTypePulseCard
+          :buttonLabel="[
+            { text: 'BANK', value: 'https://www.gentwo.com/' },
+            { text: 'AMC', value: 'https://www.gentwo.com/' },
+            { text: 'NEWS', value: 'https://www.gentwo.com/' },
+            { text: 'BANK', value: 'https://www.gentwo.com/' },
+            { text: 'AMC', value: 'https://www.gentwo.com/' },
+            { text: 'NEWS', value: 'https://www.gentwo.com/' },
+          ]"
+          variant="pulseCard"
+          shortDescription="Build your actively managed certificate"
+          date="2023-02-15"
+        ></CardTypePulseCard>
+        <CardTypePulseCard
+          :buttonLabel="[
+            { text: 'BANK', value: 'https://www.gentwo.com/' },
+            { text: 'AMC', value: 'https://www.gentwo.com/' },
+            { text: 'NEWS', value: 'https://www.gentwo.com/' },
+            { text: 'BANK', value: 'https://www.gentwo.com/' },
+          ]"
+          variant="pulseCard"
+          shortDescription="Build your actively managed certificate"
+          date="2023-02-15"
+        ></CardTypePulseCard>
+
+        <CardTypePulseCard
+          :buttonLabel="[
+            { text: 'BANK', value: 'https://www.gentwo.com/' },
+            { text: 'AMC', value: 'https://www.gentwo.com/' },
+            { text: 'NEWS', value: 'https://www.gentwo.com/' },
+            { text: 'BANK', value: 'https://www.gentwo.com/' },
+          ]"
+          variant="pulseCard"
+          shortDescription="Build your actively managed certificate"
+          date="2023-02-15"
+        ></CardTypePulseCard>
+        <CardTypePulseCard
+          :buttonLabel="[
+            { text: 'BANK', value: 'https://www.gentwo.com/' },
+            { text: 'AMC', value: 'https://www.gentwo.com/' },
+          ]"
+          variant="pulseCard"
+          shortDescription="Build your actively managed certificate"
+          date="2023-02-15"
+        ></CardTypePulseCard>
       </div>
     </section>
     <Transition>

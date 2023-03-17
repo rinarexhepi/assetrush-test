@@ -13,14 +13,16 @@
         class="p-4 flex flex-col flex-1 justify-between gap-7 relative m-6 lg:h-[150px] md:h-[150px] sm:h-[120px] h-[100px]"
       >
         <div v-if="buttonLabel">
-          <ul class="flex flex-row flex-wrap ">
-            <li
+          <div class="flex flex-row flex-wrap ">
+            <a
               class="text-slate-400 border-2 w-max border-slate-400 rounded-full px-3 mx-1 my-1"
               v-for="label in buttonLabel"
+              href="'label.value'"
+              target="blank"
             >
               {{ label.text }}
-            </li>
-          </ul>
+            </a>
+          </div>
         </div>
         <p class="lg:text-3xl text-2xl text-white font-semibold ">
           {{ shortDescription }}
@@ -41,6 +43,7 @@ import { Variant } from "./types";
 
 interface Labels {
   text: String;
+  value: String;
 }
 
 export default defineComponent({
