@@ -5,7 +5,7 @@
       src="~/assets/img/Geneva_Key-Art.png"
     />
     <div
-      class="absolute top-0 flex flex-col justify-center item gap-6 items-left w-full h-full p-8 ml-16"
+      class="absolute top-0 flex flex-col justify-center gap-6 items-left w-full h-full p-8 ml-16"
     >
       <Headline level="h2" headingVariant="ecosystem">
         {{ title }}
