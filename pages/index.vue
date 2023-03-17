@@ -51,6 +51,7 @@
               class="font-md text-xs"
               buttonVariant="primary"
               text="All episodes"
+              url="talk"
             />
           </div>
         </div>
