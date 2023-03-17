@@ -61,7 +61,7 @@
             <li class="splide__slide">
               <CardTypeEpisodeCard
                 variant="episodesCard"
-                episodeNumber=""
+                episodeNumber="35"
                 author="name"
                 shortDescription="Banks have shied away from this opportunity"
                 :hasOverlay="true"
@@ -72,7 +72,7 @@
             <li class="splide__slide">
               <CardTypeEpisodeCard
                 variant="episodesCard"
-                episodeNumber=""
+                episodeNumber="34"
                 author="name"
                 shortDescription="Banks have shied away from this opportunity"
                 :hasOverlay="true"
@@ -83,7 +83,7 @@
             <li class="splide__slide">
               <CardTypeEpisodeCard
                 variant="episodesCard"
-                episodeNumber=""
+                episodeNumber="33"
                 author="name"
                 shortDescription="Banks have shied away from this opportunity"
                 :hasOverlay="true"
@@ -94,7 +94,7 @@
             <li class="splide__slide">
               <CardTypeEpisodeCard
                 variant="episodesCard"
-                episodeNumber="2"
+                episodeNumber="32"
                 author="name"
                 shortDescription="Banks have shied away from this opportunity"
                 :hasOverlay="true"
@@ -105,7 +105,7 @@
             <li class="splide__slide">
               <CardTypeEpisodeCard
                 variant="episodesCard"
-                episodeNumber="2"
+                episodeNumber="31"
                 author="name"
                 shortDescription="Banks have shied away from this opportunity"
                 :hasOverlay="true"

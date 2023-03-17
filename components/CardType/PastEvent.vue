@@ -16,7 +16,7 @@
         <div class="h-full flex-1 pr-2">
           <StrapiButton
             buttonVariant="third"
-            class="uppercase h-max lg:px-5 lg:py-3 px-3 py-3 font-semibold lg:mr-6"
+            class="uppercase h-max w-full lg:px-5 lg:py-3 px-3 py-3 font-semibold lg:mr-6"
             text="Find out more"
             alt="play"
             loading="lazy"
