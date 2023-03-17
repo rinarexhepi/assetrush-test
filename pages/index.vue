@@ -267,6 +267,9 @@
           date="2023-02-15"
         ></CardTypePulseCard>
       </div>
+      <div>
+        <InfoNewsletter />
+      </div>
     </section>
     <Transition>
       <Modal

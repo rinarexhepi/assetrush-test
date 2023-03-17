@@ -1,15 +1,15 @@
 <template>
-  <div class="flex lg:flex-row flex-col w-full justify-around my-10 gap-16">
-    <div class="flex flex-col flex-1 gap-8">
-      <div class=" flex flex-col">
+  <div class="py-10 flex flex-row w-full justify-center gap-8">
+    <div class="flex flex-col gap-8">
+      <div class=" flex flex-col w-full">
         <Headline level="h6" headingVariant="subtitles"
-          >AssetRush pulse newsletter</Headline
-        >
+          >AssetRush pulse newsletter
+        </Headline>
         <p class="text-md text-white">
           stay in the loop with our monthly newsletter
         </p>
       </div>
-      <div class="flex lg:flex-row flex-col gap-2 sm:px-10 ">
+      <div class="flex lg:flex-row flex-col gap-2">
         <input
           type="text"
           placeholder="Your Email Address"
@@ -20,13 +20,10 @@
         <StrapiButton buttonVariant="primary" text="Subscribe" />
       </div>
     </div>
-    <div class="flex lg:flex-row flex-col flex-1 items-center gap-4">
-      <Headline
-        class="flex-1"
-        level="h5"
-        headingVariant="pastARPresenters"
-        text="Asset Rush on Youtube"
-      />
+    <div class=" flex lg:flex-row flex-col items-center gap-4">
+      <Headline level="h5" headingVariant="pastARPresenters"
+        >Asset Rush on Youtube</Headline
+      >
       <img
         class="flex-1 flex shrink-0  h-[65px]"
         src="~/assets/img/youtube.png"
