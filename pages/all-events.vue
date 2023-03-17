@@ -8,7 +8,6 @@
       </div>
       <div class="relative flex flex-row py-6">
         <EventsLatest
-          posterImage="~/assets/img/Geneva_Key-Art.png"
           headline="Latest Event"
           variant="events"
           title="AssetRush x Geneva 2023"
@@ -16,7 +15,6 @@
           :button="true"
         />
         <EventsLatest
-          posterImage="~/assets/img/Geneva_Key-Art.png"
           headline="Latest Event"
           variant="events"
           title="AssetRush x Geneva 2023"

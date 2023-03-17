@@ -1,11 +1,8 @@
-<script lang="ts" setup></script>
-
 <template>
   <div class="bg-joinBackground">
     <section>
       <div class="relative ">
         <EventsLatest
-          posterImage="~/assets/img/Geneva_Key-Art.png"
           headline="Latest Event"
           variant="events"
           title="AssetRush x Geneva 2023"
@@ -53,6 +50,12 @@
           variant="becomeCard"
           title="Partner"
           shortDescription="Publish and promote your professional expertise and insight with our audience and become a thought leader."
+        />
+      </div>
+      <div>
+        <CardTypeMarketingContact
+          variant="marketingContact"
+          text="MARKETING TEAM"
         />
       </div>
       <div class="py-10">

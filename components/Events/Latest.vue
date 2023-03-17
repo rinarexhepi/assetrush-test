@@ -2,7 +2,7 @@
   <div :class="selectedVariant">
     <img
       class="h-[350px] w-full object-cover"
-      src="~/assets/img/Geneva_Key-Art.png"
+      src="~/assets/img/hero-join.jpeg"
     />
     <div
       class="absolute top-0 flex flex-col justify-center gap-6 items-left w-full h-full p-8"
@@ -36,15 +36,15 @@ export default defineComponent({
   props: {
     headline: {
       type: String,
-      required: true,
+      required: false,
     },
     posterImage: {
       type: String,
-      required: true,
+      required: false,
     },
     title: {
       type: String,
-      required: true,
+      required: false,
     },
     button: {
       type: Boolean,

@@ -1,7 +1,14 @@
 <template>
   <div class="bg-primary">
     <section>
-      <div class="relative p-8 ml-16">
+      <div class="items-center">
+        <EventsLatest
+          posterImage="'~/assets/img/hero-join.jpeg'"
+          title="Join the future of finance today"
+          :button="false"
+        />
+      </div>
+      <div class="relative p-8 pt-24 ml-16">
         <Headline level="h2" headingVariant="ecosystem">
           Past Events
         </Headline>
@@ -9,44 +16,41 @@
       <div class="relative py-6">
         <div class="w-screen overflow-hidden my-8">
           <div class="flex flex-col items-center w-full">
-            <div class="flex flex-row">
-              <li class="splide__slide">
-                <CardTypePastEvent
-                  variant="pastEvents"
-                  shortDescription="Asset Rush x Metaverse"
-                  date="July 15th, 2022"
-                >
-                </CardTypePastEvent>
-              </li>
-              <li class="splide__slide">
-                <CardTypePastEvent
-                  variant="pastEvents"
-                  shortDescription="Asset Rush x Metaverse"
-                  date="July 15th, 2022"
-                >
-                </CardTypePastEvent>
-              </li>
+            <div class="flex lg:flex-row flex-col">
+              <CardTypePastEvent
+                variant="pastEvents"
+                shortDescription="Asset Rush x Metaverse"
+                date="July 15th, 2022"
+              >
+              </CardTypePastEvent>
+
+              <CardTypePastEvent
+                variant="pastEvents"
+                shortDescription="Asset Rush x Metaverse"
+                date="July 15th, 2022"
+              >
+              </CardTypePastEvent>
             </div>
-            <div class="flex flex-row">
-              <li class="splide__slide">
-                <CardTypePastEvent
-                  variant="pastEvents"
-                  shortDescription="Asset Rush x Metaverse"
-                  date="July 15th, 2022"
-                >
-                </CardTypePastEvent>
-              </li>
-              <li class="splide__slide">
-                <CardTypePastEvent
-                  variant="pastEvents"
-                  shortDescription="Asset Rush x Metaverse"
-                  date="July 15th, 2022"
-                >
-                </CardTypePastEvent>
-              </li>
+            <div class="flex lg:flex-row flex-col">
+              <CardTypePastEvent
+                variant="pastEvents"
+                shortDescription="Asset Rush x Metaverse"
+                date="July 15th, 2022"
+              >
+              </CardTypePastEvent>
+
+              <CardTypePastEvent
+                variant="pastEvents"
+                shortDescription="Asset Rush x Metaverse"
+                date="July 15th, 2022"
+              >
+              </CardTypePastEvent>
             </div>
           </div>
         </div>
+      </div>
+      <div>
+        <InfoNewsletter />
       </div>
       <div
         class="flex lg:flex-row flex-col gap-6 justify-center items-center w-full py-10"

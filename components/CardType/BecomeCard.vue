@@ -3,9 +3,7 @@
     <StandardSmallLayout>
       <template v-slot:first>
         <div :class="selectedVariant">
-          <div
-            class="flex flex-row justify-between transition ease-in-out duration-300 "
-          >
+          <div class="flex flex-row justify-between">
             <div class="flex flex-col p-2">
               <Headline headingVariant="becomeSubheading">
                 {{ subtitle }}
