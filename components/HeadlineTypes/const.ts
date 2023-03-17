@@ -12,7 +12,7 @@ export const variantClasses = {
   pulseDate: "text-2xl font-gtplanar font-bold text-gray-400 font-bold ",
   footerText: "text-lg text-white",
   ecosystem:
-    "xl:text-6xl lg:text-5xl text-3xl font-gtplanar font-bold text-white ",
+    "xl:text-5xl lg:text-3xl md:text-2xl text-xl font-gtplanar font-bold text-white ",
   becomeTitle:
     "lg:text-8xl md:text-7xl sm:text-6xl text-3xl text-blue-700 font-abril font-extrabold",
   becomeSubheading:
