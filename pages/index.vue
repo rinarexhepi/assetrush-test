@@ -116,7 +116,7 @@
           </BaseSlider>
         </div>
       </div>
-      <div class="relative py-6 ml-16">
+      <div class="relative py-6 ">
         <Headline level="h2" headingVariant="ecosystem">
           Past Events
         </Headline>
@@ -170,10 +170,15 @@
           />
         </div>
       </div>
-      <div class="relative py-4 pl-20">
+      <div class="relative py-4  flex flex-row justify-between">
         <Headline level="h2" headingVariant="ecosystem">
           Pulse
         </Headline>
+        <StrapiButton
+          buttonVariant="primaryHovered"
+          text="View all"
+          class="text-[8px]"
+        />
       </div>
       <div class="flex flex-row flex-wrap justify-center w-full">
         <CardTypePulseCard

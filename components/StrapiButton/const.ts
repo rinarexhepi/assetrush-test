@@ -7,4 +7,6 @@ export const buttonClasses = {
     " uppercase text-blue-600 bg-white hover:bg-blue-600 hover:text-white transition ease-in-out duration-300 rounded-full",
   primaryCornered:
     "uppercase hover:bg-white/40  transition duration-500 ease-in-out text-white bg-white/20 py-2 px-4 ",
+  primaryHovered:
+    "relative w-max h-max ease-in duration-100 rounded-full text-white bg-white/30 hover:bg-white hover:text-blue-600 mx-2 py-4 px-6 ",
 };

@@ -3,6 +3,7 @@ const buttonTypes = [
   "secondary",
   "third",
   "primaryCornered",
+  "primaryHovered",
 ] as const;
 
 export type ButtonVariant = typeof buttonTypes[number];
