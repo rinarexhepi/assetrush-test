@@ -121,6 +121,6 @@
 }
 
 .img-ticker {
-  animation: ticker-kf 4s infinite linear;
+  animation: ticker-kf 6s infinite linear;
 }
 </style>
