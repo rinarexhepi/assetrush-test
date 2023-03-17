@@ -223,11 +223,25 @@
       <div class="flex flex-col items-center">
         <div class="flex flex-row">
           <CardTypePulseCard
+            :buttonLabel="[
+              { text: 'BANK' },
+              { text: 'AMC' },
+              { text: 'NEWS' },
+              { text: 'BANK' },
+              { text: 'AMC' },
+              { text: 'NEWS' },
+            ]"
             variant="pulseCard"
             shortDescription="Build your actively managed certificate"
             date="2023-02-15"
           ></CardTypePulseCard>
           <CardTypePulseCard
+            :buttonLabel="[
+              { text: 'BANK' },
+              { text: 'AMC' },
+              { text: 'NEWS' },
+              { text: 'BANK' },
+            ]"
             variant="pulseCard"
             shortDescription="Build your actively managed certificate"
             date="2023-02-15"
@@ -235,11 +249,18 @@
         </div>
         <div class="flex flex-row">
           <CardTypePulseCard
+            :buttonLabel="[
+              { text: 'BANK' },
+              { text: 'AMC' },
+              { text: 'NEWS' },
+              { text: 'BANK' },
+            ]"
             variant="pulseCard"
             shortDescription="Build your actively managed certificate"
             date="2023-02-15"
           ></CardTypePulseCard>
           <CardTypePulseCard
+            :buttonLabel="[{ text: 'BANK' }, { text: 'AMC' }]"
             variant="pulseCard"
             shortDescription="Build your actively managed certificate"
             date="2023-02-15"

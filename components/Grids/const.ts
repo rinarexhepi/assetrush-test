@@ -1,7 +1,7 @@
 export const variantClasses = {
   gridResponsive: "lg:grid-cols-12 md:grid-cols-6 sm:grid-cols-6",
   fullBleed: "gap-4 py-6",
-  guttersOnly: "gap-4 px-10 py-6",
+  guttersOnly: "gap-4 px-4 py-6",
   halfAndHalf: "flex flex-row justify-center w-full py-6",
   standard: "grid-cols-12 gap-4",
   centered: "grid-cols-12 gap-4 mx-20",

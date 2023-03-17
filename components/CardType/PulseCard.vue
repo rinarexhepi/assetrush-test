@@ -13,11 +13,12 @@
         class="p-4 flex flex-col flex-1 justify-between gap-7 relative m-6 lg:h-[150px] md:h-[150px] sm:h-[120px] h-[100px]"
       >
         <div v-if="buttonLabel">
-          <ul>
+          <ul class="flex flex-row flex-wrap ">
             <li
-              class="text-slate-400 border-2 w-max border-slate-400 rounded-full px-2"
+              class="text-slate-400 border-2 w-max border-slate-400 rounded-full px-3 mx-1 my-1"
+              v-for="label in buttonLabel"
             >
-              {{ buttonLabel }}
+              {{ label.text }}
             </li>
           </ul>
         </div>
@@ -37,7 +38,10 @@
 import { variantClasses } from "./const";
 import { PropType } from "vue";
 import { Variant } from "./types";
-import Labels from "./Labels.ts";
+
+interface Labels {
+  text: String;
+}
 
 export default defineComponent({
   props: {

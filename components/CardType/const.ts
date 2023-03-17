@@ -6,7 +6,7 @@ export const variantClasses = {
     "lg:col-start-5 lg:col-end-9 md:col-start-3 md:col-end-5 sm:col-start-3 sm:col-end-5 bg-primary p-8 mx-16 border-none rounded-xl ",
   pastEvents: " relative w-[344px] h-[500px]",
   pulseCard:
-    "m-5 flex flex-col bg-pulseCard relative hover:bg-pulseCardHover scale-100 hover:scale-105 transition duration-300 ease-in-out rounded-xl w-[500px] h-[500px]",
+    "my-5 flex flex-col bg-pulseCard relative hover:bg-pulseCardHover scale-100 hover:scale-105 transition duration-300 ease-in-out rounded-xl w-[80%] h-full",
   talkCard:
     "bg-primary hover:bg-pulseCard scale-100 hover:scale-105 transition duration-300 ease-in-out relative flex lg:flex-row flex-col-reverse w-full h-full rounded-xl",
   becomeCard:
