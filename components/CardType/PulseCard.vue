@@ -10,14 +10,14 @@
         />
       </div>
       <div
-        class="p-4 flex flex-col flex-1 justify-between gap-7 relative m-6 lg:h-[150px] md:h-[150px] sm:h-[120px] h-[100px]"
+        class="p-1 flex flex-col flex-1 justify-between gap-7 relative m-6 lg:h-[150px] md:h-[150px] sm:h-[120px] h-[100px]"
       >
         <div v-if="buttonLabel">
           <div class="flex flex-row flex-wrap ">
             <a
               class="text-slate-400 border-2 w-max border-slate-400 rounded-full px-3 mx-1 my-1"
               v-for="label in buttonLabel"
-              :href="label.value"
+              :href?="label.value"
               target="_blank"
             >
               {{ label.text }}
