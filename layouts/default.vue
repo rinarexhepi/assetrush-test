@@ -1,7 +1,7 @@
 <template>
   <Header />
   <slot />
-  <!-- <Footer /> -->
+  <Footer />
 </template>
 <script lang="ts">
 export default defineComponent({

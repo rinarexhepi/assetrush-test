@@ -122,8 +122,10 @@
         </Headline>
       </div>
 
-      <div class="relative py-6 flex lg:flex-row flex-col h-full w-full gap-2">
-        <div class=" w-[25%]">
+      <div
+        class="relative py-6 flex lg:flex-row flex-col h-full w-full gap-2 items-center"
+      >
+        <div class="w-[25%]">
           <CardTypePastEvent
             variant="pastEvents"
             shortDescription="Asset Rush x Metaverse"
@@ -131,7 +133,7 @@
           >
           </CardTypePastEvent>
         </div>
-        <div class=" w-[25%]">
+        <div class="w-[25%]">
           <CardTypePastEvent
             variant="pastEvents"
             shortDescription="Asset Rush x Metaverse"
@@ -170,7 +172,7 @@
           />
         </div>
       </div>
-      <div class="relative py-4  flex flex-row justify-between">
+      <div class="relative py-4 mx-32 flex flex-row justify-between">
         <Headline level="h2" headingVariant="ecosystem">
           Pulse
         </Headline>
