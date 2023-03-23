@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
   <section>
     <div
       class="relative flex flex-col items-center gap-6 lg:px-96 md:px-36 px-20 bg-indigo-900"
@@ -96,4 +96,100 @@
       </div>
     </div>
   </section>
+</template> -->
+<template>
+  <footer class="bg-primary py-24">
+    <div class="container mx-auto flex gap-6">
+      <div
+        class="flex flex-col w-2/4 font-gtplanar gap-6 text-sm text-white pr-12"
+      >
+        <div>
+          <img
+            width="240"
+            src="https://static1.squarespace.com/static/6278bb92688b50292499e115/t/627a135b3083d16e1742ea7c/1652167515610/logo-full.png"
+          />
+          <span class="text-xs">powered by GenTwo</span>
+        </div>
+        <p>
+          © 2018–2023 All rights reserved <br />
+          Privacy Policy & Disclaimer
+        </p>
+        <p class="text-white/60">
+          <span class="block text-white">Contact Us</span>
+          Brandschenkestrasse 45, 8002 Zurich
+          <a class="hover:text-white block" href="tel:+41 44 512 75 00"
+            >+41 44 512 75 00</a
+          >
+        </p>
+      </div>
+      <div class="w-1/4">
+        <ul class="flex flex-col gap-2 text-sm text-white font-gtplanar">
+          <li>
+            <a href="#">Pulse</a>
+          </li>
+        </ul>
+      </div>
+      <div class="w-1/4">
+        <ul class="flex flex-col gap-2 text-sm text-white font-gtplanar">
+          <li>
+            <a href="#">Events</a>
+          </li>
+          <li>
+            <a href="#">Talk</a>
+          </li>
+        </ul>
+      </div>
+      <div class="w-1/4">
+        <ul class="flex flex-col gap-2 text-sm text-white font-gtplanar">
+          <li>
+            <a href="#">About Us</a>
+          </li>
+          <li>
+            <a href="#">Contact</a>
+          </li>
+          <li>
+            <a href="#">Join</a>
+          </li>
+        </ul>
+      </div>
+      <div class="w-1/4">
+        <ul class="flex gap-1 py-4 px-6 bg-white/20 rounded-full">
+          <li>
+            <a href="#">
+              <img
+                class="w-1/2 mx-auto object-contain"
+                src="https://static1.squarespace.com/static/6278bb92688b50292499e115/t/629723a21f1bdc42f0372d10/1654072226614/icon-social--envelope.png"
+              />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img
+                class="w-1/2 mx-auto object-contain"
+                src="https://static1.squarespace.com/static/6278bb92688b50292499e115/t/629723da23afb408ee9c89b9/1654072282553/icon-social--map.png"
+              />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img
+                class="w-1/2 mx-auto object-contain"
+                src="https://static1.squarespace.com/static/6278bb92688b50292499e115/t/6297241c6e1669281164b64f/1654072348661/icon-social--linkedin.png"
+              />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img
+                class="w-1/2 mx-auto object-contain"
+                src="https://static1.squarespace.com/static/6278bb92688b50292499e115/t/6297244cb52818388b9fa7d6/1654072396270/icon-social--youtube.png"
+              />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
 </template>
+
+<script setup lang="ts"></script>

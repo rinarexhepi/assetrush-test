@@ -3,7 +3,7 @@
     <div :class="selectedVariant">
       <template v-if="hasOverlay">
         <span
-          class=" absolute h-full w-1/2 float-left bg-gradient-to-b from-blue-600 to-pink-500 opacity-80 z-0 rounded-l-2xl"
+          class=" absolute h-full w-1/2 float-left bg-custom-gradient  opacity-80 z-0 rounded-l-2xl"
         >
         </span>
         <div>

@@ -11,17 +11,23 @@ module.exports = {
   ],
   theme: {
     extend: {
+      container: {
+        padding: {
+          xl: "10rem",
+        },
+      },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
         mono: ["ui-monospace", "PTMono-Regular"],
         gtplanar: ["GT-Planar", "sans-serif"],
         abril: ["Abril-Fatface"],
+        benet: ["bennet"],
       },
       colors: {
         // primary: "#091537",
         // primary: "#12121c",
         // primary: "#151935",
-        primary: "#150b30",
+        primary: "#150d2b",
         secondary: "#4e30a0;",
         joinBackground: "#000048",
         hover: "#00010a",

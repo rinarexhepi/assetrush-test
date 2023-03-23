@@ -14,7 +14,7 @@
                     {{ author }}
                   </h3>
                   <p
-                    class="lg:text-4xl text-2xl text-white font-serif font-semibold "
+                    class="lg:text-2xl text-2xl text-white font-gtplanar font-light"
                   >
                     {{ shortDescription }}
                   </p>
